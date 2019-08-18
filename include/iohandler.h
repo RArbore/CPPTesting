@@ -1,11 +1,8 @@
 #ifndef IOHANDLER_H
 #define IOHANDLER_H
 
-#include <iostream>
+#include "pch.h"
 #include <SFML/Graphics.hpp>
-#include <thread>
-#include <chrono>
-#include "mainclass.h"
 
 using namespace std;
 using namespace sf;

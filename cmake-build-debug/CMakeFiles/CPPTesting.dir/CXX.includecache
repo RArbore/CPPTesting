@@ -7,18 +7,16 @@
 #IncludeRegexTransform: 
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/iohandler.h
-iostream
--
+pch.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
 SFML/Graphics.hpp
 -
-thread
--
-chrono
--
-mainclass.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/mainclass.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/mainclass.h
+pch.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
+
+/Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
 iostream
 -
 chrono
@@ -27,6 +25,8 @@ thread
 -
 iohandler.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/iohandler.h
+mainclass.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/mainclass.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/src/iohandler.cpp
 ../include/iohandler.h
@@ -39,4 +39,8 @@ iohandler.h
 /Users/EpicChicken/CLionProjects/CPPTesting/src/mainclass.cpp
 ../include/mainclass.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/mainclass.h
+
+/Users/EpicChicken/CLionProjects/CPPTesting/src/pch.cpp
+../include/pch.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
 

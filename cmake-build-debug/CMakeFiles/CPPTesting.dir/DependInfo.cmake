@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/EpicChicken/CLionProjects/CPPTesting/src/iohandler.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/iohandler.cpp.o"
   "/Users/EpicChicken/CLionProjects/CPPTesting/src/main.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/main.cpp.o"
   "/Users/EpicChicken/CLionProjects/CPPTesting/src/mainclass.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/mainclass.cpp.o"
+  "/Users/EpicChicken/CLionProjects/CPPTesting/src/pch.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/pch.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
