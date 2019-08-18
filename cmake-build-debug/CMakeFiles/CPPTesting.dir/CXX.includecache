@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/EpicChicken/CLionProjects/CPPTesting/include/iohandler.h
+iostream
+-
+SFML/Graphics.hpp
+-
+thread
+-
+chrono
+-
+mainclass.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/mainclass.h
+
+/Users/EpicChicken/CLionProjects/CPPTesting/include/mainclass.h
+iostream
+-
+chrono
+-
+thread
+-
+iohandler.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/iohandler.h
+
+/Users/EpicChicken/CLionProjects/CPPTesting/src/iohandler.cpp
+../include/iohandler.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/iohandler.h
+
+/Users/EpicChicken/CLionProjects/CPPTesting/src/main.cpp
+../include/mainclass.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/mainclass.h
+
+/Users/EpicChicken/CLionProjects/CPPTesting/src/mainclass.cpp
+../include/mainclass.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/mainclass.h
+

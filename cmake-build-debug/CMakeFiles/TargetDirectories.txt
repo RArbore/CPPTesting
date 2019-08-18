@@ -1,0 +1,3 @@
+/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir
