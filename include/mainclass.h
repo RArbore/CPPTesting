@@ -1,8 +1,6 @@
 #ifndef MAINCLASS_H
 #define MAINCLASS_H
 
-#include "pch.h"
-
 using namespace std;
 using namespace std::chrono;
 

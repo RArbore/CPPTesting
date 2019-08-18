@@ -1,5 +1,3 @@
-#include "../include/mainclass.h"
-
 int main() {
 
     mainclass mainc;

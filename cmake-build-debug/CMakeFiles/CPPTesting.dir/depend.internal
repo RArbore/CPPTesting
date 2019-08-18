@@ -3,18 +3,11 @@
 
 CMakeFiles/CPPTesting.dir/src/iohandler.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/iohandler.h
- /Users/EpicChicken/CLionProjects/CPPTesting/include/mainclass.h
- /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
  /Users/EpicChicken/CLionProjects/CPPTesting/src/iohandler.cpp
 CMakeFiles/CPPTesting.dir/src/main.cpp.o
- /Users/EpicChicken/CLionProjects/CPPTesting/include/iohandler.h
- /Users/EpicChicken/CLionProjects/CPPTesting/include/mainclass.h
- /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
  /Users/EpicChicken/CLionProjects/CPPTesting/src/main.cpp
 CMakeFiles/CPPTesting.dir/src/mainclass.cpp.o
- /Users/EpicChicken/CLionProjects/CPPTesting/include/iohandler.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/mainclass.h
- /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
  /Users/EpicChicken/CLionProjects/CPPTesting/src/mainclass.cpp
 CMakeFiles/CPPTesting.dir/src/pch.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/iohandler.h

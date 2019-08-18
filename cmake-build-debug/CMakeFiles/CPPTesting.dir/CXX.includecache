@@ -7,14 +7,10 @@
 #IncludeRegexTransform: 
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/iohandler.h
-pch.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
 SFML/Graphics.hpp
 -
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/mainclass.h
-pch.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
 iostream
@@ -33,12 +29,6 @@ mainclass.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/iohandler.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/src/main.cpp
-../include/mainclass.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/mainclass.h
-
-/Users/EpicChicken/CLionProjects/CPPTesting/src/mainclass.cpp
-../include/mainclass.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/mainclass.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/src/pch.cpp
 ../include/pch.h

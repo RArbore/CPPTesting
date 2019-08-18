@@ -1,7 +1,6 @@
 #ifndef IOHANDLER_H
 #define IOHANDLER_H
 
-#include "pch.h"
 #include <SFML/Graphics.hpp>
 
 using namespace std;
