@@ -8,15 +8,15 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-# Custom flags: CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
+# Custom flags: CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h
 
-# Custom flags: CMakeFiles/CPPTesting.dir/src/Iohandler.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
+# Custom flags: CMakeFiles/CPPTesting.dir/src/Iohandler.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h
 
-# Custom flags: CMakeFiles/CPPTesting.dir/src/Main.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
+# Custom flags: CMakeFiles/CPPTesting.dir/src/Main.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h
 
-# Custom flags: CMakeFiles/CPPTesting.dir/src/Pch.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
+# Custom flags: CMakeFiles/CPPTesting.dir/src/Pch.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h
 
-# Custom flags: CMakeFiles/CPPTesting.dir/src/Entity.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
+# Custom flags: CMakeFiles/CPPTesting.dir/src/Entity.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h
 
-# Custom flags: CMakeFiles/CPPTesting.dir/src/Hitbox.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
+# Custom flags: CMakeFiles/CPPTesting.dir/src/Hitbox.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h
 

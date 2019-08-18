@@ -60,15 +60,15 @@ include CMakeFiles/pch.dir/flags.make
 CMakeFiles/pch.dir/src/Pch.cpp.o: CMakeFiles/pch.dir/flags.make
 CMakeFiles/pch.dir/src/Pch.cpp.o: ../src/Pch.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pch.dir/src/Pch.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h -o CMakeFiles/pch.dir/src/Pch.cpp.o -c /Users/EpicChicken/CLionProjects/CPPTesting/src/Pch.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h -o CMakeFiles/pch.dir/src/Pch.cpp.o -c /Users/EpicChicken/CLionProjects/CPPTesting/src/Pch.cpp
 
 CMakeFiles/pch.dir/src/Pch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pch.dir/src/Pch.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h -E /Users/EpicChicken/CLionProjects/CPPTesting/src/Pch.cpp > CMakeFiles/pch.dir/src/Pch.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h -E /Users/EpicChicken/CLionProjects/CPPTesting/src/Pch.cpp > CMakeFiles/pch.dir/src/Pch.cpp.i
 
 CMakeFiles/pch.dir/src/Pch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pch.dir/src/Pch.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h -S /Users/EpicChicken/CLionProjects/CPPTesting/src/Pch.cpp -o CMakeFiles/pch.dir/src/Pch.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h -S /Users/EpicChicken/CLionProjects/CPPTesting/src/Pch.cpp -o CMakeFiles/pch.dir/src/Pch.cpp.s
 
 # Object files for target pch
 pch_OBJECTS = \
