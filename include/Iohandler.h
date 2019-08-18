@@ -2,6 +2,7 @@
 #define IOHANDLER_H
 
 #include <SFML/Graphics.hpp>
+#include "Mainclass.h"
 
 using namespace std;
 using namespace sf;

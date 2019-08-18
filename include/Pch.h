@@ -4,7 +4,5 @@
 #include <iostream>
 #include <chrono>
 #include <thread>
-#include "Iohandler.h"
-#include "Mainclass.h"
 
 #endif //CPPTESTING_PCH_H

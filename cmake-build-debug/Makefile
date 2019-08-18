@@ -136,6 +136,60 @@ pch/fast:
 	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/build
 .PHONY : pch/fast
 
+src/Entity.o: src/Entity.cpp.o
+
+.PHONY : src/Entity.o
+
+# target to build an object file
+src/Entity.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Entity.cpp.o
+.PHONY : src/Entity.cpp.o
+
+src/Entity.i: src/Entity.cpp.i
+
+.PHONY : src/Entity.i
+
+# target to preprocess a source file
+src/Entity.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Entity.cpp.i
+.PHONY : src/Entity.cpp.i
+
+src/Entity.s: src/Entity.cpp.s
+
+.PHONY : src/Entity.s
+
+# target to generate assembly for a file
+src/Entity.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Entity.cpp.s
+.PHONY : src/Entity.cpp.s
+
+src/Hitbox.o: src/Hitbox.cpp.o
+
+.PHONY : src/Hitbox.o
+
+# target to build an object file
+src/Hitbox.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Hitbox.cpp.o
+.PHONY : src/Hitbox.cpp.o
+
+src/Hitbox.i: src/Hitbox.cpp.i
+
+.PHONY : src/Hitbox.i
+
+# target to preprocess a source file
+src/Hitbox.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Hitbox.cpp.i
+.PHONY : src/Hitbox.cpp.i
+
+src/Hitbox.s: src/Hitbox.cpp.s
+
+.PHONY : src/Hitbox.s
+
+# target to generate assembly for a file
+src/Hitbox.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Hitbox.cpp.s
+.PHONY : src/Hitbox.cpp.s
+
 src/Iohandler.o: src/Iohandler.cpp.o
 
 .PHONY : src/Iohandler.o
@@ -257,6 +311,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... CPPTesting"
 	@echo "... pch"
+	@echo "... src/Entity.o"
+	@echo "... src/Entity.i"
+	@echo "... src/Entity.s"
+	@echo "... src/Hitbox.o"
+	@echo "... src/Hitbox.i"
+	@echo "... src/Hitbox.s"
 	@echo "... src/Iohandler.o"
 	@echo "... src/Iohandler.i"
 	@echo "... src/Iohandler.s"

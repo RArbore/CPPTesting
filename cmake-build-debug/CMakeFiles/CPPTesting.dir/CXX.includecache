@@ -6,31 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/EpicChicken/CLionProjects/CPPTesting/include/iohandler.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
 SFML/Graphics.hpp
 -
+Mainclass.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
 
-/Users/EpicChicken/CLionProjects/CPPTesting/include/mainclass.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
+Iohandler.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
 
-/Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
-iostream
--
-chrono
--
-thread
--
-iohandler.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/iohandler.h
-mainclass.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/mainclass.h
-
-/Users/EpicChicken/CLionProjects/CPPTesting/src/iohandler.cpp
-../include/iohandler.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/iohandler.h
-
-/Users/EpicChicken/CLionProjects/CPPTesting/src/main.cpp
-
-/Users/EpicChicken/CLionProjects/CPPTesting/src/pch.cpp
-../include/pch.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
+/Users/EpicChicken/CLionProjects/CPPTesting/src/Main.cpp
+../include/Mainclass.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
 

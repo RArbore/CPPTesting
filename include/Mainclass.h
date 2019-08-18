@@ -1,6 +1,8 @@
 #ifndef MAINCLASS_H
 #define MAINCLASS_H
 
+#include "Iohandler.h"
+
 using namespace std;
 using namespace std::chrono;
 

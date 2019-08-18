@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CPPTesting.dir/src/Iohandler.cpp.o"
   "CMakeFiles/CPPTesting.dir/src/Main.cpp.o"
   "CMakeFiles/CPPTesting.dir/src/Pch.cpp.o"
+  "CMakeFiles/CPPTesting.dir/src/Entity.cpp.o"
+  "CMakeFiles/CPPTesting.dir/src/Hitbox.cpp.o"
   "CPPTesting.pdb"
   "CPPTesting"
 )

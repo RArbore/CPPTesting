@@ -126,6 +126,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h">
+			<Option target="CPPTesting"/>
+		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h">
+			<Option target="CPPTesting"/>
+		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h">
 			<Option target="CPPTesting"/>
 		</Unit>
@@ -135,6 +141,12 @@
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h">
 			<Option target="CPPTesting"/>
 			<Option target="pch"/>
+		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Entity.cpp">
+			<Option target="CPPTesting"/>
+		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Hitbox.cpp">
+			<Option target="CPPTesting"/>
 		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Iohandler.cpp">
 			<Option target="CPPTesting"/>
