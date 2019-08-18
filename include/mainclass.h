@@ -1,10 +1,10 @@
 #ifndef MAINCLASS_H
 #define MAINCLASS_H
 
-#include <iostream>
-#include <chrono>
-#include <thread>
-#include "iohandler.h"
+#include "pch.h"
+
+using namespace std;
+using namespace std::chrono;
 
 class mainclass {
 

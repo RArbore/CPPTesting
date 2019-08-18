@@ -1,8 +1,5 @@
 #include "../include/mainclass.h"
 
-using namespace std;
-using namespace std::chrono;
-
 mainclass::mainclass() {
     counter = 0;
     running = true;

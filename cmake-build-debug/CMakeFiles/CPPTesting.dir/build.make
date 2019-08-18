@@ -60,47 +60,61 @@ include CMakeFiles/CPPTesting.dir/flags.make
 CMakeFiles/CPPTesting.dir/src/mainclass.cpp.o: CMakeFiles/CPPTesting.dir/flags.make
 CMakeFiles/CPPTesting.dir/src/mainclass.cpp.o: ../src/mainclass.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPPTesting.dir/src/mainclass.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CPPTesting.dir/src/mainclass.cpp.o -c /Users/EpicChicken/CLionProjects/CPPTesting/src/mainclass.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h -o CMakeFiles/CPPTesting.dir/src/mainclass.cpp.o -c /Users/EpicChicken/CLionProjects/CPPTesting/src/mainclass.cpp
 
 CMakeFiles/CPPTesting.dir/src/mainclass.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPTesting.dir/src/mainclass.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/EpicChicken/CLionProjects/CPPTesting/src/mainclass.cpp > CMakeFiles/CPPTesting.dir/src/mainclass.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h -E /Users/EpicChicken/CLionProjects/CPPTesting/src/mainclass.cpp > CMakeFiles/CPPTesting.dir/src/mainclass.cpp.i
 
 CMakeFiles/CPPTesting.dir/src/mainclass.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPTesting.dir/src/mainclass.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/EpicChicken/CLionProjects/CPPTesting/src/mainclass.cpp -o CMakeFiles/CPPTesting.dir/src/mainclass.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h -S /Users/EpicChicken/CLionProjects/CPPTesting/src/mainclass.cpp -o CMakeFiles/CPPTesting.dir/src/mainclass.cpp.s
 
 CMakeFiles/CPPTesting.dir/src/iohandler.cpp.o: CMakeFiles/CPPTesting.dir/flags.make
 CMakeFiles/CPPTesting.dir/src/iohandler.cpp.o: ../src/iohandler.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CPPTesting.dir/src/iohandler.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CPPTesting.dir/src/iohandler.cpp.o -c /Users/EpicChicken/CLionProjects/CPPTesting/src/iohandler.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h -o CMakeFiles/CPPTesting.dir/src/iohandler.cpp.o -c /Users/EpicChicken/CLionProjects/CPPTesting/src/iohandler.cpp
 
 CMakeFiles/CPPTesting.dir/src/iohandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPTesting.dir/src/iohandler.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/EpicChicken/CLionProjects/CPPTesting/src/iohandler.cpp > CMakeFiles/CPPTesting.dir/src/iohandler.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h -E /Users/EpicChicken/CLionProjects/CPPTesting/src/iohandler.cpp > CMakeFiles/CPPTesting.dir/src/iohandler.cpp.i
 
 CMakeFiles/CPPTesting.dir/src/iohandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPTesting.dir/src/iohandler.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/EpicChicken/CLionProjects/CPPTesting/src/iohandler.cpp -o CMakeFiles/CPPTesting.dir/src/iohandler.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h -S /Users/EpicChicken/CLionProjects/CPPTesting/src/iohandler.cpp -o CMakeFiles/CPPTesting.dir/src/iohandler.cpp.s
 
 CMakeFiles/CPPTesting.dir/src/main.cpp.o: CMakeFiles/CPPTesting.dir/flags.make
 CMakeFiles/CPPTesting.dir/src/main.cpp.o: ../src/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CPPTesting.dir/src/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CPPTesting.dir/src/main.cpp.o -c /Users/EpicChicken/CLionProjects/CPPTesting/src/main.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h -o CMakeFiles/CPPTesting.dir/src/main.cpp.o -c /Users/EpicChicken/CLionProjects/CPPTesting/src/main.cpp
 
 CMakeFiles/CPPTesting.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPTesting.dir/src/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/EpicChicken/CLionProjects/CPPTesting/src/main.cpp > CMakeFiles/CPPTesting.dir/src/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h -E /Users/EpicChicken/CLionProjects/CPPTesting/src/main.cpp > CMakeFiles/CPPTesting.dir/src/main.cpp.i
 
 CMakeFiles/CPPTesting.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPTesting.dir/src/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/EpicChicken/CLionProjects/CPPTesting/src/main.cpp -o CMakeFiles/CPPTesting.dir/src/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h -S /Users/EpicChicken/CLionProjects/CPPTesting/src/main.cpp -o CMakeFiles/CPPTesting.dir/src/main.cpp.s
+
+CMakeFiles/CPPTesting.dir/src/pch.cpp.o: CMakeFiles/CPPTesting.dir/flags.make
+CMakeFiles/CPPTesting.dir/src/pch.cpp.o: ../src/pch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CPPTesting.dir/src/pch.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h -o CMakeFiles/CPPTesting.dir/src/pch.cpp.o -c /Users/EpicChicken/CLionProjects/CPPTesting/src/pch.cpp
+
+CMakeFiles/CPPTesting.dir/src/pch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPTesting.dir/src/pch.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h -E /Users/EpicChicken/CLionProjects/CPPTesting/src/pch.cpp > CMakeFiles/CPPTesting.dir/src/pch.cpp.i
+
+CMakeFiles/CPPTesting.dir/src/pch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPTesting.dir/src/pch.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h -S /Users/EpicChicken/CLionProjects/CPPTesting/src/pch.cpp -o CMakeFiles/CPPTesting.dir/src/pch.cpp.s
 
 # Object files for target CPPTesting
 CPPTesting_OBJECTS = \
 "CMakeFiles/CPPTesting.dir/src/mainclass.cpp.o" \
 "CMakeFiles/CPPTesting.dir/src/iohandler.cpp.o" \
-"CMakeFiles/CPPTesting.dir/src/main.cpp.o"
+"CMakeFiles/CPPTesting.dir/src/main.cpp.o" \
+"CMakeFiles/CPPTesting.dir/src/pch.cpp.o"
 
 # External object files for target CPPTesting
 CPPTesting_EXTERNAL_OBJECTS =
@@ -108,13 +122,14 @@ CPPTesting_EXTERNAL_OBJECTS =
 CPPTesting: CMakeFiles/CPPTesting.dir/src/mainclass.cpp.o
 CPPTesting: CMakeFiles/CPPTesting.dir/src/iohandler.cpp.o
 CPPTesting: CMakeFiles/CPPTesting.dir/src/main.cpp.o
+CPPTesting: CMakeFiles/CPPTesting.dir/src/pch.cpp.o
 CPPTesting: CMakeFiles/CPPTesting.dir/build.make
 CPPTesting: /usr/local/lib/libsfml-graphics.2.5.1.dylib
 CPPTesting: /usr/local/lib/libsfml-audio.2.5.1.dylib
 CPPTesting: /usr/local/lib/libsfml-window.2.5.1.dylib
 CPPTesting: /usr/local/lib/libsfml-system.2.5.1.dylib
 CPPTesting: CMakeFiles/CPPTesting.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable CPPTesting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable CPPTesting"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CPPTesting.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

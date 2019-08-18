@@ -123,6 +123,19 @@ CPPTesting/fast:
 	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/build
 .PHONY : CPPTesting/fast
 
+#=============================================================================
+# Target rules for targets named pch
+
+# Build rule for target.
+pch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pch
+.PHONY : pch
+
+# fast build rule for target.
+pch/fast:
+	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/build
+.PHONY : pch/fast
+
 src/iohandler.o: src/iohandler.cpp.o
 
 .PHONY : src/iohandler.o
@@ -204,6 +217,36 @@ src/mainclass.cpp.s:
 	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/mainclass.cpp.s
 .PHONY : src/mainclass.cpp.s
 
+src/pch.o: src/pch.cpp.o
+
+.PHONY : src/pch.o
+
+# target to build an object file
+src/pch.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/pch.cpp.o
+	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/src/pch.cpp.o
+.PHONY : src/pch.cpp.o
+
+src/pch.i: src/pch.cpp.i
+
+.PHONY : src/pch.i
+
+# target to preprocess a source file
+src/pch.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/pch.cpp.i
+	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/src/pch.cpp.i
+.PHONY : src/pch.cpp.i
+
+src/pch.s: src/pch.cpp.s
+
+.PHONY : src/pch.s
+
+# target to generate assembly for a file
+src/pch.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/pch.cpp.s
+	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/src/pch.cpp.s
+.PHONY : src/pch.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,6 +256,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... CPPTesting"
+	@echo "... pch"
 	@echo "... src/iohandler.o"
 	@echo "... src/iohandler.i"
 	@echo "... src/iohandler.s"
@@ -222,6 +266,9 @@ help:
 	@echo "... src/mainclass.o"
 	@echo "... src/mainclass.i"
 	@echo "... src/mainclass.s"
+	@echo "... src/pch.o"
+	@echo "... src/pch.i"
+	@echo "... src/pch.s"
 .PHONY : help
 
 

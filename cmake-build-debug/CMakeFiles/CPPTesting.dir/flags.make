@@ -8,3 +8,11 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
+# Custom flags: CMakeFiles/CPPTesting.dir/src/mainclass.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
+
+# Custom flags: CMakeFiles/CPPTesting.dir/src/iohandler.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
+
+# Custom flags: CMakeFiles/CPPTesting.dir/src/main.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
+
+# Custom flags: CMakeFiles/CPPTesting.dir/src/pch.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h
+
