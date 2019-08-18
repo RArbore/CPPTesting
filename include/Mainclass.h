@@ -2,6 +2,7 @@
 #define MAINCLASS_H
 
 #include "Iohandler.h"
+#include "Entity.h"
 
 using namespace std;
 using namespace std::chrono;
@@ -15,6 +16,8 @@ public:
     int counter;
 
     bool running;
+
+    list<Entity*> entities;
 
     Mainclass();
 

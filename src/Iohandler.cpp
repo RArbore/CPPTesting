@@ -17,8 +17,11 @@ void Iohandler::windowtick() {
         }
     }
     window.clear();
-    drawAddress("resources/portrait.png", 0, 0);
-    drawFromSheet(IntRect(128+16*(((int)(main->counter/10))%9), 44, 16, 20), 200, 0, 4, 4);
+    for (Entity* e : main->entities) {
+        int xd = e->hitbox.x+e->hitbox.w/2-e->sheetLocation.width/2;
+        int yd = e->hitbox.y+e->hitbox.h/2-e->sheetLocation.height/2;
+        drawFromSheet(e->sheetLocation, xd, yd);
+    }
     window.display();
 }
 

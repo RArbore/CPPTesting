@@ -16,7 +16,7 @@ Mainclass.h
 Iohandler.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
 
-/Users/EpicChicken/CLionProjects/CPPTesting/src/Main.cpp
-../include/Mainclass.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
+/Users/EpicChicken/CLionProjects/CPPTesting/src/Iohandler.cpp
+../include/Iohandler.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
 
