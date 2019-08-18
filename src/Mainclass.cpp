@@ -1,11 +1,11 @@
-#include "../include/mainclass.h"
+#include "../include/Mainclass.h"
 
-mainclass::mainclass() {
+Mainclass::Mainclass() {
     counter = 0;
     running = true;
 }
 
-void mainclass::gameloop() {
+void Mainclass::gameloop() {
     long ptime, atime, diff = 0;
     while (running) {
         ptime = getmillis();
@@ -28,16 +28,16 @@ void mainclass::gameloop() {
     }
 }
 
-long mainclass::getmillis() {
+long Mainclass::getmillis() {
     std::chrono::time_point<std::chrono::system_clock> now =
             std::chrono::system_clock::now();
     auto duration = now.time_since_epoch();
     return std::chrono::duration_cast<std::chrono::milliseconds>(duration).count();
 }
 
-void mainclass::tick() {
-    thread maintick(&mainclass::gameloop, this);
-    iohandler io(this);
+void Mainclass::tick() {
+    thread maintick(&Mainclass::gameloop, this);
+    Iohandler io(this);
     while (running) {
         io.windowtick();
     }

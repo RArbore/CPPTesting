@@ -136,116 +136,116 @@ pch/fast:
 	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/build
 .PHONY : pch/fast
 
-src/iohandler.o: src/iohandler.cpp.o
+src/Iohandler.o: src/Iohandler.cpp.o
 
-.PHONY : src/iohandler.o
-
-# target to build an object file
-src/iohandler.cpp.o:
-	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/iohandler.cpp.o
-.PHONY : src/iohandler.cpp.o
-
-src/iohandler.i: src/iohandler.cpp.i
-
-.PHONY : src/iohandler.i
-
-# target to preprocess a source file
-src/iohandler.cpp.i:
-	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/iohandler.cpp.i
-.PHONY : src/iohandler.cpp.i
-
-src/iohandler.s: src/iohandler.cpp.s
-
-.PHONY : src/iohandler.s
-
-# target to generate assembly for a file
-src/iohandler.cpp.s:
-	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/iohandler.cpp.s
-.PHONY : src/iohandler.cpp.s
-
-src/main.o: src/main.cpp.o
-
-.PHONY : src/main.o
+.PHONY : src/Iohandler.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/Iohandler.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Iohandler.cpp.o
+.PHONY : src/Iohandler.cpp.o
 
-src/main.i: src/main.cpp.i
+src/Iohandler.i: src/Iohandler.cpp.i
 
-.PHONY : src/main.i
+.PHONY : src/Iohandler.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/Iohandler.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Iohandler.cpp.i
+.PHONY : src/Iohandler.cpp.i
 
-src/main.s: src/main.cpp.s
+src/Iohandler.s: src/Iohandler.cpp.s
 
-.PHONY : src/main.s
+.PHONY : src/Iohandler.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/Iohandler.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Iohandler.cpp.s
+.PHONY : src/Iohandler.cpp.s
 
-src/mainclass.o: src/mainclass.cpp.o
+src/Main.o: src/Main.cpp.o
 
-.PHONY : src/mainclass.o
+.PHONY : src/Main.o
 
 # target to build an object file
-src/mainclass.cpp.o:
-	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/mainclass.cpp.o
-.PHONY : src/mainclass.cpp.o
+src/Main.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Main.cpp.o
+.PHONY : src/Main.cpp.o
 
-src/mainclass.i: src/mainclass.cpp.i
+src/Main.i: src/Main.cpp.i
 
-.PHONY : src/mainclass.i
+.PHONY : src/Main.i
 
 # target to preprocess a source file
-src/mainclass.cpp.i:
-	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/mainclass.cpp.i
-.PHONY : src/mainclass.cpp.i
+src/Main.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Main.cpp.i
+.PHONY : src/Main.cpp.i
 
-src/mainclass.s: src/mainclass.cpp.s
+src/Main.s: src/Main.cpp.s
 
-.PHONY : src/mainclass.s
+.PHONY : src/Main.s
 
 # target to generate assembly for a file
-src/mainclass.cpp.s:
-	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/mainclass.cpp.s
-.PHONY : src/mainclass.cpp.s
+src/Main.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Main.cpp.s
+.PHONY : src/Main.cpp.s
 
-src/pch.o: src/pch.cpp.o
+src/Mainclass.o: src/Mainclass.cpp.o
 
-.PHONY : src/pch.o
+.PHONY : src/Mainclass.o
 
 # target to build an object file
-src/pch.cpp.o:
-	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/pch.cpp.o
-	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/src/pch.cpp.o
-.PHONY : src/pch.cpp.o
+src/Mainclass.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o
+.PHONY : src/Mainclass.cpp.o
 
-src/pch.i: src/pch.cpp.i
+src/Mainclass.i: src/Mainclass.cpp.i
 
-.PHONY : src/pch.i
+.PHONY : src/Mainclass.i
 
 # target to preprocess a source file
-src/pch.cpp.i:
-	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/pch.cpp.i
-	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/src/pch.cpp.i
-.PHONY : src/pch.cpp.i
+src/Mainclass.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.i
+.PHONY : src/Mainclass.cpp.i
 
-src/pch.s: src/pch.cpp.s
+src/Mainclass.s: src/Mainclass.cpp.s
 
-.PHONY : src/pch.s
+.PHONY : src/Mainclass.s
 
 # target to generate assembly for a file
-src/pch.cpp.s:
-	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/pch.cpp.s
-	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/src/pch.cpp.s
-.PHONY : src/pch.cpp.s
+src/Mainclass.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.s
+.PHONY : src/Mainclass.cpp.s
+
+src/Pch.o: src/Pch.cpp.o
+
+.PHONY : src/Pch.o
+
+# target to build an object file
+src/Pch.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Pch.cpp.o
+	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/src/Pch.cpp.o
+.PHONY : src/Pch.cpp.o
+
+src/Pch.i: src/Pch.cpp.i
+
+.PHONY : src/Pch.i
+
+# target to preprocess a source file
+src/Pch.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Pch.cpp.i
+	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/src/Pch.cpp.i
+.PHONY : src/Pch.cpp.i
+
+src/Pch.s: src/Pch.cpp.s
+
+.PHONY : src/Pch.s
+
+# target to generate assembly for a file
+src/Pch.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Pch.cpp.s
+	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/src/Pch.cpp.s
+.PHONY : src/Pch.cpp.s
 
 # Help Target
 help:
@@ -257,18 +257,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... CPPTesting"
 	@echo "... pch"
-	@echo "... src/iohandler.o"
-	@echo "... src/iohandler.i"
-	@echo "... src/iohandler.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... src/mainclass.o"
-	@echo "... src/mainclass.i"
-	@echo "... src/mainclass.s"
-	@echo "... src/pch.o"
-	@echo "... src/pch.i"
-	@echo "... src/pch.s"
+	@echo "... src/Iohandler.o"
+	@echo "... src/Iohandler.i"
+	@echo "... src/Iohandler.s"
+	@echo "... src/Main.o"
+	@echo "... src/Main.i"
+	@echo "... src/Main.s"
+	@echo "... src/Mainclass.o"
+	@echo "... src/Mainclass.i"
+	@echo "... src/Mainclass.s"
+	@echo "... src/Pch.o"
+	@echo "... src/Pch.i"
+	@echo "... src/Pch.s"
 .PHONY : help
 
 

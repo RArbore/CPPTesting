@@ -5,11 +5,11 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -pthread")
 
 set(SFML_DIR "users/lib/cmake/SFML")
 
-add_library(pch include/pch.h src/pch.cpp)
+add_library(pch include/Pch.h src/Pch.cpp)
 
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 
-set(SOURCE_FILES src/mainclass.cpp src/iohandler.cpp include/iohandler.h include/mainclass.h src/main.cpp include/pch.h src/pch.cpp)
+set(SOURCE_FILES src/Mainclass.cpp src/Iohandler.cpp include/Iohandler.h include/Mainclass.h src/Main.cpp include/Pch.h src/Pch.cpp)
 set_source_files_properties(${SOURCE_FILES} PROPERTIES COMPILE_FLAGS "-include ${CMAKE_CURRENT_SOURCE_DIR}/include/pch.h")
 
 add_executable(CPPTesting ${SOURCE_FILES})

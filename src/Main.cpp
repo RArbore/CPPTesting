@@ -1,6 +1,6 @@
 int main() {
 
-    mainclass mainc;
+    Mainclass mainc;
     mainc.tick();
 
 }

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/pch.dir/src/pch.cpp.o"
+  "CMakeFiles/pch.dir/src/Pch.cpp.o"
   "libpch.pdb"
   "libpch.a"
 )

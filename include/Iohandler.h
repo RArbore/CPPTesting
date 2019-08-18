@@ -6,19 +6,19 @@
 using namespace std;
 using namespace sf;
 
-class mainclass;
+class Mainclass;
 
-class iohandler {
+class Iohandler {
 
 public:
 
-    mainclass* main;
+    Mainclass* main;
 
     Texture spritesheet;
 
     RenderWindow window;
 
-    iohandler(mainclass *in);
+    Iohandler(Mainclass *in);
 
     void windowtick();
 

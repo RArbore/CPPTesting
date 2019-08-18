@@ -1,6 +1,6 @@
-#include "../include/iohandler.h"
+#include "../include/Iohandler.h"
 
-iohandler::iohandler(mainclass *in):
+Iohandler::Iohandler(Mainclass *in):
         window(VideoMode(VideoMode::getDesktopMode().width, VideoMode::getDesktopMode().height,32),"Game")
 {
     main = in;
@@ -8,7 +8,7 @@ iohandler::iohandler(mainclass *in):
     spritesheet.setSmooth(false);
 }
 
-void iohandler::windowtick() {
+void Iohandler::windowtick() {
     Event event{};
     while (window.pollEvent(event)) {
         if (event.type == Event::Closed) {
@@ -22,7 +22,7 @@ void iohandler::windowtick() {
     window.display();
 }
 
-void iohandler::drawFromSheet(IntRect sheetrect, int x, int y, int w, int h) {
+void Iohandler::drawFromSheet(IntRect sheetrect, int x, int y, int w, int h) {
     Sprite sprite;
     sprite.setTexture(spritesheet);
     sprite.setTextureRect(IntRect(sheetrect));
@@ -31,7 +31,7 @@ void iohandler::drawFromSheet(IntRect sheetrect, int x, int y, int w, int h) {
     window.draw(sprite);
 }
 
-void iohandler::drawAddress(const string& address, int x, int y, int w, int h) {
+void Iohandler::drawAddress(const string& address, int x, int y, int w, int h) {
     Texture texture;
     texture.loadFromFile(address);
     texture.setSmooth(false);

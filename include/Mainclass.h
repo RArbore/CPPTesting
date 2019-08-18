@@ -4,7 +4,7 @@
 using namespace std;
 using namespace std::chrono;
 
-class mainclass {
+class Mainclass {
 
 public:
 
@@ -14,7 +14,7 @@ public:
 
     bool running;
 
-    mainclass();
+    Mainclass();
 
     void gameloop();
 

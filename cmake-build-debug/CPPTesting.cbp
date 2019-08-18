@@ -126,26 +126,26 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/iohandler.h">
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h">
 			<Option target="CPPTesting"/>
 		</Unit>
-		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/mainclass.h">
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h">
 			<Option target="CPPTesting"/>
 		</Unit>
-		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/pch.h">
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h">
 			<Option target="CPPTesting"/>
 			<Option target="pch"/>
 		</Unit>
-		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/iohandler.cpp">
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Iohandler.cpp">
 			<Option target="CPPTesting"/>
 		</Unit>
-		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/main.cpp">
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Main.cpp">
 			<Option target="CPPTesting"/>
 		</Unit>
-		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/mainclass.cpp">
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Mainclass.cpp">
 			<Option target="CPPTesting"/>
 		</Unit>
-		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/pch.cpp">
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Pch.cpp">
 			<Option target="CPPTesting"/>
 			<Option target="pch"/>
 		</Unit>

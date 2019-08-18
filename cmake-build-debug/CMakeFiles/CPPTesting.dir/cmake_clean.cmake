@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CPPTesting.dir/src/mainclass.cpp.o"
-  "CMakeFiles/CPPTesting.dir/src/iohandler.cpp.o"
-  "CMakeFiles/CPPTesting.dir/src/main.cpp.o"
-  "CMakeFiles/CPPTesting.dir/src/pch.cpp.o"
+  "CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o"
+  "CMakeFiles/CPPTesting.dir/src/Iohandler.cpp.o"
+  "CMakeFiles/CPPTesting.dir/src/Main.cpp.o"
+  "CMakeFiles/CPPTesting.dir/src/Pch.cpp.o"
   "CPPTesting.pdb"
   "CPPTesting"
 )
