@@ -8,6 +8,7 @@
 using namespace sf;
 
 class Mainclass;
+class Hitbox;
 
 class Entity {
 
@@ -19,7 +20,7 @@ public:
 
     Mainclass* main;
 
-    Hitbox* hitbox{};
+    Hitbox* hitbox;
 
     IntRect sheetLocation;
 

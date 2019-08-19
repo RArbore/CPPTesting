@@ -3,6 +3,10 @@
 Entity::Entity(Mainclass* in, double x, double y) {
     main = in;
     main->entities.push_back(this);
+    horizAnis = 0;
+    vertAnis = 0;
+    ticksPerFrame = 0;
+    hitbox = new Hitbox(x, y, 0, 0);
 }
 
 void Entity::remove() {
@@ -19,8 +23,9 @@ IntRect Entity::currentFrame() {
     int timedCount = (int)(main->counter/ticksPerFrame);
     int x = left+(indivwidth*(timedCount%horizAnis));
     int y = top+(indivheight*((int)(timedCount/vertAnis)));
+    return {x, y, indivwidth, indivheight};
 }
 
-void tick() {
+void Entity::tick() {
 
 }
