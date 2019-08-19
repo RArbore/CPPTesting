@@ -163,6 +163,33 @@ src/Entity.cpp.s:
 	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Entity.cpp.s
 .PHONY : src/Entity.cpp.s
 
+src/Global.o: src/Global.cpp.o
+
+.PHONY : src/Global.o
+
+# target to build an object file
+src/Global.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Global.cpp.o
+.PHONY : src/Global.cpp.o
+
+src/Global.i: src/Global.cpp.i
+
+.PHONY : src/Global.i
+
+# target to preprocess a source file
+src/Global.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Global.cpp.i
+.PHONY : src/Global.cpp.i
+
+src/Global.s: src/Global.cpp.s
+
+.PHONY : src/Global.s
+
+# target to generate assembly for a file
+src/Global.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Global.cpp.s
+.PHONY : src/Global.cpp.s
+
 src/Hitbox.o: src/Hitbox.cpp.o
 
 .PHONY : src/Hitbox.o
@@ -341,6 +368,9 @@ help:
 	@echo "... src/Entity.o"
 	@echo "... src/Entity.i"
 	@echo "... src/Entity.s"
+	@echo "... src/Global.o"
+	@echo "... src/Global.i"
+	@echo "... src/Global.s"
 	@echo "... src/Hitbox.o"
 	@echo "... src/Hitbox.i"
 	@echo "... src/Hitbox.s"

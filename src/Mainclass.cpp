@@ -3,11 +3,16 @@
 Mainclass::Mainclass() {
     counter = 0;
     running = true;
+    entities = list<Entity*>();
+    data = Global();
+    data.counter = &counter;
+    data.running = &running;
+    data.entities = &entities;
 }
 
 void Mainclass::gameloop() {
     long ptime, atime, diff = 0;
-    Player(this, 10, 10);
+    Player(&data, 10, 10);
     while (running) {
         ptime = getmillis();
         counter++;
@@ -38,7 +43,7 @@ long Mainclass::getmillis() {
 
 void Mainclass::tick() {
     thread maintick(&Mainclass::gameloop, this);
-    Iohandler io(this);
+    Iohandler io(&data);
     while (running) {
         io.windowtick();
     }

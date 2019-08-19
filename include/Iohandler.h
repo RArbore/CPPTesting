@@ -2,24 +2,22 @@
 #define IOHANDLER_H
 
 #include <SFML/Graphics.hpp>
-#include "Mainclass.h"
+#include "Global.h"
 
 using namespace std;
 using namespace sf;
-
-class Mainclass;
 
 class Iohandler {
 
 public:
 
-    Mainclass* main;
+    Global* main;
 
     Texture spritesheet;
 
     RenderWindow window;
 
-    Iohandler(Mainclass *in);
+    explicit Iohandler(Global* in);
 
     void windowtick();
 
