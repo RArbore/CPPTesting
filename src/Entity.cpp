@@ -23,7 +23,7 @@ IntRect Entity::currentFrame() {
     int* counter = main->counter;
     int timedCount = (int)(*counter/ticksPerFrame);
     int x = left+(indivwidth*(timedCount%horizAnis));
-    int y = top+(indivheight*((int)(timedCount/vertAnis)));
+    int y = top+(indivheight*(((int)(timedCount/horizAnis))%vertAnis));
     return {x, y, indivwidth, indivheight};
 }
 

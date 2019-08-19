@@ -5,6 +5,7 @@
 #include "Hitbox.h"
 #include "Global.h"
 
+using namespace std;
 using namespace sf;
 
 class Hitbox;

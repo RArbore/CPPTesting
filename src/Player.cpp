@@ -7,7 +7,7 @@ Player::Player(Global* in, double x, double y): Entity(in, x, y) {
     hitbox->h = 20;
     this->sheetLocation.left = 128;
     this->sheetLocation.top = 44;
-    this->sheetLocation.width = 48;
+    this->sheetLocation.width = 64;
     this->sheetLocation.height = 20;
     horizAnis = 4;
     vertAnis = 1;
