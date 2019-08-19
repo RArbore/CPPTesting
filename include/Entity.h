@@ -3,22 +3,33 @@
 
 #include <SFML/Graphics.hpp>
 #include "Hitbox.h"
-#include "Mainclass.h"
+#include "Global.h"
 
+using namespace std;
 using namespace sf;
 
-class Mainclass;
+class Hitbox;
+class Global;
 
 class Entity {
 
 public:
-    Hitbox* hitbox{};
+
+    int horizAnis;
+    int vertAnis;
+    int ticksPerFrame;
+
+    Global* main;
+
+    Hitbox* hitbox;
 
     IntRect sheetLocation;
 
-    Entity(Mainclass* in, double x, double y);
+    Entity(Global* in, double x, double y);
 
     void remove();
+
+    IntRect currentFrame();
 
     virtual void tick() = 0;
 

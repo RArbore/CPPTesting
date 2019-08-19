@@ -5,11 +5,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/EpicChicken/CLionProjects/CPPTesting/src/Entity.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/Entity.cpp.o"
+  "/Users/EpicChicken/CLionProjects/CPPTesting/src/Global.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/Global.cpp.o"
   "/Users/EpicChicken/CLionProjects/CPPTesting/src/Hitbox.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/Hitbox.cpp.o"
   "/Users/EpicChicken/CLionProjects/CPPTesting/src/Iohandler.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/Iohandler.cpp.o"
   "/Users/EpicChicken/CLionProjects/CPPTesting/src/Main.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/Main.cpp.o"
   "/Users/EpicChicken/CLionProjects/CPPTesting/src/Mainclass.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o"
   "/Users/EpicChicken/CLionProjects/CPPTesting/src/Pch.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/Pch.cpp.o"
+  "/Users/EpicChicken/CLionProjects/CPPTesting/src/Player.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/Player.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

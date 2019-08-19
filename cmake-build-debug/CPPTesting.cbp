@@ -129,6 +129,9 @@
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h">
 			<Option target="CPPTesting"/>
 		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h">
+			<Option target="CPPTesting"/>
+		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h">
 			<Option target="CPPTesting"/>
 		</Unit>
@@ -142,7 +145,13 @@
 			<Option target="CPPTesting"/>
 			<Option target="pch"/>
 		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h">
+			<Option target="CPPTesting"/>
+		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Entity.cpp">
+			<Option target="CPPTesting"/>
+		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Global.cpp">
 			<Option target="CPPTesting"/>
 		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Hitbox.cpp">
@@ -160,6 +169,9 @@
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Pch.cpp">
 			<Option target="CPPTesting"/>
 			<Option target="pch"/>
+		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Player.cpp">
+			<Option target="CPPTesting"/>
 		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
