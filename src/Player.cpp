@@ -1,6 +1,6 @@
 #include "../include/Player.h"
 
-Player::Player(Mainclass* in, double x, double y): Entity(in, x, y) {
+Player::Player(Global* in, double x, double y): Entity(in, x, y) {
     hitbox->x = x;
     hitbox->y = y;
     hitbox->w = 16;
@@ -9,6 +9,9 @@ Player::Player(Mainclass* in, double x, double y): Entity(in, x, y) {
     this->sheetLocation.top = 44;
     this->sheetLocation.width = 48;
     this->sheetLocation.height = 20;
+    horizAnis = 4;
+    vertAnis = 1;
+    ticksPerFrame = 4;
 }
 
 void Player::tick() {

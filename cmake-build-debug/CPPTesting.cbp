@@ -129,6 +129,9 @@
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h">
 			<Option target="CPPTesting"/>
 		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h">
+			<Option target="CPPTesting"/>
+		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h">
 			<Option target="CPPTesting"/>
 		</Unit>
@@ -146,6 +149,9 @@
 			<Option target="CPPTesting"/>
 		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Entity.cpp">
+			<Option target="CPPTesting"/>
+		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Global.cpp">
 			<Option target="CPPTesting"/>
 		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Hitbox.cpp">

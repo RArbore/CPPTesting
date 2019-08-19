@@ -3,23 +3,26 @@
 
 CMakeFiles/CPPTesting.dir/src/Entity.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
- /Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
- /Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
- /Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
  /Users/EpicChicken/CLionProjects/CPPTesting/src/Entity.cpp
+CMakeFiles/CPPTesting.dir/src/Global.cpp.o
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/src/Global.cpp
 CMakeFiles/CPPTesting.dir/src/Hitbox.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
  /Users/EpicChicken/CLionProjects/CPPTesting/src/Hitbox.cpp
 CMakeFiles/CPPTesting.dir/src/Iohandler.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
- /Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
- /Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
  /Users/EpicChicken/CLionProjects/CPPTesting/src/Iohandler.cpp
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
@@ -27,6 +30,7 @@ CMakeFiles/CPPTesting.dir/src/Main.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/src/Main.cpp
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
@@ -37,6 +41,7 @@ CMakeFiles/CPPTesting.dir/src/Pch.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/src/Pch.cpp
 CMakeFiles/CPPTesting.dir/src/Player.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h

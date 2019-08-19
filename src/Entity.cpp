@@ -1,8 +1,8 @@
 #include "../include/Entity.h"
 
-Entity::Entity(Mainclass* in, double x, double y) {
+Entity::Entity(Global* in, double x, double y) {
     main = in;
-    main->entities.push_back(this);
+    main->entities->push_back(this);
     horizAnis = 0;
     vertAnis = 0;
     ticksPerFrame = 0;
@@ -10,7 +10,7 @@ Entity::Entity(Mainclass* in, double x, double y) {
 }
 
 void Entity::remove() {
-    main->entities.remove(this);
+    main->entities->remove(this);
 }
 
 IntRect Entity::currentFrame() {
@@ -20,7 +20,8 @@ IntRect Entity::currentFrame() {
     int totalheight = sheetLocation.height;
     int indivwidth = totalwidth/horizAnis;
     int indivheight = totalheight/vertAnis;
-    int timedCount = (int)(main->counter/ticksPerFrame);
+    int* counter = main->counter;
+    int timedCount = (int)(*counter/ticksPerFrame);
     int x = left+(indivwidth*(timedCount%horizAnis));
     int y = top+(indivheight*((int)(timedCount/vertAnis)));
     return {x, y, indivwidth, indivheight};

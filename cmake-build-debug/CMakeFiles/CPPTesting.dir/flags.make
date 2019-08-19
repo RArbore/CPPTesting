@@ -22,3 +22,5 @@ CXX_INCLUDES =
 
 # Custom flags: CMakeFiles/CPPTesting.dir/src/Player.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h
 
+# Custom flags: CMakeFiles/CPPTesting.dir/src/Global.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h
+

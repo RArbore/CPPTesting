@@ -11,16 +11,20 @@ SFML/Graphics.hpp
 -
 Hitbox.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
-Mainclass.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
+Global.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+Entity.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
 SFML/Graphics.hpp
 -
-Mainclass.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
+Global.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
 Iohandler.h
@@ -29,28 +33,16 @@ Player.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
 Entity.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+Global.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
 Mainclass.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
 Entity.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
-
-/Users/EpicChicken/CLionProjects/CPPTesting/src/Entity.cpp
-../include/Entity.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
-
-/Users/EpicChicken/CLionProjects/CPPTesting/src/Iohandler.cpp
-../include/Iohandler.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
-
-/Users/EpicChicken/CLionProjects/CPPTesting/src/Main.cpp
-../include/Mainclass.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
-
-/Users/EpicChicken/CLionProjects/CPPTesting/src/Mainclass.cpp
-../include/Mainclass.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
+Global.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/src/Player.cpp
 ../include/Player.h

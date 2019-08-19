@@ -3,6 +3,7 @@
 
 #include "Mainclass.h"
 #include "Entity.h"
+#include "Global.h"
 
 class Mainclass;
 class Entity;
@@ -11,7 +12,7 @@ class Player: public Entity {
 
 public:
 
-    Player(Mainclass* in, double x, double y);
+    Player(Global* in, double x, double y);
 
     void tick();
 
