@@ -8,7 +8,6 @@
 using namespace std;
 using namespace sf;
 
-class Hitbox;
 class Global;
 
 class Entity {

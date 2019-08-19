@@ -42,8 +42,6 @@ CMakeFiles/CPPTesting.dir/src/Pch.cpp.o: ../src/Pch.cpp
 CMakeFiles/CPPTesting.dir/src/Player.cpp.o: ../include/Entity.h
 CMakeFiles/CPPTesting.dir/src/Player.cpp.o: ../include/Global.h
 CMakeFiles/CPPTesting.dir/src/Player.cpp.o: ../include/Hitbox.h
-CMakeFiles/CPPTesting.dir/src/Player.cpp.o: ../include/Iohandler.h
-CMakeFiles/CPPTesting.dir/src/Player.cpp.o: ../include/Mainclass.h
 CMakeFiles/CPPTesting.dir/src/Player.cpp.o: ../include/Player.h
 CMakeFiles/CPPTesting.dir/src/Player.cpp.o: ../src/Player.cpp
 
