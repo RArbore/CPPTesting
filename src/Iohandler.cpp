@@ -18,9 +18,10 @@ void Iohandler::windowtick() {
     }
     window.clear();
     for (Entity* e : main->entities) {
-        int xd = e->hitbox.x+e->hitbox.w/2-e->sheetLocation.width/2;
-        int yd = e->hitbox.y+e->hitbox.h/2-e->sheetLocation.height/2;
-        drawFromSheet(e->sheetLocation, xd, yd);
+        IntRect frame = e->currentFrame();
+        int xd = e->hitbox->x+e->hitbox->w/2-frame.width/2;
+        int yd = e->hitbox->y+e->hitbox->h/2-frame.height/2;
+        drawFromSheet(frame, xd, yd);
     }
     window.display();
 }

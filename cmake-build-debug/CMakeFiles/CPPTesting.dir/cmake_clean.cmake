@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CPPTesting.dir/src/Pch.cpp.o"
   "CMakeFiles/CPPTesting.dir/src/Entity.cpp.o"
   "CMakeFiles/CPPTesting.dir/src/Hitbox.cpp.o"
+  "CMakeFiles/CPPTesting.dir/src/Player.cpp.o"
   "CPPTesting.pdb"
   "CPPTesting"
 )

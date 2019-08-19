@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/EpicChicken/CLionProjects/CPPTesting/src/Main.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/Main.cpp.o"
   "/Users/EpicChicken/CLionProjects/CPPTesting/src/Mainclass.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o"
   "/Users/EpicChicken/CLionProjects/CPPTesting/src/Pch.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/Pch.cpp.o"
+  "/Users/EpicChicken/CLionProjects/CPPTesting/src/Player.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/Player.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

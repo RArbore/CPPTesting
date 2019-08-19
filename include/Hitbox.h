@@ -4,6 +4,7 @@
 class Hitbox {
 
 public:
+
     double x;
     double y;
     double w;

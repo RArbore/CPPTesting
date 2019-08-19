@@ -12,6 +12,13 @@ class Mainclass;
 class Entity {
 
 public:
+
+    int horizAnis;
+    int vertAnis;
+    int ticksPerFrame;
+
+    Mainclass* main;
+
     Hitbox* hitbox{};
 
     IntRect sheetLocation;
@@ -19,6 +26,8 @@ public:
     Entity(Mainclass* in, double x, double y);
 
     void remove();
+
+    IntRect currentFrame();
 
     virtual void tick() = 0;
 

@@ -7,6 +7,7 @@ Mainclass::Mainclass() {
 
 void Mainclass::gameloop() {
     long ptime, atime, diff = 0;
+    Player(this, 10, 10);
     while (running) {
         ptime = getmillis();
         counter++;

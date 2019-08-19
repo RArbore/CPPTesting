@@ -2,6 +2,7 @@
 #define MAINCLASS_H
 
 #include "Iohandler.h"
+#include "Player.h"
 #include "Entity.h"
 
 using namespace std;
