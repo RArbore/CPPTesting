@@ -19,8 +19,8 @@ void Iohandler::windowtick() {
     window.clear();
     for (Entity* e : *main->entities) {
         IntRect frame = e->currentFrame();
-        int xd = e->hitbox->x+e->hitbox->w/2-frame.width/2;
-        int yd = e->hitbox->y+e->hitbox->h/2-frame.height/2;
+        int xd = e->hitbox->x+e->hitbox->w/2-abs(frame.width)/2;
+        int yd = e->hitbox->y+e->hitbox->h/2-abs(frame.height)/2;
         drawFromSheet(frame, xd, yd);
     }
     window.display();

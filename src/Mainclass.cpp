@@ -1,22 +1,29 @@
 #include "../include/Mainclass.h"
 
-Mainclass::Mainclass() {
+Mainclass::Mainclass():
+    data()
+{
     counter = 0;
     running = true;
     entities = list<Entity*>();
-    data = Global();
+    keys = std::map<char, bool>();
     data.counter = &counter;
     data.running = &running;
     data.entities = &entities;
+    data.keys = &keys;
 }
 
 void Mainclass::gameloop() {
+    while (waiting) {}
     long ptime, atime, diff = 0;
-    Player(&data, 10, 10);
+    Player(&data, 0, 0);
     while (running) {
         ptime = getmillis();
-        counter++;
 
+        counter++;
+        for (auto & e : entities) {
+            (*e).tick();
+        }
 
         atime = getmillis();
         diff = atime-ptime;
@@ -41,10 +48,19 @@ long Mainclass::getmillis() {
     return std::chrono::duration_cast<std::chrono::milliseconds>(duration).count();
 }
 
-void Mainclass::tick() {
-    thread maintick(&Mainclass::gameloop, this);
+void Mainclass::iohandle() {
     Iohandler io(&data);
     while (running) {
         io.windowtick();
+        keys['W'] = sf::Keyboard::isKeyPressed(sf::Keyboard::W);
+        keys['A'] = sf::Keyboard::isKeyPressed(sf::Keyboard::A);
+        keys['S'] = sf::Keyboard::isKeyPressed(sf::Keyboard::S);
+        keys['D'] = sf::Keyboard::isKeyPressed(sf::Keyboard::D);
+        waiting = false;
     }
+}
+
+void Mainclass::tick() {
+    thread maintick(&Mainclass::gameloop, this);
+    iohandle();
 }

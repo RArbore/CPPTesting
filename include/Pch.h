@@ -5,5 +5,6 @@
 #include <chrono>
 #include <thread>
 #include <list>
+#include <SFML/Graphics.hpp>
 
 #endif //CPPTESTING_PCH_H

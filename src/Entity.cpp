@@ -27,10 +27,6 @@ IntRect Entity::currentFrame() {
     return {x, y, indivwidth, indivheight};
 }
 
-void Entity::tick() {
-
-}
-
 void Entity::setAni(IntRect isheetLocation, int ihorizAnis, int ivertAnis, int iticksPerFrame) {
     this->sheetLocation = isheetLocation;
     this->horizAnis = ihorizAnis;

@@ -7,8 +7,6 @@
 #IncludeRegexTransform: 
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
-SFML/Graphics.hpp
--
 Hitbox.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
 Global.h
@@ -20,47 +18,11 @@ Entity.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
 
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
-SFML/Graphics.hpp
--
-Global.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
-
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
-Iohandler.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
-Player.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
 Entity.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
 Global.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
-
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
-Entity.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
-Global.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
-
-/Users/EpicChicken/CLionProjects/CPPTesting/src/Entity.cpp
-../include/Entity.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
-
-/Users/EpicChicken/CLionProjects/CPPTesting/src/Global.cpp
-../include/Global.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
-
-/Users/EpicChicken/CLionProjects/CPPTesting/src/Iohandler.cpp
-../include/Iohandler.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
-
-/Users/EpicChicken/CLionProjects/CPPTesting/src/Main.cpp
-../include/Mainclass.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
-
-/Users/EpicChicken/CLionProjects/CPPTesting/src/Mainclass.cpp
-../include/Mainclass.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/src/Player.cpp
 ../include/Player.h

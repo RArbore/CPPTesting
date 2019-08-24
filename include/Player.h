@@ -10,10 +10,11 @@ class Player: public Entity {
 
 public:
 
+    int direction;
+
     Player(Global* in, double x, double y);
 
-    void tick();
-
+    void tick() override;
 };
 
 

@@ -1,7 +1,6 @@
 #ifndef IOHANDLER_H
 #define IOHANDLER_H
 
-#include <SFML/Graphics.hpp>
 #include "Global.h"
 
 using namespace std;

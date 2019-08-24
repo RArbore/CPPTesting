@@ -17,7 +17,11 @@ public:
 
     bool running;
 
+    bool waiting = true;
+
     list<Entity*> entities;
+
+    std::map<char, bool> keys;
 
     Global data;
 
@@ -28,6 +32,8 @@ public:
     void gameloop();
 
     void tick();
+
+    void iohandle();
 
     static long getmillis();
 

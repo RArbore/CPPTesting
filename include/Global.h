@@ -15,6 +15,8 @@ public:
 
     std::list<Entity*>* entities;
 
+    std::map<char, bool>* keys;
+
 };
 
 #endif //CPPTESTING_GLOBAL_H
