@@ -32,6 +32,10 @@ public:
 
     virtual void tick() = 0;
 
+protected:
+
+    void setAni(IntRect isheetLocation, int ihorizAnis, int ivertAnis, int iticksPerFrame);
+
 };
 
 
