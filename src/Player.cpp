@@ -18,14 +18,14 @@ Player::Player(Global* in, double x, double y): Entity(in, x, y) {
 void Player::tick() {
     sheetLocation.left = 128;
     sheetLocation.top = 44;
-    sheetLocation.width = 64*direction;
+    sheetLocation.width = 64;
     sheetLocation.height = 20;
     horizAnis = 4;
     if (main->keys->at('W')) {
         //hitbox->y--;
         sheetLocation.left = 256;
         sheetLocation.top = 44;
-        sheetLocation.width = 16*direction;
+        sheetLocation.width = 16;
         sheetLocation.height = 20;
         horizAnis = 1;
     }
@@ -34,7 +34,7 @@ void Player::tick() {
         hitbox->x--;
         sheetLocation.left = 192;
         sheetLocation.top = 44;
-        sheetLocation.width = 64 * direction;
+        sheetLocation.width = 64;
         sheetLocation.height = 20;
         horizAnis = 4;
     }
@@ -43,7 +43,7 @@ void Player::tick() {
         hitbox->x++;
         sheetLocation.left = 192;
         sheetLocation.top = 44;
-        sheetLocation.width = 64*direction;
+        sheetLocation.width = 64;
         sheetLocation.height = 20;
         horizAnis = 4;
     }
