@@ -16,7 +16,7 @@ Mainclass::Mainclass():
 void Mainclass::gameloop() {
     while (waiting) {}
     long ptime, atime, diff = 0;
-    Player(&data, 0, 0);
+    Player(&data, 200, 200);
     while (running) {
         ptime = getmillis();
 

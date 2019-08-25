@@ -18,13 +18,7 @@ Entity.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
 
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
-Entity.h
+/Users/EpicChicken/CLionProjects/CPPTesting/src/Entity.cpp
+../include/Entity.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
-Global.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
-
-/Users/EpicChicken/CLionProjects/CPPTesting/src/Player.cpp
-../include/Player.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
 
