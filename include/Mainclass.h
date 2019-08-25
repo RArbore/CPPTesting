@@ -19,6 +19,8 @@ public:
 
     bool waiting = true;
 
+    array<array<int, 40>, 80> map;
+
     list<Entity*> entities;
 
     std::map<char, bool> keys;

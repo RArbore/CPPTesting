@@ -13,6 +13,8 @@ public:
 
     bool* running;
 
+    std::array<std::array<int, 40>, 80>* map;
+
     std::list<Entity*>* entities;
 
     std::map<char, bool>* keys;

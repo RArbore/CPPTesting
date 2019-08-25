@@ -1,7 +1,8 @@
 #include "../include/Mainclass.h"
 
 Mainclass::Mainclass():
-    data()
+    data(),
+    map()
 {
     counter = 0;
     running = true;
@@ -11,12 +12,20 @@ Mainclass::Mainclass():
     data.running = &running;
     data.entities = &entities;
     data.keys = &keys;
+    data.map = &map;
 }
 
 void Mainclass::gameloop() {
     while (waiting) {}
     long ptime, atime, diff = 0;
     Player(&data, 200, 200);
+    for (int x = 0; x < map.size(); x++) {
+        for (int y = 0; y < map.at(0).size(); y++) {
+            if (y >= 20) {
+                map[x][y] = 1;
+            }
+        }
+    }
     while (running) {
         ptime = getmillis();
 

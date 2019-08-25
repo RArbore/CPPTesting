@@ -16,6 +16,8 @@ Player::Player(Global* in, double x, double y): Entity(in, x, y) {
 }
 
 void Player::tick() {
+    vx *= 0.8;
+    vy += 0.5;
     sheetLocation.left = 128*(-2*direction+1)+1024*direction-64*direction;
     sheetLocation.top = 40;
     sheetLocation.width = 64;
@@ -32,7 +34,7 @@ void Player::tick() {
     }
     if (main->keys->at('A')) {
         direction = 1;
-        hitbox->x--;
+        vx -= 0.8;
         sheetLocation.left = 192*(-2*direction+1)+1024*direction-64*direction;
         sheetLocation.top = 40;
         sheetLocation.width = 64;
@@ -42,12 +44,18 @@ void Player::tick() {
     }
     if (main->keys->at('D')) {
         direction = 0;
-        hitbox->x++;
+        vx += 0.8;
         sheetLocation.left = 192*(-2*direction+1)+1024*direction-64*direction;
         sheetLocation.top = 40;
         sheetLocation.width = 64;
         sheetLocation.height = 24;
         horizAnis = 4;
         ticksPerFrame = 4*(-2*direction+1);
+    }
+    if (!moveH(vx)) {
+        vx = 0;
+    }
+    if (!moveV(vy)) {
+        vy = 0;
     }
 }

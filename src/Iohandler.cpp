@@ -17,6 +17,13 @@ void Iohandler::windowtick() {
         }
     }
     window.clear();
+    for (int x = 0; x < main->map->size(); x++) {
+        for (int y = 0; y < main->map->at(0).size(); y++) {
+            if (main->map->at(x).at(y) == 1) {
+                drawFromSheet(IntRect(16, 64, 16, 16), x*16, y*16);
+            }
+        }
+    }
     for (Entity* e : *main->entities) {
         IntRect frame = e->currentFrame();
         int xd = e->hitbox->x+e->hitbox->w/2-abs(frame.width)/2;

@@ -12,6 +12,9 @@ public:
 
     int direction;
 
+    double vx;
+    double vy;
+
     Player(Global* in, double x, double y);
 
     void tick() override;

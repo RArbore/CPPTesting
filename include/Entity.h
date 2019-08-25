@@ -29,6 +29,12 @@ public:
 
     IntRect currentFrame();
 
+    bool checkCollision();
+
+    bool moveH(double distance);
+
+    bool moveV(double distance);
+
     virtual void tick() = 0;
 
 protected:
