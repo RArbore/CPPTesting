@@ -17,6 +17,10 @@ public:
 
     Player(Global* in, double x, double y);
 
+    bool onGround();
+    bool onLeft();
+    bool onRight();
+
     void tick() override;
 };
 

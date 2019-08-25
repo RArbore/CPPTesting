@@ -15,16 +15,42 @@ Player::Player(Global* in, double x, double y): Entity(in, x, y) {
     ticksPerFrame = 4;
 }
 
+bool Player::onGround() {
+    hitbox->h = 28;
+    bool val = checkCollision();
+    hitbox->h = 24;
+    return val;
+}
+
+bool Player::onLeft() {
+    double bx = hitbox->x;
+    hitbox->x = bx-4;
+    bool val = checkCollision();
+    hitbox->x = bx;
+    return val;
+}
+
+bool Player::onRight() {
+    hitbox->w = 20;
+    bool val = checkCollision();
+    hitbox->w = 16;
+    return val;
+}
+
 void Player::tick() {
-    vx *= 0.8;
+    if (onGround()) {
+        vx *= 0.8;
+    }
     vy += 0.5;
-    sheetLocation.left = 128*(-2*direction+1)+1024*direction-64*direction;
-    sheetLocation.top = 40;
-    sheetLocation.width = 64;
-    sheetLocation.height = 24;
-    horizAnis = 4;
-    ticksPerFrame = 4*(-2*direction+1);
-    if (main->keys->at('W')) {
+    if (onGround()) {
+        sheetLocation.left = 128 * (-2 * direction + 1) + 1024 * direction - 64 * direction;
+        sheetLocation.top = 40;
+        sheetLocation.width = 64;
+        sheetLocation.height = 24;
+        horizAnis = 4;
+        ticksPerFrame = 4 * (-2 * direction + 1);
+    }
+    else {
         sheetLocation.left = 256*(-2*direction+1)+1024*direction-16*direction;
         sheetLocation.top = 40;
         sheetLocation.width = 16;
@@ -32,7 +58,15 @@ void Player::tick() {
         horizAnis = 1;
         ticksPerFrame = 4*(-2*direction+1);
     }
-    if (main->keys->at('A')) {
+    if (main->keys->at('W') && onGround()) {
+        vy = -abs(vx)-3;
+    }
+    else if (main->keys->at('W') && !onGround() && ((onLeft() && vx < 0) || (onRight() && vx > 0))) {
+        vy = -abs(vx)-3;
+        vx *= -1;
+        direction = 1 - direction;
+    }
+    if (main->keys->at('A') && onGround()) {
         direction = 1;
         vx -= 0.8;
         sheetLocation.left = 192*(-2*direction+1)+1024*direction-64*direction;
@@ -42,7 +76,7 @@ void Player::tick() {
         horizAnis = 4;
         ticksPerFrame = 4*(-2*direction+1);
     }
-    if (main->keys->at('D')) {
+    if (main->keys->at('D') && onGround()) {
         direction = 0;
         vx += 0.8;
         sheetLocation.left = 192*(-2*direction+1)+1024*direction-64*direction;
