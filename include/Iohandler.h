@@ -2,9 +2,12 @@
 #define IOHANDLER_H
 
 #include "Global.h"
+#include "Player.h"
 
 using namespace std;
 using namespace sf;
+
+class Player;
 
 class Iohandler {
 

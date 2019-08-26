@@ -18,6 +18,7 @@ CMakeFiles/CPPTesting.dir/src/Iohandler.cpp.o: ../include/Entity.h
 CMakeFiles/CPPTesting.dir/src/Iohandler.cpp.o: ../include/Global.h
 CMakeFiles/CPPTesting.dir/src/Iohandler.cpp.o: ../include/Hitbox.h
 CMakeFiles/CPPTesting.dir/src/Iohandler.cpp.o: ../include/Iohandler.h
+CMakeFiles/CPPTesting.dir/src/Iohandler.cpp.o: ../include/Player.h
 CMakeFiles/CPPTesting.dir/src/Iohandler.cpp.o: ../src/Iohandler.cpp
 
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Entity.h

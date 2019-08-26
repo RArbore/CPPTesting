@@ -5,6 +5,8 @@ Mainclass::Mainclass():
     map()
 {
     counter = 0;
+    cx = 0;
+    cy = 0;
     running = true;
     entities = list<Entity*>();
     keys = std::map<char, bool>();
@@ -13,18 +15,26 @@ Mainclass::Mainclass():
     data.entities = &entities;
     data.keys = &keys;
     data.map = &map;
+    data.cx = &cx;
+    data.cy = &cy;
 }
 
 void Mainclass::gameloop() {
     while (waiting) {}
+    srand(time(NULL));
     long ptime, atime, diff = 0;
-    Player(&data, 200, 200);
-    for (int x = 0; x < map.size(); x++) {
-        for (int y = 0; y < map.at(0).size(); y++) {
-            if (y >= 20) {
-                map[x][y] = 1;
+    Player(&data, 220, 200);
+    for (int x = 0; x < data.MAP_WIDTH; x++) {
+        vector<int> toadd;
+        for (int y = 0; y < data.MAP_HEIGHT; y++) {
+            if (y >= 160 || (x > 30 && x % 3 == 0 && y % 12 < 9 && rand() % 10 > 5)) {
+                toadd.push_back(1);
+            }
+            else {
+                toadd.push_back(0);
             }
         }
+        map.push_back(toadd);
     }
     while (running) {
         ptime = getmillis();

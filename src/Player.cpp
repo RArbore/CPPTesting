@@ -92,4 +92,6 @@ void Player::tick() {
     if (!moveV(vy)) {
         vy = 0;
     }
+    *(main->cx) = hitbox->x+hitbox->w/2;
+    *(main->cy) = hitbox->y+hitbox->h/2;
 }

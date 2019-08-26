@@ -11,9 +11,15 @@ public:
 
     int* counter;
 
+    int* cx;
+    int* cy;
+
+    const int MAP_WIDTH = 80;
+    const int MAP_HEIGHT = 170;
+
     bool* running;
 
-    std::array<std::array<int, 40>, 80>* map;
+    std::vector<std::vector<int>>* map;
 
     std::list<Entity*>* entities;
 

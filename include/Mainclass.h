@@ -15,11 +15,14 @@ public:
 
     int counter;
 
+    int cx;
+    int cy;
+
     bool running;
 
     bool waiting = true;
 
-    array<array<int, 40>, 80> map;
+    vector<vector<int>> map;
 
     list<Entity*> entities;
 

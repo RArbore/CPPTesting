@@ -38,8 +38,8 @@ bool Entity::checkCollision() {
     if (hitbox->x < 0 || hitbox->y < 0 || hitbox->x+hitbox->w >= main->map->size()*16 || hitbox->y+hitbox->h >= main->map->at(0).size()*16) {
         return true;
     }
-    for (int x = 0; x < main->map->size(); x++) {
-        for (int y = 0; y < main->map->at(0).size(); y++) {
+    for (int x = 0; x < main->MAP_WIDTH; x++) {
+        for (int y = 0; y < main->MAP_HEIGHT; y++) {
             if (main->map->at(x).at(y) == 1) {
                 Hitbox block(x * 16, y * 16, 16, 16);
                 if (hitbox->overlap(block.x, block.y, block.w, block.h)) {
