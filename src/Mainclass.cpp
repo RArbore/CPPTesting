@@ -25,7 +25,7 @@ void Mainclass::gameloop() {
     long ptime, atime, diff = 0;
 
     ifstream inFile;
-    inFile.open("maps/map1.csv");
+    inFile.open("maps/map2.csv");
     string input;
     getline(inFile, input);
     inFile.close();

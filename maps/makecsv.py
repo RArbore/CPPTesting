@@ -17,16 +17,14 @@ def colorToType(color):
     elif checkArrays(color, [0, 255, 0]):
         return 2
 
-img = cv2.imread('maps/map1.png', cv2.IMREAD_COLOR)
-
-print(len(img), len(img[0]), len(img[0][0]))
+img = cv2.imread('maps/map2.png', cv2.IMREAD_COLOR)
 
 output = ''
-output += str(len(img))+","+str(len(img[0]))
+output += str(len(img[0]))+","+str(len(img))
 for x in range(0, len(img)):
     for y in range(0, len(img[0])):
         output += ","+str(colorToType(img[x][y]))
 
-f = open("maps/map1.csv", "w+")
+f = open("maps/map2.csv", "w+")
 f.write(output)
 f.close()

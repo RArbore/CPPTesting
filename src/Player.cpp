@@ -60,6 +60,14 @@ void Player::tick() {
     }
     if (main->keys->at('W') && onGround()) {
         vy = -abs(vx)-3;
+        if (main->keys->at('A') && direction == 0) {
+            vx *= -1.22;
+            direction = 0;
+        }
+        else if (main->keys->at('D') && direction == 1) {
+            vx *= -1.2;
+            direction = 0;
+        }
     }
     else if (main->keys->at('W') && !onGround() && ((onLeft() && vx < 0) || (onRight() && vx > 0))) {
         vy = -abs(vx)-3;
