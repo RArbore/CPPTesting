@@ -7,6 +7,7 @@
 #include <list>
 #include <array>
 #include <cmath>
+#include <fstream>
 #include <SFML/Graphics.hpp>
 
 #endif //CPPTESTING_PCH_H

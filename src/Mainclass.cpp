@@ -21,21 +21,41 @@ Mainclass::Mainclass():
 
 void Mainclass::gameloop() {
     while (waiting) {}
-    srand(time(NULL));
+    srand(getmillis());
     long ptime, atime, diff = 0;
-    Player(&data, 220, 200);
+
+    ifstream inFile;
+    inFile.open("maps/map1.csv");
+    string input;
+    getline(inFile, input);
+    inFile.close();
+    vector<int> splitted;
+    while (!input.empty()) {
+        if (input.find(',') == string::npos) {
+            splitted.push_back(stoi(input));
+            input = "";
+        }
+        else {
+            string token = input.substr(0, input.find(','));
+            input.erase(0, input.find(',') + 1);
+            splitted.push_back(stoi(token));
+        }
+    }
+    data.MAP_WIDTH = splitted.at(0);
+    data.MAP_HEIGHT = splitted.at(1);
     for (int x = 0; x < data.MAP_WIDTH; x++) {
         vector<int> toadd;
         for (int y = 0; y < data.MAP_HEIGHT; y++) {
-            if (y >= 160 || (x > 30 && x % 3 == 0 && y % 12 < 9 && rand() % 10 > 5)) {
-                toadd.push_back(1);
+            int value = splitted.at(x+y*data.MAP_WIDTH+2);
+            if (value == 2) {
+                Player(&data, x*16, y*16-10);
+                value = 0;
             }
-            else {
-                toadd.push_back(0);
-            }
+            toadd.push_back(value);
         }
         map.push_back(toadd);
     }
+
     while (running) {
         ptime = getmillis();
 

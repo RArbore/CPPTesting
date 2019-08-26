@@ -4,7 +4,7 @@ Player::Player(Global* in, double x, double y): Entity(in, x, y) {
     direction = 0;
     hitbox->x = x;
     hitbox->y = y;
-    hitbox->w = 16;
+    hitbox->w = 14;
     hitbox->h = 24;
     sheetLocation.left = 128;
     sheetLocation.top = 40;
@@ -31,9 +31,9 @@ bool Player::onLeft() {
 }
 
 bool Player::onRight() {
-    hitbox->w = 20;
+    hitbox->w = 18;
     bool val = checkCollision();
-    hitbox->w = 16;
+    hitbox->w = 14;
     return val;
 }
 

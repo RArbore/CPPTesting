@@ -14,8 +14,8 @@ public:
     int* cx;
     int* cy;
 
-    const int MAP_WIDTH = 80;
-    const int MAP_HEIGHT = 170;
+    int MAP_WIDTH;
+    int MAP_HEIGHT;
 
     bool* running;
 
