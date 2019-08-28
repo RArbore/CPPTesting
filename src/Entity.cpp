@@ -1,8 +1,9 @@
 #include "../include/Entity.h"
 
-Entity::Entity(Global* in, double x, double y) {
-    main = in;
-    main->entities->push_back(this);
+Entity::Entity(vector<Entity*>* ilist, double x, double y) {
+    elist = ilist;
+    elist->push_back(this);
+    transparency = 255;
     horizAnis = 0;
     vertAnis = 0;
     ticksPerFrame = 0;
@@ -10,37 +11,29 @@ Entity::Entity(Global* in, double x, double y) {
 }
 
 void Entity::remove() {
-    main->entities->remove(this);
+    elist->erase(std::find(elist->begin(), elist->end(), this));
 }
 
-IntRect Entity::currentFrame() {
+IntRect Entity::currentFrame(int counter) {
     int left = sheetLocation.left;
     int top = sheetLocation.top;
     int totalwidth = sheetLocation.width;
     int totalheight = sheetLocation.height;
     int indivwidth = totalwidth/horizAnis;
     int indivheight = totalheight/vertAnis;
-    int* counter = main->counter;
-    int timedCount = (int)(*counter/ticksPerFrame);
+    int timedCount = (int)(counter/ticksPerFrame);
     int x = left + (indivwidth * ((timedCount%horizAnis+horizAnis)%horizAnis));
     int y = top+(indivheight*(((int)(timedCount/horizAnis))%vertAnis));
     return {x, y, indivwidth, indivheight};
 }
 
-void Entity::setAni(IntRect isheetLocation, int ihorizAnis, int ivertAnis, int iticksPerFrame) {
-    this->sheetLocation = isheetLocation;
-    this->horizAnis = ihorizAnis;
-    this->vertAnis = ivertAnis;
-    this->ticksPerFrame = iticksPerFrame;
-}
-
-bool Entity::checkCollision() {
-    if (hitbox->x < 0 || hitbox->y < 0 || hitbox->x+hitbox->w >= main->map->size()*16 || hitbox->y+hitbox->h >= main->map->at(0).size()*16) {
+bool Entity::checkCollision(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT) {
+    if (hitbox->x < 0 || hitbox->y < 0 || hitbox->x+hitbox->w >= map->size()*16 || hitbox->y+hitbox->h >= map->at(0).size()*16) {
         return true;
     }
-    for (int x = 0; x < main->MAP_WIDTH; x++) {
-        for (int y = 0; y < main->MAP_HEIGHT; y++) {
-            if (main->map->at(x).at(y) == 1) {
+    for (int x = 0; x < MAP_WIDTH; x++) {
+        for (int y = 0; y < MAP_HEIGHT; y++) {
+            if (map->at(x).at(y) == 1) {
                 Hitbox block(x * 16, y * 16, 16, 16);
                 if (hitbox->overlap(block.x, block.y, block.w, block.h)) {
                     return true;
@@ -51,7 +44,7 @@ bool Entity::checkCollision() {
     return false;
 }
 
-bool Entity::moveH(double distance) {
+bool Entity::moveH(double distance, vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT) {
     bool direction = true;
     if (distance < 0) {
         distance *= -1;
@@ -60,7 +53,7 @@ bool Entity::moveH(double distance) {
     int prevW = (int) hitbox->w;
     if (direction) {
         hitbox->w += distance;
-        if (!checkCollision()) {
+        if (!checkCollision(map, MAP_WIDTH, MAP_HEIGHT)) {
             hitbox->x += distance;
             hitbox->w = prevW;
             return true;
@@ -69,7 +62,7 @@ bool Entity::moveH(double distance) {
     else {
         hitbox->w += distance;
         hitbox->x -= distance;
-        if (!checkCollision()) {
+        if (!checkCollision(map, MAP_WIDTH, MAP_HEIGHT)) {
             hitbox->w = prevW;
             return true;
         }
@@ -81,14 +74,14 @@ bool Entity::moveH(double distance) {
     for (int i = 0; i < distance; i++) {
         if (direction) {
             hitbox->x++;
-            if (checkCollision()) {
+            if (checkCollision(map, MAP_WIDTH, MAP_HEIGHT)) {
                 hitbox->x--;
                 return false;
             }
         }
         else {
             hitbox->x--;
-            if (checkCollision()) {
+            if (checkCollision(map, MAP_WIDTH, MAP_HEIGHT)) {
                 hitbox->x++;
                 return false;
             }
@@ -97,7 +90,7 @@ bool Entity::moveH(double distance) {
     return true;
 }
 
-bool Entity::moveV(double distance) {
+bool Entity::moveV(double distance, vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT) {
     bool direction = true;
     if (distance < 0) {
         distance *= -1;
@@ -106,7 +99,7 @@ bool Entity::moveV(double distance) {
     int prevH = (int) hitbox->h;
     if (direction) {
         hitbox->h += distance;
-        if (!checkCollision()) {
+        if (!checkCollision(map, MAP_WIDTH, MAP_HEIGHT)) {
             hitbox->y += distance;
             hitbox->h = prevH;
             return true;
@@ -115,7 +108,7 @@ bool Entity::moveV(double distance) {
     else {
         hitbox->h += distance;
         hitbox->y -= distance;
-        if (!checkCollision()) {
+        if (!checkCollision(map, MAP_WIDTH, MAP_HEIGHT)) {
             hitbox->h = prevH;
             return true;
         }
@@ -127,14 +120,14 @@ bool Entity::moveV(double distance) {
     for (int i = 0; i < distance; i++) {
         if (direction) {
             hitbox->y++;
-            if (checkCollision()) {
+            if (checkCollision(map, MAP_WIDTH, MAP_HEIGHT)) {
                 hitbox->y--;
                 return false;
             }
         }
         else {
             hitbox->y--;
-            if (checkCollision()) {
+            if (checkCollision(map, MAP_WIDTH, MAP_HEIGHT)) {
                 hitbox->y++;
                 return false;
             }

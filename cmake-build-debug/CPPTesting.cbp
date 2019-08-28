@@ -126,6 +126,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/BJCloud.h">
+			<Option target="CPPTesting"/>
+		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h">
 			<Option target="CPPTesting"/>
 		</Unit>
@@ -146,6 +149,9 @@
 			<Option target="pch"/>
 		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h">
+			<Option target="CPPTesting"/>
+		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/BJCloud.cpp">
 			<Option target="CPPTesting"/>
 		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Entity.cpp">

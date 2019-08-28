@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CPPTesting.dir/src/Hitbox.cpp.o"
   "CMakeFiles/CPPTesting.dir/src/Player.cpp.o"
   "CMakeFiles/CPPTesting.dir/src/Global.cpp.o"
+  "CMakeFiles/CPPTesting.dir/src/BJCloud.cpp.o"
   "CPPTesting.pdb"
   "CPPTesting"
 )

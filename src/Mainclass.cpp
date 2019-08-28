@@ -2,13 +2,14 @@
 
 Mainclass::Mainclass():
     data(),
-    map()
+    map(),
+    entities()
 {
     counter = 0;
     cx = 0;
     cy = 0;
     running = true;
-    entities = list<Entity*>();
+    map_done = false;
     keys = std::map<char, bool>();
     data.counter = &counter;
     data.running = &running;
@@ -17,6 +18,7 @@ Mainclass::Mainclass():
     data.map = &map;
     data.cx = &cx;
     data.cy = &cy;
+    data.map_done = &map_done;
 }
 
 void Mainclass::gameloop() {
@@ -48,20 +50,20 @@ void Mainclass::gameloop() {
         for (int y = 0; y < data.MAP_HEIGHT; y++) {
             int value = splitted.at(x+y*data.MAP_WIDTH+2);
             if (value == 2) {
-                Player(&data, x*16, y*16-10);
+                Player(&entities, x*16, y*16-10);
                 value = 0;
             }
             toadd.push_back(value);
         }
         map.push_back(toadd);
     }
-
+    map_done = true;
     while (running) {
         ptime = getmillis();
 
         counter++;
-        for (auto & e : entities) {
-            (*e).tick();
+        for (Entity* e : entities) {
+            (*e).tick(&data);
         }
 
         atime = getmillis();

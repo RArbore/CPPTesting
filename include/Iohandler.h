@@ -23,7 +23,7 @@ public:
 
     void windowtick();
 
-    void drawFromSheet(IntRect sheetrect, int x, int y, int w = 1, int h = 1);
+    void drawFromSheet(IntRect sheetrect, int x, int y, int w = 1, int h = 1, int t = 255);
 
     void drawAddress(const string& address, int x, int y, int w = 1, int h = 1);
 

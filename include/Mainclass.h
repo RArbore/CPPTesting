@@ -3,6 +3,7 @@
 
 #include "Iohandler.h"
 #include "Player.h"
+#include "BJCloud.h"
 #include "Entity.h"
 #include "Global.h"
 
@@ -19,12 +20,13 @@ public:
     int cy;
 
     bool running;
+    bool map_done;
 
     bool waiting = true;
 
     vector<vector<int>> map;
 
-    list<Entity*> entities;
+    vector<Entity*> entities;
 
     std::map<char, bool> keys;
 

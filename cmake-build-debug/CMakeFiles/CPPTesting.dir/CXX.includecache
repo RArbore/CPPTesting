@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/Users/EpicChicken/CLionProjects/CPPTesting/include/BJCloud.h
+Entity.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+Global.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
 Hitbox.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
 Global.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+list
+-
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
 Entity.h
@@ -18,13 +26,21 @@ Entity.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
 
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
+Global.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+Player.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
+
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
 Entity.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
 Global.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+BJCloud.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/BJCloud.h
 
-/Users/EpicChicken/CLionProjects/CPPTesting/src/Player.cpp
-../include/Player.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
+/Users/EpicChicken/CLionProjects/CPPTesting/src/Iohandler.cpp
+../include/Iohandler.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
 

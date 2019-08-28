@@ -3,6 +3,7 @@
 
 #include "Hitbox.h"
 #include "Global.h"
+#include <list>
 
 using namespace std;
 using namespace sf;
@@ -17,29 +18,27 @@ public:
     int vertAnis;
     int ticksPerFrame;
 
-    Global* main;
+    int transparency;
+
+    vector<Entity*>* elist;
 
     Hitbox* hitbox;
 
     IntRect sheetLocation;
 
-    Entity(Global* in, double x, double y);
+    Entity(vector<Entity*>* ilist, double x, double y);
 
     void remove();
 
-    IntRect currentFrame();
+    IntRect currentFrame(int counter);
 
-    bool checkCollision();
+    bool checkCollision(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
 
-    bool moveH(double distance);
+    bool moveH(double distance, vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
 
-    bool moveV(double distance);
+    bool moveV(double distance, vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
 
-    virtual void tick() = 0;
-
-protected:
-
-    void setAni(IntRect isheetLocation, int ihorizAnis, int ivertAnis, int iticksPerFrame);
+    virtual void tick(Global* main) = 0;
 
 };
 

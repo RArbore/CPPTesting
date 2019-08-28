@@ -19,9 +19,11 @@ public:
 
     bool* running;
 
+    bool* map_done;
+
     std::vector<std::vector<int>>* map;
 
-    std::list<Entity*>* entities;
+    std::vector<Entity*>* entities;
 
     std::map<char, bool>* keys;
 
