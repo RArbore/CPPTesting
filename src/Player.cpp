@@ -16,7 +16,7 @@ Player::Player(vector<Entity*>* ilist, double x, double y): Entity(ilist, x, y) 
 }
 
 bool Player::onGround(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT) {
-    hitbox->h = 32;
+    hitbox->h = 28;
     bool val = checkCollision(map, MAP_WIDTH, MAP_HEIGHT);
     hitbox->h = 24;
     return val;
@@ -24,14 +24,14 @@ bool Player::onGround(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIG
 
 bool Player::onLeft(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT) {
     double bx = hitbox->x;
-    hitbox->x = bx-8;
+    hitbox->x = bx-4;
     bool val = checkCollision(map, MAP_WIDTH, MAP_HEIGHT);
     hitbox->x = bx;
     return val;
 }
 
 bool Player::onRight(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT) {
-    hitbox->w = 22;
+    hitbox->w = 18;
     bool val = checkCollision(map, MAP_WIDTH, MAP_HEIGHT);
     hitbox->w = 14;
     return val;

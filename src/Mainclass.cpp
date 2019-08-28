@@ -62,6 +62,7 @@ void Mainclass::gameloop() {
         ptime = getmillis();
 
         counter++;
+        cout << entities.size() << endl;
         for (Entity* e : entities) {
             (*e).tick(&data);
         }

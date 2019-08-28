@@ -29,16 +29,17 @@ void Iohandler::windowtick() {
                 }
             }
         }
-        for (Entity *e : *main->entities) {
+        for (Entity* e : *main->entities) {
+            cout << e << endl;
             try {
                 IntRect frame = e->currentFrame(*main->counter);
-                if (dynamic_cast<Player*>(e)) {
-                    drawFromSheet(frame, wsx - abs(frame.width) / 2, wsy - abs(frame.height) / 2);
-                } else {
+                //if (dynamic_cast<Player*>(e)) {
+                //    drawFromSheet(frame, wsx - abs(frame.width) / 2, wsy - abs(frame.height) / 2);
+                //} else {
                     int xd = e->hitbox->x + e->hitbox->w / 2 - abs(frame.width) / 2;
                     int yd = e->hitbox->y + e->hitbox->h / 2 - abs(frame.height) / 2;
                     drawFromSheet(frame, xd + wsx - cx, yd + wsy - cy, 1, 1, e->transparency);
-                }
+                //}
             }
             catch (...) {
 

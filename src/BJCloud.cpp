@@ -1,6 +1,7 @@
 #include "../include/BJCloud.h"
 
 BJCloud::BJCloud(vector<Entity*>* ilist, double x, double y): Entity(ilist, x, y) {
+    cout << this << endl;
     hitbox->x = x;
     hitbox->y = y;
     hitbox->w = 4;
@@ -15,10 +16,12 @@ BJCloud::BJCloud(vector<Entity*>* ilist, double x, double y): Entity(ilist, x, y
 }
 
 void BJCloud::tick(Global* main) {
+    cout << transparency << endl;
     if (*main->counter % 4 == 0) {
         transparency -= 255/10;
     }
     if (transparency <= 0) {
         remove();
     }
+    cout << "after" << endl;
 }
