@@ -2,6 +2,7 @@
 #define CPPTESTING_PLAYER_H
 
 #include "Entity.h"
+#include "BJCloud.h"
 #include "Global.h"
 #include "BJCloud.h"
 
@@ -16,13 +17,15 @@ public:
     double vx;
     double vy;
 
-    Player(vector<Entity*>* ilist, double x, double y);
+    vector<BJCloud> point_to;
+
+    Player(Global* main, double x, double y);
 
     bool onGround(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
     bool onLeft(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
     bool onRight(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
 
-    void tick(Global* main) override;
+    void tick() override;
 };
 
 

@@ -1,18 +1,22 @@
 #include "../include/Entity.h"
 
-Entity::Entity(vector<Entity*>* ilist, double x, double y):
+Entity::Entity(Global* main, double x, double y):
     hitbox(x, y, 0, 0)
 {
-    elist = ilist;
+    exists = true;
+    this->main = main;
+    elist = main->entities;
+    //main->entitystorage->push_back(*this);
     elist->push_back(this);
     transparency = 255;
-    horizAnis = 0;
-    vertAnis = 0;
-    ticksPerFrame = 0;
+    horizAnis = 1;
+    vertAnis = 1;
+    ticksPerFrame = 1;
 }
 
 void Entity::remove() {
     elist->erase(std::find(elist->begin(), elist->end(), this));
+    exists = false;
 }
 
 int Entity::zeroToOne(int in) {
@@ -30,8 +34,8 @@ IntRect Entity::currentFrame(int counter) {
     int indivwidth = totalwidth/zeroToOne(horizAnis);
     int indivheight = totalheight/zeroToOne(vertAnis);
     int timedCount = (int)(counter/zeroToOne(ticksPerFrame));
-    int x = left + (indivwidth * ((timedCount%horizAnis+horizAnis)%horizAnis));
-    int y = top+(indivheight*(((int)(timedCount/horizAnis))%vertAnis));
+    int x = left + (indivwidth * ((timedCount%zeroToOne(horizAnis)+zeroToOne(horizAnis))%zeroToOne(horizAnis)));
+    int y = top+(indivheight*(((int)(timedCount/zeroToOne(horizAnis)))%zeroToOne(vertAnis)));
     return {x, y, indivwidth, indivheight};
 }
 

@@ -14,6 +14,7 @@ Mainclass::Mainclass():
     data.counter = &counter;
     data.running = &running;
     data.entities = &entities;
+    data.entitystorage = &entitystorage;
     data.keys = &keys;
     data.map = &map;
     data.cx = &cx;
@@ -50,7 +51,7 @@ void Mainclass::gameloop() {
         for (int y = 0; y < data.MAP_HEIGHT; y++) {
             int value = splitted.at(x+y*data.MAP_WIDTH+2);
             if (value == 2) {
-                Player(&entities, x*16, y*16-10);
+                Player(&data, x*16, y*16-10);
                 value = 0;
             }
             toadd.push_back(value);
@@ -68,7 +69,7 @@ void Mainclass::gameloop() {
         }
         for (Entity* e : temp) {
             try {
-                (*e).tick(&data);
+                (*e).tick();
             }
             catch (...) {}
         }

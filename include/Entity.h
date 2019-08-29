@@ -20,17 +20,20 @@ public:
 
     int transparency;
 
+    bool exists;
+
     vector<Entity*>* elist;
+    Global* main;
 
     Hitbox hitbox;
 
     IntRect sheetLocation;
 
-    Entity(vector<Entity*>* ilist, double x, double y);
+    Entity(Global* main, double x, double y);
 
     void remove();
 
-    int zeroToOne(int in);
+    static int zeroToOne(int in);
 
     IntRect currentFrame(int counter);
 
@@ -40,7 +43,7 @@ public:
 
     bool moveV(double distance, vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
 
-    virtual void tick(Global* main) = 0;
+    virtual void tick() = 0;
 
 };
 

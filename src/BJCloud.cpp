@@ -1,6 +1,6 @@
 #include "../include/BJCloud.h"
 
-BJCloud::BJCloud(vector<Entity*>* ilist, double x, double y): Entity(ilist, x, y) {
+BJCloud::BJCloud(Global* main, double x, double y): Entity(main, x, y) {
     hitbox.w = 4;
     hitbox.h = 4;
     sheetLocation.left = 128;
@@ -12,7 +12,7 @@ BJCloud::BJCloud(vector<Entity*>* ilist, double x, double y): Entity(ilist, x, y
     ticksPerFrame = 4;
 }
 
-void BJCloud::tick(Global* main) {
+void BJCloud::tick() {
     if (*main->counter % 4 == 0) {
         transparency -= 25;
     }

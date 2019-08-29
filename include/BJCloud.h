@@ -10,9 +10,9 @@ class BJCloud: public Entity {
 
 public:
 
-    BJCloud(vector<Entity*>* ilist, double x, double y);
+    BJCloud(Global* main, double x, double y);
 
-    void tick(Global* main) override;
+    void tick() override;
 
 };
 
