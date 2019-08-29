@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/21A29E79-3688-403C-96A5-11881C1807B3/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/FA7184CA-5A2C-47D1-83EB-390586C8F274/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/21A29E79-3688-403C-96A5-11881C1807B3/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/FA7184CA-5A2C-47D1-83EB-390586C8F274/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/21A29E79-3688-403C-96A5-11881C1807B3/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/FA7184CA-5A2C-47D1-83EB-390586C8F274/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/21A29E79-3688-403C-96A5-11881C1807B3/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/FA7184CA-5A2C-47D1-83EB-390586C8F274/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -135,6 +135,33 @@ pch: cmake_check_build_system
 pch/fast:
 	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/build
 .PHONY : pch/fast
+
+src/BJCloud.o: src/BJCloud.cpp.o
+
+.PHONY : src/BJCloud.o
+
+# target to build an object file
+src/BJCloud.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/BJCloud.cpp.o
+.PHONY : src/BJCloud.cpp.o
+
+src/BJCloud.i: src/BJCloud.cpp.i
+
+.PHONY : src/BJCloud.i
+
+# target to preprocess a source file
+src/BJCloud.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/BJCloud.cpp.i
+.PHONY : src/BJCloud.cpp.i
+
+src/BJCloud.s: src/BJCloud.cpp.s
+
+.PHONY : src/BJCloud.s
+
+# target to generate assembly for a file
+src/BJCloud.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/BJCloud.cpp.s
+.PHONY : src/BJCloud.cpp.s
 
 src/Entity.o: src/Entity.cpp.o
 
@@ -365,6 +392,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... CPPTesting"
 	@echo "... pch"
+	@echo "... src/BJCloud.o"
+	@echo "... src/BJCloud.i"
+	@echo "... src/BJCloud.s"
 	@echo "... src/Entity.o"
 	@echo "... src/Entity.i"
 	@echo "... src/Entity.s"

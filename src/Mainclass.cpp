@@ -2,21 +2,24 @@
 
 Mainclass::Mainclass():
     data(),
-    map()
+    map(),
+    entities()
 {
     counter = 0;
     cx = 0;
     cy = 0;
     running = true;
-    entities = list<Entity*>();
+    map_done = false;
     keys = std::map<char, bool>();
     data.counter = &counter;
     data.running = &running;
     data.entities = &entities;
+    data.entitystorage = &entitystorage;
     data.keys = &keys;
     data.map = &map;
     data.cx = &cx;
     data.cy = &cy;
+    data.map_done = &map_done;
 }
 
 void Mainclass::gameloop() {
@@ -55,13 +58,20 @@ void Mainclass::gameloop() {
         }
         map.push_back(toadd);
     }
-
+    map_done = true;
     while (running) {
         ptime = getmillis();
 
         counter++;
-        for (auto & e : entities) {
-            (*e).tick();
+        vector<Entity*> temp;
+        for (Entity* e : entities) {
+            temp.push_back(e);
+        }
+        for (Entity* e : temp) {
+            try {
+                (*e).tick();
+            }
+            catch (...) {}
         }
 
         atime = getmillis();

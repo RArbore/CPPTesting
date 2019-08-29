@@ -50,10 +50,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/21A29E79-3688-403C-96A5-11881C1807B3/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/FA7184CA-5A2C-47D1-83EB-390586C8F274/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/21A29E79-3688-403C-96A5-11881C1807B3/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/FA7184CA-5A2C-47D1-83EB-390586C8F274/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug
 CMakeFiles/CPPTesting.dir/all:
 	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/depend
 	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target CPPTesting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target CPPTesting"
 .PHONY : CMakeFiles/CPPTesting.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/CPPTesting.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CPPTesting.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/CPPTesting.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/CPPTesting.dir/rule
@@ -108,7 +108,7 @@ clean: CMakeFiles/CPPTesting.dir/clean
 CMakeFiles/pch.dir/all:
 	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/depend
 	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target pch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target pch"
 .PHONY : CMakeFiles/pch.dir/all
 
 # Include target in all.
