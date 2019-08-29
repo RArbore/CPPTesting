@@ -2,10 +2,8 @@
 
 Player::Player(vector<Entity*>* ilist, double x, double y): Entity(ilist, x, y) {
     direction = 0;
-    hitbox->x = x;
-    hitbox->y = y;
-    hitbox->w = 14;
-    hitbox->h = 24;
+    hitbox.w = 14;
+    hitbox.h = 24;
     sheetLocation.left = 128;
     sheetLocation.top = 40;
     sheetLocation.width = 64;
@@ -16,29 +14,29 @@ Player::Player(vector<Entity*>* ilist, double x, double y): Entity(ilist, x, y) 
 }
 
 bool Player::onGround(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT) {
-    hitbox->h = 28;
+    hitbox.h = 28;
     bool val = checkCollision(map, MAP_WIDTH, MAP_HEIGHT);
-    hitbox->h = 24;
+    hitbox.h = 24;
     return val;
 }
 
 bool Player::onLeft(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT) {
-    double bx = hitbox->x;
-    hitbox->x = bx-4;
+    double bx = hitbox.x;
+    hitbox.x = bx-4;
     bool val = checkCollision(map, MAP_WIDTH, MAP_HEIGHT);
-    hitbox->x = bx;
+    hitbox.x = bx;
     return val;
 }
 
 bool Player::onRight(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT) {
-    hitbox->w = 18;
+    hitbox.w = 18;
     bool val = checkCollision(map, MAP_WIDTH, MAP_HEIGHT);
-    hitbox->w = 14;
+    hitbox.w = 14;
     return val;
 }
 
 void Player::tick(Global* main) {
-    //BJCloud(main->entities, hitbox->x, hitbox->y);
+    BJCloud(main->entities, hitbox.x, hitbox.y);
     if (onGround(main->map, main->MAP_WIDTH, main->MAP_HEIGHT)) {
         vx *= 0.8;
     }
@@ -64,12 +62,12 @@ void Player::tick(Global* main) {
         if (main->keys->at('A') && direction == 0) {
             vx *= -1.2;
             direction = 0;
-            BJCloud(main->entities, hitbox->x, hitbox->y);
+            BJCloud(main->entities, hitbox.x, hitbox.y);
         }
         else if (main->keys->at('D') && direction == 1) {
             vx *= -1.2;
             direction = 0;
-            BJCloud(main->entities, hitbox->x, hitbox->y);
+            BJCloud(main->entities, hitbox.x, hitbox.y);
         }
     }
     else if (main->keys->at('W') && !onGround(main->map, main->MAP_WIDTH, main->MAP_HEIGHT) && ((onLeft(main->map, main->MAP_WIDTH, main->MAP_HEIGHT) && vx < 0) || (onRight(main->map, main->MAP_WIDTH, main->MAP_HEIGHT) && vx > 0))) {
@@ -103,6 +101,6 @@ void Player::tick(Global* main) {
     if (!moveV(vy, main->map, main->MAP_WIDTH, main->MAP_HEIGHT)) {
         vy = 0;
     }
-    *(main->cx) = hitbox->x+hitbox->w/2;
-    *(main->cy) = hitbox->y+hitbox->h/2;
+    *(main->cx) = hitbox.x+hitbox.w/2;
+    *(main->cy) = hitbox.y+hitbox.h/2;
 }

@@ -22,13 +22,15 @@ public:
 
     vector<Entity*>* elist;
 
-    Hitbox* hitbox;
+    Hitbox hitbox;
 
     IntRect sheetLocation;
 
     Entity(vector<Entity*>* ilist, double x, double y);
 
     void remove();
+
+    int zeroToOne(int in);
 
     IntRect currentFrame(int counter);
 

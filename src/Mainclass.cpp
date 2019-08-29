@@ -62,9 +62,16 @@ void Mainclass::gameloop() {
         ptime = getmillis();
 
         counter++;
-        cout << entities.size() << endl;
         for (Entity* e : entities) {
-            (*e).tick(&data);
+            cout << "START" << endl;
+            cout << e << endl;
+            cout << data.counter << endl;
+            cout << &data << endl;
+            try {
+                cout << (*e).transparency << endl;
+                (*e).tick(&data);
+            }
+            catch (...) {}
         }
 
         atime = getmillis();
