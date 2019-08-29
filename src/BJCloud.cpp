@@ -13,12 +13,10 @@ BJCloud::BJCloud(vector<Entity*>* ilist, double x, double y): Entity(ilist, x, y
 }
 
 void BJCloud::tick(Global* main) {
-    cout << transparency << endl;
     if (*main->counter % 4 == 0) {
         transparency -= 25;
     }
     if (transparency <= 0) {
         remove();
     }
-    cout << "after" << endl;
 }

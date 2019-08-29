@@ -36,7 +36,9 @@ bool Player::onRight(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGH
 }
 
 void Player::tick(Global* main) {
-    BJCloud(main->entities, hitbox.x, hitbox.y);
+    if (*main->counter == 1) {
+        BJCloud(main->entities, hitbox.x, hitbox.y);
+    }
     if (onGround(main->map, main->MAP_WIDTH, main->MAP_HEIGHT)) {
         vx *= 0.8;
     }
