@@ -126,7 +126,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/BJCloud.h">
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/DustCloud.h">
 			<Option target="CPPTesting"/>
 		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h">
@@ -151,7 +151,7 @@
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h">
 			<Option target="CPPTesting"/>
 		</Unit>
-		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/BJCloud.cpp">
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/DustCloud.cpp">
 			<Option target="CPPTesting"/>
 		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Entity.cpp">

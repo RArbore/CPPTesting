@@ -6,11 +6,11 @@
 
 class Entity;
 
-class BJCloud: public Entity {
+class DustCloud: public Entity {
 
 public:
 
-    BJCloud(Global* main, double x, double y);
+    DustCloud(Global* main, double x, double y);
 
     void tick() override;
 

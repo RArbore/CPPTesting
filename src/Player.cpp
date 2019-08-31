@@ -40,6 +40,9 @@ bool Player::onRight(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGH
 void Player::tick() {
     counter++;
     if (onGround(main->map, main->MAP_WIDTH, main->MAP_HEIGHT)) {
+        if (abs(vx) > 0.1 && counter % 4 == 0) {
+            main->entities->push_back(new DustCloud(main, hitbox.x+rand()%10, hitbox.y+24));
+        }
         vx *= 0.8;
     }
     vy += 0.5;
@@ -64,12 +67,10 @@ void Player::tick() {
         if (main->keys->at('A') && direction == 0) {
             vx *= -1.2;
             direction = 0;
-            main->entities->push_back(new BJCloud(main, hitbox.x+5, hitbox.y+10));
         }
         else if (main->keys->at('D') && direction == 1) {
             vx *= -1.2;
             direction = 0;
-            main->entities->push_back(new BJCloud(main, hitbox.x+5, hitbox.y+10));
         }
     }
     else if (main->keys->at('W') && ((onLeft(main->map, main->MAP_WIDTH, main->MAP_HEIGHT) && pvx < 0) || (onRight(main->map, main->MAP_WIDTH, main->MAP_HEIGHT) && pvx > 0))) {
@@ -103,6 +104,11 @@ void Player::tick() {
         vx = 0;
     }
     if (!moveV(vy, main->map, main->MAP_WIDTH, main->MAP_HEIGHT)) {
+        if (vy > 1) {
+            for (int i = 0; i < 4; i++) {
+                main->entities->push_back(new DustCloud(main, hitbox.x+rand()%10, hitbox.y+24));
+            }
+        }
         vy = 0;
     }
     *(main->cx) = hitbox.x+hitbox.w/2;

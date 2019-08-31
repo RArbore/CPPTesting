@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/FA7184CA-5A2C-47D1-83EB-390586C8F274/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/69E368FE-CA8F-490D-AA21-CE0527B1ED17/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/FA7184CA-5A2C-47D1-83EB-390586C8F274/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/69E368FE-CA8F-490D-AA21-CE0527B1ED17/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -161,18 +161,18 @@ CMakeFiles/CPPTesting.dir/src/Global.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPTesting.dir/src/Global.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h -S /Users/EpicChicken/CLionProjects/CPPTesting/src/Global.cpp -o CMakeFiles/CPPTesting.dir/src/Global.cpp.s
 
-CMakeFiles/CPPTesting.dir/src/BJCloud.cpp.o: CMakeFiles/CPPTesting.dir/flags.make
-CMakeFiles/CPPTesting.dir/src/BJCloud.cpp.o: ../src/BJCloud.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CPPTesting.dir/src/BJCloud.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h -o CMakeFiles/CPPTesting.dir/src/BJCloud.cpp.o -c /Users/EpicChicken/CLionProjects/CPPTesting/src/BJCloud.cpp
+CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.o: CMakeFiles/CPPTesting.dir/flags.make
+CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.o: ../src/DustCloud.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h -o CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.o -c /Users/EpicChicken/CLionProjects/CPPTesting/src/DustCloud.cpp
 
-CMakeFiles/CPPTesting.dir/src/BJCloud.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPTesting.dir/src/BJCloud.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h -E /Users/EpicChicken/CLionProjects/CPPTesting/src/BJCloud.cpp > CMakeFiles/CPPTesting.dir/src/BJCloud.cpp.i
+CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h -E /Users/EpicChicken/CLionProjects/CPPTesting/src/DustCloud.cpp > CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.i
 
-CMakeFiles/CPPTesting.dir/src/BJCloud.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPTesting.dir/src/BJCloud.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h -S /Users/EpicChicken/CLionProjects/CPPTesting/src/BJCloud.cpp -o CMakeFiles/CPPTesting.dir/src/BJCloud.cpp.s
+CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h -S /Users/EpicChicken/CLionProjects/CPPTesting/src/DustCloud.cpp -o CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.s
 
 # Object files for target CPPTesting
 CPPTesting_OBJECTS = \
@@ -184,7 +184,7 @@ CPPTesting_OBJECTS = \
 "CMakeFiles/CPPTesting.dir/src/Hitbox.cpp.o" \
 "CMakeFiles/CPPTesting.dir/src/Player.cpp.o" \
 "CMakeFiles/CPPTesting.dir/src/Global.cpp.o" \
-"CMakeFiles/CPPTesting.dir/src/BJCloud.cpp.o"
+"CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.o"
 
 # External object files for target CPPTesting
 CPPTesting_EXTERNAL_OBJECTS =
@@ -197,7 +197,7 @@ CPPTesting: CMakeFiles/CPPTesting.dir/src/Entity.cpp.o
 CPPTesting: CMakeFiles/CPPTesting.dir/src/Hitbox.cpp.o
 CPPTesting: CMakeFiles/CPPTesting.dir/src/Player.cpp.o
 CPPTesting: CMakeFiles/CPPTesting.dir/src/Global.cpp.o
-CPPTesting: CMakeFiles/CPPTesting.dir/src/BJCloud.cpp.o
+CPPTesting: CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.o
 CPPTesting: CMakeFiles/CPPTesting.dir/build.make
 CPPTesting: /usr/local/lib/libsfml-graphics.2.5.1.dylib
 CPPTesting: /usr/local/lib/libsfml-audio.2.5.1.dylib

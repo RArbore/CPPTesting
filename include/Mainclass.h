@@ -3,7 +3,7 @@
 
 #include "Iohandler.h"
 #include "Player.h"
-#include "BJCloud.h"
+#include "DustCloud.h"
 #include "Entity.h"
 #include "Global.h"
 

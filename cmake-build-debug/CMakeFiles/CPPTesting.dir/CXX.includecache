@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/EpicChicken/CLionProjects/CPPTesting/include/BJCloud.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/DustCloud.h
 Entity.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
 Global.h
@@ -31,8 +31,8 @@ Entity.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
 Global.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
-BJCloud.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/BJCloud.h
+DustCloud.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/DustCloud.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/src/Player.cpp
 ../include/Player.h

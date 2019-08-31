@@ -3,7 +3,7 @@
 
 #include "Entity.h"
 #include "Global.h"
-#include "BJCloud.h"
+#include "DustCloud.h"
 
 class Entity;
 
