@@ -27,7 +27,6 @@ public:
     vector<vector<int>> map;
 
     vector<Entity*> entities;
-    vector<Entity> entitystorage;
 
     std::map<char, bool> keys;
 

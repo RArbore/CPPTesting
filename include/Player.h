@@ -2,7 +2,6 @@
 #define CPPTESTING_PLAYER_H
 
 #include "Entity.h"
-#include "BJCloud.h"
 #include "Global.h"
 #include "BJCloud.h"
 
@@ -16,8 +15,6 @@ public:
 
     double vx;
     double vy;
-
-    vector<BJCloud> point_to;
 
     Player(Global* main, double x, double y);
 

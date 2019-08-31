@@ -31,7 +31,7 @@ void Iohandler::windowtick() {
         }
         for (Entity* e : *main->entities) {
             try {
-                IntRect frame = e->currentFrame(*main->counter);
+                IntRect frame = e->currentFrame(e->counter);
                 if (dynamic_cast<Player*>(e)) {
                     drawFromSheet(frame, wsx - abs(frame.width) / 2, wsy - abs(frame.height) / 2);
                 } else {

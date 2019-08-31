@@ -9,8 +9,6 @@ class Global{
 
 public:
 
-    int* counter;
-
     int* cx;
     int* cy;
 
@@ -24,7 +22,6 @@ public:
     std::vector<std::vector<int>>* map;
 
     std::vector<Entity*>* entities;
-    std::vector<Entity>* entitystorage;
 
     std::map<char, bool>* keys;
 

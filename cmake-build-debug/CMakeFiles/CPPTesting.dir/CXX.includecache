@@ -26,17 +26,37 @@ Entity.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
 
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
+Global.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+Player.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
+
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
+Iohandler.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
+Player.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
+BJCloud.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/BJCloud.h
+Entity.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+Global.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
 Entity.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
-BJCloud.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/BJCloud.h
 Global.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
 BJCloud.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/BJCloud.h
 
-/Users/EpicChicken/CLionProjects/CPPTesting/src/Player.cpp
-../include/Player.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
+/Users/EpicChicken/CLionProjects/CPPTesting/src/Entity.cpp
+../include/Entity.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+
+/Users/EpicChicken/CLionProjects/CPPTesting/src/Mainclass.cpp
+../include/Mainclass.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
 

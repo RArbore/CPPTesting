@@ -20,5 +20,5 @@ bool Hitbox::overlap(double hx, double hy, double hw, double hh) {
 }
 
 bool Hitbox::overlap(Hitbox* hitbox) {
-    this->overlap(hitbox->x, hitbox->y, hitbox->w, hitbox->h);
+    return this->overlap(hitbox->x, hitbox->y, hitbox->w, hitbox->h);
 }

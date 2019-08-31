@@ -18,11 +18,12 @@ public:
     int vertAnis;
     int ticksPerFrame;
 
+    int counter;
+
     int transparency;
 
     bool exists;
 
-    vector<Entity*>* elist;
     Global* main;
 
     Hitbox hitbox;
@@ -35,7 +36,7 @@ public:
 
     static int zeroToOne(int in);
 
-    IntRect currentFrame(int counter);
+    IntRect currentFrame(int icounter);
 
     bool checkCollision(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
 
@@ -44,6 +45,8 @@ public:
     bool moveV(double distance, vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
 
     virtual void tick() = 0;
+
+    virtual ~Entity();
 
 };
 

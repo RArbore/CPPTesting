@@ -5,17 +5,14 @@ Entity::Entity(Global* main, double x, double y):
 {
     exists = true;
     this->main = main;
-    elist = main->entities;
-    //main->entitystorage->push_back(*this);
-    elist->push_back(this);
     transparency = 255;
     horizAnis = 1;
     vertAnis = 1;
     ticksPerFrame = 1;
+    counter = 0;
 }
 
 void Entity::remove() {
-    elist->erase(std::find(elist->begin(), elist->end(), this));
     exists = false;
 }
 
@@ -26,7 +23,7 @@ int Entity::zeroToOne(int in) {
     return in;
 }
 
-IntRect Entity::currentFrame(int counter) {
+IntRect Entity::currentFrame(int icounter) {
     int left = sheetLocation.left;
     int top = sheetLocation.top;
     int totalwidth = sheetLocation.width;
@@ -147,3 +144,5 @@ bool Entity::moveV(double distance, vector<std::vector<int>>* map, int MAP_WIDTH
     }
     return true;
 }
+
+Entity::~Entity() = default;

@@ -11,10 +11,8 @@ Mainclass::Mainclass():
     running = true;
     map_done = false;
     keys = std::map<char, bool>();
-    data.counter = &counter;
     data.running = &running;
     data.entities = &entities;
-    data.entitystorage = &entitystorage;
     data.keys = &keys;
     data.map = &map;
     data.cx = &cx;
@@ -28,7 +26,7 @@ void Mainclass::gameloop() {
     long ptime, atime, diff = 0;
 
     ifstream inFile;
-    inFile.open("maps/map2.csv");
+    inFile.open("maps/map1.csv");
     string input;
     getline(inFile, input);
     inFile.close();
@@ -51,7 +49,8 @@ void Mainclass::gameloop() {
         for (int y = 0; y < data.MAP_HEIGHT; y++) {
             int value = splitted.at(x+y*data.MAP_WIDTH+2);
             if (value == 2) {
-                Player(&data, x*16, y*16-10);
+                entities.push_back(new Player(&data, x*16, y*16-10));
+                entities.push_back(new BJCloud(&data, x*16, y*16-10));
                 value = 0;
             }
             toadd.push_back(value);
@@ -70,6 +69,10 @@ void Mainclass::gameloop() {
         for (Entity* e : temp) {
             try {
                 (*e).tick();
+                if (!e->exists) {
+                    entities.erase(std::find(entities.begin(), entities.end(), e));
+                    delete e;
+                }
             }
             catch (...) {}
         }

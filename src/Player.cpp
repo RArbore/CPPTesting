@@ -1,6 +1,8 @@
 #include "../include/Player.h"
 
 Player::Player(Global* main, double x, double y): Entity(main, x, y) {
+    vx = 0;
+    vy = 0;
     direction = 0;
     hitbox.w = 14;
     hitbox.h = 24;
@@ -36,6 +38,7 @@ bool Player::onRight(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGH
 }
 
 void Player::tick() {
+    counter++;
     if (onGround(main->map, main->MAP_WIDTH, main->MAP_HEIGHT)) {
         vx *= 0.8;
     }
@@ -61,14 +64,12 @@ void Player::tick() {
         if (main->keys->at('A') && direction == 0) {
             vx *= -1.2;
             direction = 0;
-            BJCloud bjcloud(main, hitbox.x, hitbox.y+12);
-            point_to.push_back(bjcloud);
+            main->entities->push_back(new BJCloud(main, hitbox.x, hitbox.y+12));
         }
         else if (main->keys->at('D') && direction == 1) {
             vx *= -1.2;
             direction = 0;
-            BJCloud bjcloud(main, hitbox.x, hitbox.y+12);
-            point_to.push_back(bjcloud);
+            main->entities->push_back(new BJCloud(main, hitbox.x, hitbox.y+12));
         }
     }
     else if (main->keys->at('W') && !onGround(main->map, main->MAP_WIDTH, main->MAP_HEIGHT) && ((onLeft(main->map, main->MAP_WIDTH, main->MAP_HEIGHT) && vx < 0) || (onRight(main->map, main->MAP_WIDTH, main->MAP_HEIGHT) && vx > 0))) {
@@ -104,11 +105,11 @@ void Player::tick() {
     }
     *(main->cx) = hitbox.x+hitbox.w/2;
     *(main->cy) = hitbox.y+hitbox.h/2;
-    for (int i = 0; i < point_to.size(); i++) {
-        BJCloud e = point_to.at(i);
-        if (!e.exists) {
-            point_to.erase(point_to.begin()+i);
-            i--;
-        }
-    }
+//    for (int i = 0; i < point_to.size(); i++) {
+//        BJCloud e = point_to.at(i);
+//        if (!e.exists) {
+//            point_to.erase(point_to.begin()+i);
+//            i--;
+//        }
+//    }
 }

@@ -13,7 +13,8 @@ BJCloud::BJCloud(Global* main, double x, double y): Entity(main, x, y) {
 }
 
 void BJCloud::tick() {
-    if (*main->counter % 4 == 0) {
+    counter++;
+    if (counter % 4 == 0) {
         transparency -= 25;
     }
     if (transparency <= 0) {
