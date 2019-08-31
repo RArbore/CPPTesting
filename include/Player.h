@@ -16,6 +16,9 @@ public:
     double vx;
     double vy;
 
+    double pvx;
+    double pvy;
+
     Player(Global* main, double x, double y);
 
     bool onGround(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);

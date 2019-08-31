@@ -64,17 +64,17 @@ void Player::tick() {
         if (main->keys->at('A') && direction == 0) {
             vx *= -1.2;
             direction = 0;
-            main->entities->push_back(new BJCloud(main, hitbox.x, hitbox.y+12));
+            main->entities->push_back(new BJCloud(main, hitbox.x+5, hitbox.y+10));
         }
         else if (main->keys->at('D') && direction == 1) {
             vx *= -1.2;
             direction = 0;
-            main->entities->push_back(new BJCloud(main, hitbox.x, hitbox.y+12));
+            main->entities->push_back(new BJCloud(main, hitbox.x+5, hitbox.y+10));
         }
     }
-    else if (main->keys->at('W') && !onGround(main->map, main->MAP_WIDTH, main->MAP_HEIGHT) && ((onLeft(main->map, main->MAP_WIDTH, main->MAP_HEIGHT) && vx < 0) || (onRight(main->map, main->MAP_WIDTH, main->MAP_HEIGHT) && vx > 0))) {
-        vy = -abs(vx)-3;
-        vx *= -1;
+    else if (main->keys->at('W') && ((onLeft(main->map, main->MAP_WIDTH, main->MAP_HEIGHT) && pvx < 0) || (onRight(main->map, main->MAP_WIDTH, main->MAP_HEIGHT) && pvx > 0))) {
+        vy = -abs(pvx)-3;
+        vx = -1*pvx;
         direction = 1 - direction;
     }
     if (main->keys->at('A') && onGround(main->map, main->MAP_WIDTH, main->MAP_HEIGHT)) {
@@ -97,6 +97,8 @@ void Player::tick() {
         horizAnis = 4;
         ticksPerFrame = 4*(-2*direction+1);
     }
+    pvx = vx;
+    pvy = vy;
     if (!moveH(vx, main->map, main->MAP_WIDTH, main->MAP_HEIGHT)) {
         vx = 0;
     }

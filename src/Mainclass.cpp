@@ -26,7 +26,7 @@ void Mainclass::gameloop() {
     long ptime, atime, diff = 0;
 
     ifstream inFile;
-    inFile.open("maps/map1.csv");
+    inFile.open("maps/map2.csv");
     string input;
     getline(inFile, input);
     inFile.close();
@@ -50,7 +50,6 @@ void Mainclass::gameloop() {
             int value = splitted.at(x+y*data.MAP_WIDTH+2);
             if (value == 2) {
                 entities.push_back(new Player(&data, x*16, y*16-10));
-                entities.push_back(new BJCloud(&data, x*16, y*16-10));
                 value = 0;
             }
             toadd.push_back(value);
