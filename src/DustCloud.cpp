@@ -1,6 +1,6 @@
-#include "../include/BJCloud.h"
+#include "../include/DustCloud.h"
 
-BJCloud::BJCloud(Global* main, double x, double y): Entity(main, x, y) {
+DustCloud::DustCloud(Global* main, double x, double y): Entity(main, x, y) {
     hitbox.w = 4;
     hitbox.h = 4;
     sheetLocation.left = 128;
@@ -12,7 +12,7 @@ BJCloud::BJCloud(Global* main, double x, double y): Entity(main, x, y) {
     ticksPerFrame = 4;
 }
 
-void BJCloud::tick() {
+void DustCloud::tick() {
     counter++;
     if (counter % 4 == 0) {
         transparency -= 25;
