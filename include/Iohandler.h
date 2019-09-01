@@ -19,6 +19,10 @@ public:
 
     RenderWindow window;
 
+    View view;
+
+    int counter;
+
     explicit Iohandler(Global* in);
 
     void windowtick();

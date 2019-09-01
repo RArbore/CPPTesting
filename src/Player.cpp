@@ -40,6 +40,11 @@ bool Player::onRight(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGH
 void Player::tick() {
     counter++;
     if (onGround(main->map, main->MAP_WIDTH, main->MAP_HEIGHT)) {
+        if (pvy > 1) {
+            for (int i = 0; i < 4; i++) {
+                main->entities->push_back(new DustCloud(main, hitbox.x+rand()%10, hitbox.y+24));
+            }
+        }
         if (abs(vx) > 0.1 && counter % 4 == 0) {
             main->entities->push_back(new DustCloud(main, hitbox.x+rand()%10, hitbox.y+24));
         }
@@ -74,6 +79,16 @@ void Player::tick() {
         }
     }
     else if (main->keys->at('W') && ((onLeft(main->map, main->MAP_WIDTH, main->MAP_HEIGHT) && pvx < 0) || (onRight(main->map, main->MAP_WIDTH, main->MAP_HEIGHT) && pvx > 0))) {
+        if (pvx < 0) {
+            for (int i = 0; i < 4; i++) {
+                main->entities->push_back(new DustCloud(main, hitbox.x, hitbox.y+rand()%20));
+            }
+        }
+        else {
+            for (int i = 0; i < 4; i++) {
+                main->entities->push_back(new DustCloud(main, hitbox.x+10, hitbox.y+rand()%20));
+            }
+        }
         vy = -abs(pvx)-3;
         vx = -1*pvx;
         direction = 1 - direction;
@@ -104,11 +119,6 @@ void Player::tick() {
         vx = 0;
     }
     if (!moveV(vy, main->map, main->MAP_WIDTH, main->MAP_HEIGHT)) {
-        if (vy > 1) {
-            for (int i = 0; i < 4; i++) {
-                main->entities->push_back(new DustCloud(main, hitbox.x+rand()%10, hitbox.y+24));
-            }
-        }
         vy = 0;
     }
     *(main->cx) = hitbox.x+hitbox.w/2;

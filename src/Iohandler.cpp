@@ -1,14 +1,18 @@
 #include "../include/Iohandler.h"
 
 Iohandler::Iohandler(Global* in):
-        window(VideoMode(VideoMode::getDesktopMode().width, VideoMode::getDesktopMode().height,32),"Game")
+        window(VideoMode(VideoMode::getDesktopMode().width, VideoMode::getDesktopMode().height,32),"Game"),
+        view(FloatRect(0.f, 0.f, window.getSize().x, window.getSize().y))
 {
     main = in;
     spritesheet.loadFromFile("resources/sheet.png");
     spritesheet.setSmooth(false);
+    window.setView(view);
+    counter = 0;
 }
 
 void Iohandler::windowtick() {
+    counter++;
     Event event{};
     while (window.pollEvent(event)) {
         if (event.type == Event::Closed) {
