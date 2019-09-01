@@ -136,6 +136,33 @@ pch/fast:
 	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/build
 .PHONY : pch/fast
 
+src/CrackedBlock.o: src/CrackedBlock.cpp.o
+
+.PHONY : src/CrackedBlock.o
+
+# target to build an object file
+src/CrackedBlock.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/CrackedBlock.cpp.o
+.PHONY : src/CrackedBlock.cpp.o
+
+src/CrackedBlock.i: src/CrackedBlock.cpp.i
+
+.PHONY : src/CrackedBlock.i
+
+# target to preprocess a source file
+src/CrackedBlock.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/CrackedBlock.cpp.i
+.PHONY : src/CrackedBlock.cpp.i
+
+src/CrackedBlock.s: src/CrackedBlock.cpp.s
+
+.PHONY : src/CrackedBlock.s
+
+# target to generate assembly for a file
+src/CrackedBlock.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/CrackedBlock.cpp.s
+.PHONY : src/CrackedBlock.cpp.s
+
 src/DustCloud.o: src/DustCloud.cpp.o
 
 .PHONY : src/DustCloud.o
@@ -392,6 +419,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... CPPTesting"
 	@echo "... pch"
+	@echo "... src/CrackedBlock.o"
+	@echo "... src/CrackedBlock.i"
+	@echo "... src/CrackedBlock.s"
 	@echo "... src/DustCloud.o"
 	@echo "... src/DustCloud.i"
 	@echo "... src/DustCloud.s"

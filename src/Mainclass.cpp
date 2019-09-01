@@ -1,9 +1,9 @@
 #include "../include/Mainclass.h"
 
 Mainclass::Mainclass():
-    data(),
-    map(),
-    entities()
+        data(),
+        map(),
+        entities()
 {
     counter = 0;
     cx = 0;
@@ -20,13 +20,9 @@ Mainclass::Mainclass():
     data.map_done = &map_done;
 }
 
-void Mainclass::gameloop() {
-    while (waiting) {}
-    srand(getmillis());
-    long ptime, atime, diff = 0;
-
+void Mainclass::genmap() {
     ifstream inFile;
-    inFile.open("maps/map1.csv");
+    inFile.open("maps/map3.csv");
     string input;
     getline(inFile, input);
     inFile.close();
@@ -52,11 +48,36 @@ void Mainclass::gameloop() {
                 entities.push_back(new Player(&data, x*16, y*16-10));
                 value = 0;
             }
+            else if (value == 3) {
+                entities.push_back(new CrackedBlock(&data, x*16, y*16));
+                value = 0;
+            }
             toadd.push_back(value);
         }
         map.push_back(toadd);
     }
     map_done = true;
+}
+
+void Mainclass::resetmap() {
+    map_done = false;
+    while (!io->isWaiting) {}
+    vector<Entity*> temp;
+    for (Entity* e : entities) {
+        temp.push_back(e);
+    }
+    for (Entity* e : temp) {
+        entities.erase(std::find(entities.begin(), entities.end(), e));
+        delete e;
+    }
+    genmap();
+}
+
+void Mainclass::gameloop() {
+    while (waiting) {}
+    srand(getmillis());
+    long ptime, atime, diff = 0;
+    genmap();
     while (running) {
         ptime = getmillis();
 
@@ -69,6 +90,10 @@ void Mainclass::gameloop() {
             try {
                 (*e).tick();
                 if (!e->exists) {
+                    if (dynamic_cast<Player*>(e)) {
+                        resetmap();
+                        break;
+                    }
                     entities.erase(std::find(entities.begin(), entities.end(), e));
                     delete e;
                 }
@@ -100,9 +125,10 @@ long Mainclass::getmillis() {
 }
 
 void Mainclass::iohandle() {
-    Iohandler io(&data);
+    Iohandler tio(&data);
+    io = &tio;
     while (running) {
-        io.windowtick();
+        tio.windowtick();
         keys['W'] = sf::Keyboard::isKeyPressed(sf::Keyboard::W);
         keys['A'] = sf::Keyboard::isKeyPressed(sf::Keyboard::A);
         keys['S'] = sf::Keyboard::isKeyPressed(sf::Keyboard::S);

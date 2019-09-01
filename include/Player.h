@@ -21,9 +21,9 @@ public:
 
     Player(Global* main, double x, double y);
 
-    bool onGround(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
-    bool onLeft(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
-    bool onRight(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
+    bool onGround();
+    bool onLeft();
+    bool onRight();
 
     void tick() override;
 };

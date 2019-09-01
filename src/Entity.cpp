@@ -4,6 +4,7 @@ Entity::Entity(Global* main, double x, double y):
     hitbox(x, y, 0, 0)
 {
     exists = true;
+    doCollision = false;
     this->main = main;
     transparency = 255;
     horizAnis = 1;
@@ -23,7 +24,7 @@ int Entity::zeroToOne(int in) {
     return in;
 }
 
-IntRect Entity::currentFrame(int icounter) {
+IntRect Entity::currentFrame() {
     int left = sheetLocation.left;
     int top = sheetLocation.top;
     int totalwidth = sheetLocation.width;
@@ -37,17 +38,22 @@ IntRect Entity::currentFrame(int icounter) {
 }
 
 bool Entity::checkCollision(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT) {
-    if (hitbox.x < 0 || hitbox.y < 0 || hitbox.x+hitbox.w >= map->size()*16 || hitbox.y+hitbox.h >= map->at(0).size()*16) {
+    if (hitbox.x < 0 || hitbox.y < 0 || hitbox.x+hitbox.w >= MAP_WIDTH*16) {
         return true;
     }
-    for (int x = 0; x < MAP_WIDTH; x++) {
-        for (int y = 0; y < MAP_HEIGHT; y++) {
+    for (int x = max(0, (int)(hitbox.x/16-1)); x < min(MAP_WIDTH, (int)((hitbox.x+hitbox.w)/16+1)); x++) {
+        for (int y = max(0, (int)(hitbox.y/16-1)); y < min(MAP_HEIGHT, (int)((hitbox.y+hitbox.h)/16+1)); y++) {
             if (map->at(x).at(y) == 1) {
                 Hitbox block(x * 16, y * 16, 16, 16);
                 if (hitbox.overlap(block.x, block.y, block.w, block.h)) {
                     return true;
                 }
             }
+        }
+    }
+    for (Entity* e : *main->entities) {
+        if (e != this && e->doCollision && e->hitbox.overlap(&hitbox)) {
+            return true;
         }
     }
     return false;

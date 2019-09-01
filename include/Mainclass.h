@@ -4,6 +4,7 @@
 #include "Iohandler.h"
 #include "Player.h"
 #include "DustCloud.h"
+#include "CrackedBlock.h"
 #include "Entity.h"
 #include "Global.h"
 
@@ -24,6 +25,8 @@ public:
 
     bool waiting = true;
 
+    Iohandler* io;
+
     vector<vector<int>> map;
 
     vector<Entity*> entities;
@@ -35,6 +38,10 @@ public:
     static const int MAX_TPS = 30;
 
     Mainclass();
+
+    void genmap();
+
+    void resetmap();
 
     void gameloop();
 

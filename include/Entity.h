@@ -22,6 +22,8 @@ public:
 
     int transparency;
 
+    bool doCollision;
+
     bool exists;
 
     Global* main;
@@ -36,7 +38,7 @@ public:
 
     static int zeroToOne(int in);
 
-    IntRect currentFrame(int icounter);
+    IntRect currentFrame();
 
     bool checkCollision(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
 

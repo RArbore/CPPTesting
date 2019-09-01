@@ -23,6 +23,8 @@ public:
 
     int counter;
 
+    bool isWaiting;
+
     explicit Iohandler(Global* in);
 
     void windowtick();

@@ -1,4 +1,5 @@
 import numpy as np
+import sys
 from cv2 import cv2
 
 def checkArrays(ar1, ar2):
@@ -16,8 +17,10 @@ def colorToType(color):
         return 1
     elif checkArrays(color, [0, 255, 0]):
         return 2
+    elif checkArrays(color, [0, 128, 255]):
+        return 3
 
-img = cv2.imread('maps/map2.png', cv2.IMREAD_COLOR)
+img = cv2.imread('map'+str(sys.argv[1])+'.png', cv2.IMREAD_COLOR)
 
 output = ''
 output += str(len(img[0]))+","+str(len(img))
@@ -25,6 +28,6 @@ for x in range(0, len(img)):
     for y in range(0, len(img[0])):
         output += ","+str(colorToType(img[x][y]))
 
-f = open("maps/map2.csv", "w+")
+f = open("map"+str(sys.argv[1])+".csv", "w+")
 f.write(output)
 f.close()

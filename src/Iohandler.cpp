@@ -4,28 +4,31 @@ Iohandler::Iohandler(Global* in):
         window(VideoMode(VideoMode::getDesktopMode().width, VideoMode::getDesktopMode().height,32),"Game"),
         view(FloatRect(0.f, 0.f, window.getSize().x, window.getSize().y))
 {
+    isWaiting = false;
     main = in;
     spritesheet.loadFromFile("resources/sheet.png");
     spritesheet.setSmooth(false);
+    view.zoom(0.5f);
     window.setView(view);
     counter = 0;
 }
 
 void Iohandler::windowtick() {
-    counter++;
-    Event event{};
-    while (window.pollEvent(event)) {
-        if (event.type == Event::Closed) {
-            window.close();
-            exit(EXIT_SUCCESS);
-        }
-    }
-    window.clear();
-    int cx = *main->cx;
-    int cy = *main->cy;
-    int wsx = (int)(window.getSize().x)/2;
-    int wsy = (int)(window.getSize().y)/2;
     if (*main->map_done) {
+        isWaiting = false;
+        counter++;
+        Event event{};
+        while (window.pollEvent(event)) {
+            if (event.type == Event::Closed) {
+                window.close();
+                exit(EXIT_SUCCESS);
+            }
+        }
+        window.clear();
+        int cx = *main->cx;
+        int cy = *main->cy;
+        int wsx = (int)(window.getSize().x)/2;
+        int wsy = (int)(window.getSize().y)/2;
         for (int x = 0; x < main->MAP_WIDTH; x++) {
             for (int y = 0; y < main->MAP_HEIGHT; y++) {
                 if (main->map->at(x).at(y) == 1) {
@@ -35,7 +38,7 @@ void Iohandler::windowtick() {
         }
         for (Entity* e : *main->entities) {
             try {
-                IntRect frame = e->currentFrame(e->counter);
+                IntRect frame = e->currentFrame();
                 if (dynamic_cast<Player*>(e)) {
                     drawFromSheet(frame, wsx - abs(frame.width) / 2, wsy - abs(frame.height) / 2);
                 } else {
@@ -46,8 +49,11 @@ void Iohandler::windowtick() {
             }
             catch (...) {}
         }
+        window.display();
     }
-    window.display();
+    else {
+        isWaiting = true;
+    }
 }
 
 void Iohandler::drawFromSheet(IntRect sheetrect, int x, int y, int w, int h, int t) {

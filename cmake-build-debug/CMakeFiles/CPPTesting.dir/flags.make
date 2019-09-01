@@ -26,3 +26,5 @@ CXX_INCLUDES =
 
 # Custom flags: CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h
 
+# Custom flags: CMakeFiles/CPPTesting.dir/src/CrackedBlock.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h
+
