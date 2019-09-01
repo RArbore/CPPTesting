@@ -8,7 +8,7 @@ Iohandler::Iohandler(Global* in):
     main = in;
     spritesheet.loadFromFile("resources/sheet.png");
     spritesheet.setSmooth(false);
-    view.zoom(0.5f);
+    view.zoom(1.0f);
     window.setView(view);
     counter = 0;
 }

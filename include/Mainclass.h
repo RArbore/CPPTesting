@@ -5,6 +5,7 @@
 #include "Player.h"
 #include "DustCloud.h"
 #include "CrackedBlock.h"
+#include "RainCloud.h"
 #include "Entity.h"
 #include "Global.h"
 

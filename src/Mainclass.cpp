@@ -52,6 +52,10 @@ void Mainclass::genmap() {
                 entities.push_back(new CrackedBlock(&data, x*16, y*16));
                 value = 0;
             }
+            else if (value == 4) {
+                entities.push_back(new RainCloud(&data, x*16, y*16));
+                value = 0;
+            }
             toadd.push_back(value);
         }
         map.push_back(toadd);

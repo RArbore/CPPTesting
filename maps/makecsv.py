@@ -19,6 +19,8 @@ def colorToType(color):
         return 2
     elif checkArrays(color, [0, 128, 255]):
         return 3
+    elif checkArrays(color, [255, 128, 128]):
+        return 4
 
 img = cv2.imread('map'+str(sys.argv[1])+'.png', cv2.IMREAD_COLOR)
 

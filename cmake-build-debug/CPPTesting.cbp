@@ -154,6 +154,9 @@
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h">
 			<Option target="CPPTesting"/>
 		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/RainCloud.h">
+			<Option target="CPPTesting"/>
+		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/CrackedBlock.cpp">
 			<Option target="CPPTesting"/>
 		</Unit>
@@ -183,6 +186,9 @@
 			<Option target="pch"/>
 		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Player.cpp">
+			<Option target="CPPTesting"/>
+		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/RainCloud.cpp">
 			<Option target="CPPTesting"/>
 		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/CMakeLists.txt">

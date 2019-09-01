@@ -409,6 +409,33 @@ src/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
+src/RainCloud.o: src/RainCloud.cpp.o
+
+.PHONY : src/RainCloud.o
+
+# target to build an object file
+src/RainCloud.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/RainCloud.cpp.o
+.PHONY : src/RainCloud.cpp.o
+
+src/RainCloud.i: src/RainCloud.cpp.i
+
+.PHONY : src/RainCloud.i
+
+# target to preprocess a source file
+src/RainCloud.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/RainCloud.cpp.i
+.PHONY : src/RainCloud.cpp.i
+
+src/RainCloud.s: src/RainCloud.cpp.s
+
+.PHONY : src/RainCloud.s
+
+# target to generate assembly for a file
+src/RainCloud.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/RainCloud.cpp.s
+.PHONY : src/RainCloud.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -449,6 +476,9 @@ help:
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
+	@echo "... src/RainCloud.o"
+	@echo "... src/RainCloud.i"
+	@echo "... src/RainCloud.s"
 .PHONY : help
 
 
