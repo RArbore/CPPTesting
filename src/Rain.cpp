@@ -16,7 +16,7 @@ Rain::Rain(Global* main, double x, double y): Entity(main, x, y) {
 void Rain::tick() {
     vy+=0.5;
     vy*=0.9;
-    if (!moveV(vy, main->map, main->MAP_WIDTH, main->MAP_HEIGHT)) {
+    if (!moveV(vy, main->map, main->MAP_WIDTH, main->MAP_HEIGHT) || hitbox.y+hitbox.h > main->MAP_HEIGHT*16) {
         remove();
     }
 }
