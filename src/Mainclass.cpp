@@ -83,6 +83,7 @@ void Mainclass::resetmap() {
         entities.erase(std::find(entities.begin(), entities.end(), e));
         delete e;
     }
+    counter = 0;
     genmap();
 }
 
@@ -113,6 +114,10 @@ void Mainclass::gameloop() {
             }
             catch (...) {}
         }
+        if (keys.at('R')) {
+            resetmap();
+        }
+
         atime = getmillis();
         diff = atime-ptime;
         if (diff <= 0) {
@@ -140,6 +145,7 @@ void Mainclass::iohandle() {
     Iohandler tio(&data, PLATFORM_NAME);
     data.mx = &tio.mx;
     data.my = &tio.my;
+    data.leftmouse = &tio.leftmouse;
     io = &tio;
     while (running) {
         tio.windowtick();
@@ -147,6 +153,7 @@ void Mainclass::iohandle() {
         keys['A'] = sf::Keyboard::isKeyPressed(sf::Keyboard::A);
         keys['S'] = sf::Keyboard::isKeyPressed(sf::Keyboard::S);
         keys['D'] = sf::Keyboard::isKeyPressed(sf::Keyboard::D);
+        keys['R'] = sf::Keyboard::isKeyPressed(sf::Keyboard::R);
         waiting = false;
     }
 }

@@ -41,6 +41,17 @@ bool Player::onRight() {
 
 void Player::tick() {
     counter++;
+    if (transparency < 255) {
+        transparency += 8;
+    }
+    else if (transparency > 255) {
+        transparency = 255;
+    }
+    if (*main->leftmouse && transparency == 255) {
+        hitbox.x = *main->mx-hitbox.w/2;
+        hitbox.y = *main->my-hitbox.h/2;
+        transparency = 0;
+    }
     if (onGround()) {
         if (pvy > 1) {
             for (int i = 0; i < 4; i++) {

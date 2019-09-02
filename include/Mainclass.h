@@ -90,3 +90,14 @@ public:
 #else
     #define PLATFORM_NAME NULL
 #endif
+
+#ifdef defined//(_WIN32) || defined(_WIN64)
+#include <direct.h>
+// MSDN recommends against using getcwd & chdir names
+#define cwd _getcwd
+#define cd _chdir
+#else
+#include <unistd.h>
+#define cwd getcwd
+#define cd chdir
+#endif

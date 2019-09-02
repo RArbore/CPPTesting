@@ -26,6 +26,8 @@ public:
     int mx;
     int my;
 
+    bool leftmouse;
+
     bool isWaiting;
 
     explicit Iohandler(Global* in, const string& PLATFORM_NAME);

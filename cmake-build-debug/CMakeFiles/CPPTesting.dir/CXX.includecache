@@ -67,6 +67,10 @@ sys/param.h
 -
 TargetConditionals.h
 -
+direct.h
+-
+unistd.h
+-
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
 Entity.h

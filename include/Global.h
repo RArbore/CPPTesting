@@ -26,6 +26,8 @@ public:
     int* mx;
     int* my;
 
+    bool* leftmouse;
+
     std::map<char, bool>* keys;
 
 };

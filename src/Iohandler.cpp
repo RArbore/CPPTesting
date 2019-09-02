@@ -6,6 +6,7 @@ Iohandler::Iohandler(Global* in, const string& PLATFORM_NAME):
 {
     mx = 0;
     my = 0;
+    leftmouse = false;
     isWaiting = false;
     main = in;
     if (PLATFORM_NAME == "osx") {
@@ -36,10 +37,11 @@ void Iohandler::windowtick() {
         int wsy = (int)(window.getSize().y)/2;
         int cx = *main->cx;
         int cy = *main->cy;
-        Vector2i pixelPos = sf::Mouse::getPosition(window);
+        Vector2i pixelPos = Mouse::getPosition(window);
         Vector2f worldPos = window.mapPixelToCoords(pixelPos);
         mx = worldPos.x-wsx+cx;
         my = worldPos.y-wsy+cy;
+        leftmouse = Mouse::isButtonPressed(Mouse::Left);
         double scale = window.getSize().y/512.0;
         for (int i = 0; i < 4; i++) {
             for (int wx = -4; wx < main->MAP_WIDTH*16/512+4; wx++) {
@@ -57,7 +59,7 @@ void Iohandler::windowtick() {
             try {
                 IntRect frame = e->currentFrame();
                 if (dynamic_cast<Player*>(e)) {
-                    drawFromSheet(frame, wsx - abs(frame.width) / 2, wsy - abs(frame.height) / 2);
+                    drawFromSheet(frame, wsx - abs(frame.width) / 2, wsy - abs(frame.height) / 2, 1, 1, e->transparency);
                 } else {
                     int xd = e->hitbox.x + e->hitbox.w / 2 - abs(frame.width) / 2;
                     int yd = e->hitbox.y + e->hitbox.h / 2 - abs(frame.height) / 2;
