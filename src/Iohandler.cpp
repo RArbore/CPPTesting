@@ -1,6 +1,6 @@
 #include "../include/Iohandler.h"
 
-Iohandler::Iohandler(Global* in):
+Iohandler::Iohandler(Global* in, const string& PLATFORM_NAME):
         window(VideoMode(VideoMode::getDesktopMode().width, VideoMode::getDesktopMode().height,32),"Game"),
         view(FloatRect(0.f, 0.f, window.getSize().x, window.getSize().y))
 {
@@ -8,7 +8,12 @@ Iohandler::Iohandler(Global* in):
     my = 0;
     isWaiting = false;
     main = in;
-    spritesheet.loadFromFile("resources/sheet.png");
+    if (PLATFORM_NAME == "osx") {
+        spritesheet.loadFromFile("resources/sheet.png");
+    }
+    else if (PLATFORM_NAME == "windows") {
+        spritesheet.loadFromFile("resources\\sheet.png");
+    }
     spritesheet.setSmooth(false);
     view.zoom(1.0f);
     window.setView(view);

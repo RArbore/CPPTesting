@@ -3,7 +3,6 @@
 
 #include "Hitbox.h"
 #include "Global.h"
-#include <list>
 
 using namespace std;
 using namespace sf;

@@ -33,8 +33,6 @@ Hitbox.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
 Global.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
-list
--
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
 Entity.h
@@ -65,6 +63,10 @@ Entity.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
 Global.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+sys/param.h
+-
+TargetConditionals.h
+-
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
 Entity.h
@@ -88,9 +90,9 @@ Global.h
 Rain.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Rain.h
 
-/Users/EpicChicken/CLionProjects/CPPTesting/src/Coin.cpp
-../include/Coin.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Coin.h
+/Users/EpicChicken/CLionProjects/CPPTesting/src/Main.cpp
+../include/Mainclass.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/src/Mainclass.cpp
 ../include/Mainclass.h

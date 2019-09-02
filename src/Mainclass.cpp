@@ -22,7 +22,12 @@ Mainclass::Mainclass():
 
 void Mainclass::genmap() {
     ifstream inFile;
-    inFile.open("maps/map3.csv");
+    if (PLATFORM_NAME == "osx") {
+        inFile.open("maps/map3.csv");
+    }
+    else if (PLATFORM_NAME == "windows") {
+        inFile.open("maps\\map3.csv");
+    }
     string input;
     getline(inFile, input);
     inFile.close();
@@ -132,7 +137,7 @@ long Mainclass::getmillis() {
 }
 
 void Mainclass::iohandle() {
-    Iohandler tio(&data);
+    Iohandler tio(&data, PLATFORM_NAME);
     data.mx = &tio.mx;
     data.my = &tio.my;
     io = &tio;

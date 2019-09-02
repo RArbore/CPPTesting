@@ -28,7 +28,7 @@ public:
 
     bool isWaiting;
 
-    explicit Iohandler(Global* in);
+    explicit Iohandler(Global* in, const string& PLATFORM_NAME);
 
     void windowtick();
 
