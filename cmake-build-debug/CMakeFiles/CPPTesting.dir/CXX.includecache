@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/Users/EpicChicken/CLionProjects/CPPTesting/include/CrackedBlock.h
+Entity.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+Global.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+Player.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
+
 /Users/EpicChicken/CLionProjects/CPPTesting/include/DustCloud.h
 Entity.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
@@ -26,12 +34,6 @@ Entity.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
 
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
-Global.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
-Player.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
-
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
 Entity.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
@@ -40,7 +42,7 @@ Global.h
 DustCloud.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/DustCloud.h
 
-/Users/EpicChicken/CLionProjects/CPPTesting/src/Iohandler.cpp
-../include/Iohandler.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
+/Users/EpicChicken/CLionProjects/CPPTesting/src/CrackedBlock.cpp
+../include/CrackedBlock.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/CrackedBlock.h
 

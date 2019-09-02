@@ -44,6 +44,7 @@ CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Hitbox.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Iohandler.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Mainclass.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Player.h
+CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Rain.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/RainCloud.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../src/Main.cpp
 
@@ -55,6 +56,7 @@ CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/Hitbox.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/Iohandler.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/Mainclass.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/Player.h
+CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/Rain.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/RainCloud.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../src/Mainclass.cpp
 
@@ -68,9 +70,16 @@ CMakeFiles/CPPTesting.dir/src/Player.cpp.o: ../include/Hitbox.h
 CMakeFiles/CPPTesting.dir/src/Player.cpp.o: ../include/Player.h
 CMakeFiles/CPPTesting.dir/src/Player.cpp.o: ../src/Player.cpp
 
+CMakeFiles/CPPTesting.dir/src/Rain.cpp.o: ../include/Entity.h
+CMakeFiles/CPPTesting.dir/src/Rain.cpp.o: ../include/Global.h
+CMakeFiles/CPPTesting.dir/src/Rain.cpp.o: ../include/Hitbox.h
+CMakeFiles/CPPTesting.dir/src/Rain.cpp.o: ../include/Rain.h
+CMakeFiles/CPPTesting.dir/src/Rain.cpp.o: ../src/Rain.cpp
+
 CMakeFiles/CPPTesting.dir/src/RainCloud.cpp.o: ../include/Entity.h
 CMakeFiles/CPPTesting.dir/src/RainCloud.cpp.o: ../include/Global.h
 CMakeFiles/CPPTesting.dir/src/RainCloud.cpp.o: ../include/Hitbox.h
+CMakeFiles/CPPTesting.dir/src/RainCloud.cpp.o: ../include/Rain.h
 CMakeFiles/CPPTesting.dir/src/RainCloud.cpp.o: ../include/RainCloud.h
 CMakeFiles/CPPTesting.dir/src/RainCloud.cpp.o: ../src/RainCloud.cpp
 

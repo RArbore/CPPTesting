@@ -28,7 +28,7 @@ void CrackedBlock::tick() {
     }
     else {
         transparency-=10;
-        if (transparency % 20 == 0) {
+        if (transparency % 20 == 0 && transparency < 200) {
             hitbox.y++;
         }
         if (transparency < 10) {

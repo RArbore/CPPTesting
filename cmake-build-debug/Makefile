@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/BC0DE251-E77E-46FB-A19A-278D143487FC/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/02B4D308-EFB1-4AD0-B700-7CD217AB7B67/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/BC0DE251-E77E-46FB-A19A-278D143487FC/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/02B4D308-EFB1-4AD0-B700-7CD217AB7B67/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/BC0DE251-E77E-46FB-A19A-278D143487FC/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/02B4D308-EFB1-4AD0-B700-7CD217AB7B67/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/BC0DE251-E77E-46FB-A19A-278D143487FC/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/02B4D308-EFB1-4AD0-B700-7CD217AB7B67/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -409,6 +409,33 @@ src/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
+src/Rain.o: src/Rain.cpp.o
+
+.PHONY : src/Rain.o
+
+# target to build an object file
+src/Rain.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Rain.cpp.o
+.PHONY : src/Rain.cpp.o
+
+src/Rain.i: src/Rain.cpp.i
+
+.PHONY : src/Rain.i
+
+# target to preprocess a source file
+src/Rain.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Rain.cpp.i
+.PHONY : src/Rain.cpp.i
+
+src/Rain.s: src/Rain.cpp.s
+
+.PHONY : src/Rain.s
+
+# target to generate assembly for a file
+src/Rain.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Rain.cpp.s
+.PHONY : src/Rain.cpp.s
+
 src/RainCloud.o: src/RainCloud.cpp.o
 
 .PHONY : src/RainCloud.o
@@ -476,6 +503,9 @@ help:
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
+	@echo "... src/Rain.o"
+	@echo "... src/Rain.i"
+	@echo "... src/Rain.s"
 	@echo "... src/RainCloud.o"
 	@echo "... src/RainCloud.i"
 	@echo "... src/RainCloud.s"

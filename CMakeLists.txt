@@ -9,7 +9,7 @@ add_library(pch include/Pch.h src/Pch.cpp)
 
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 
-set(SOURCE_FILES src/Mainclass.cpp src/Iohandler.cpp include/Iohandler.h include/Mainclass.h src/Main.cpp include/Pch.h src/Pch.cpp src/Entity.cpp include/Entity.h src/Hitbox.cpp include/Hitbox.h src/Player.cpp include/Player.h src/Global.cpp include/Global.h src/DustCloud.cpp include/DustCloud.h src/CrackedBlock.cpp include/CrackedBlock.h src/RainCloud.cpp include/RainCloud.h)
+set(SOURCE_FILES src/Mainclass.cpp src/Iohandler.cpp include/Iohandler.h include/Mainclass.h src/Main.cpp include/Pch.h src/Pch.cpp src/Entity.cpp include/Entity.h src/Hitbox.cpp include/Hitbox.h src/Player.cpp include/Player.h src/Global.cpp include/Global.h src/DustCloud.cpp include/DustCloud.h src/CrackedBlock.cpp include/CrackedBlock.h src/RainCloud.cpp include/RainCloud.h src/Rain.cpp include/Rain.h)
 set_source_files_properties(${SOURCE_FILES} PROPERTIES COMPILE_FLAGS "-include ${CMAKE_CURRENT_SOURCE_DIR}/include/Pch.h")
 
 add_executable(CPPTesting ${SOURCE_FILES})

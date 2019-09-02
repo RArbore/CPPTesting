@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.o"
   "CMakeFiles/CPPTesting.dir/src/CrackedBlock.cpp.o"
   "CMakeFiles/CPPTesting.dir/src/RainCloud.cpp.o"
+  "CMakeFiles/CPPTesting.dir/src/Rain.cpp.o"
   "CPPTesting.pdb"
   "CPPTesting"
 )

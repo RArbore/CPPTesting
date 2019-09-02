@@ -45,6 +45,7 @@ CMakeFiles/CPPTesting.dir/src/Main.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Rain.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/RainCloud.h
  /Users/EpicChicken/CLionProjects/CPPTesting/src/Main.cpp
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o
@@ -56,6 +57,7 @@ CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Rain.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/RainCloud.h
  /Users/EpicChicken/CLionProjects/CPPTesting/src/Mainclass.cpp
 CMakeFiles/CPPTesting.dir/src/Pch.cpp.o
@@ -68,9 +70,16 @@ CMakeFiles/CPPTesting.dir/src/Player.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
  /Users/EpicChicken/CLionProjects/CPPTesting/src/Player.cpp
+CMakeFiles/CPPTesting.dir/src/Rain.cpp.o
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Rain.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/src/Rain.cpp
 CMakeFiles/CPPTesting.dir/src/RainCloud.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Rain.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/RainCloud.h
  /Users/EpicChicken/CLionProjects/CPPTesting/src/RainCloud.cpp

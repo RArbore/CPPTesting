@@ -3,7 +3,8 @@
 Player::Player(Global* main, double x, double y): Entity(main, x, y) {
     vx = 0;
     vy = 0;
-    doCollision = true;
+    pvx = 0;
+    pvy = 0;
     direction = 0;
     hitbox.w = 14;
     hitbox.h = 24;

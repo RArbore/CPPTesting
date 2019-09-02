@@ -27,6 +27,12 @@ void Iohandler::windowtick() {
         window.clear();
         int cx = *main->cx;
         int cy = *main->cy;
+        double scale = window.getSize().y/512.0;
+        for (int i = 0; i < 4; i++) {
+            for (int wx = -4; wx < main->MAP_WIDTH*16/512+4; wx++) {
+                drawFromSheet(IntRect(i*512, 512, 512, 512), -cx*(i+1)/10+(wx*512*scale), 0, scale, scale);
+            }
+        }
         int wsx = (int)(window.getSize().x)/2;
         int wsy = (int)(window.getSize().y)/2;
         for (int x = 0; x < main->MAP_WIDTH; x++) {
@@ -56,7 +62,7 @@ void Iohandler::windowtick() {
     }
 }
 
-void Iohandler::drawFromSheet(IntRect sheetrect, int x, int y, int w, int h, int t) {
+void Iohandler::drawFromSheet(IntRect sheetrect, int x, int y, double w, double h, int t) {
     Sprite sprite;
     sprite.setTexture(spritesheet);
     sprite.setTextureRect(IntRect(sheetrect));
@@ -66,7 +72,7 @@ void Iohandler::drawFromSheet(IntRect sheetrect, int x, int y, int w, int h, int
     window.draw(sprite);
 }
 
-void Iohandler::drawAddress(const string& address, int x, int y, int w, int h) {
+void Iohandler::drawAddress(const string& address, int x, int y, double w, double h) {
     Texture texture;
     texture.loadFromFile(address);
     texture.setSmooth(false);

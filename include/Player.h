@@ -16,8 +16,8 @@ public:
     double vx;
     double vy;
 
-    double pvx;
-    double pvy;
+    double pvx{};
+    double pvy{};
 
     Player(Global* main, double x, double y);
 
