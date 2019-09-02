@@ -4,6 +4,8 @@ Iohandler::Iohandler(Global* in):
         window(VideoMode(VideoMode::getDesktopMode().width, VideoMode::getDesktopMode().height,32),"Game"),
         view(FloatRect(0.f, 0.f, window.getSize().x, window.getSize().y))
 {
+    mx = 0;
+    my = 0;
     isWaiting = false;
     main = in;
     spritesheet.loadFromFile("resources/sheet.png");
@@ -25,16 +27,20 @@ void Iohandler::windowtick() {
             }
         }
         window.clear();
+        int wsx = (int)(window.getSize().x)/2;
+        int wsy = (int)(window.getSize().y)/2;
         int cx = *main->cx;
         int cy = *main->cy;
+        Vector2i pixelPos = sf::Mouse::getPosition(window);
+        Vector2f worldPos = window.mapPixelToCoords(pixelPos);
+        mx = worldPos.x-wsx+cx;
+        my = worldPos.y-wsy+cy;
         double scale = window.getSize().y/512.0;
         for (int i = 0; i < 4; i++) {
             for (int wx = -4; wx < main->MAP_WIDTH*16/512+4; wx++) {
                 drawFromSheet(IntRect(i*512, 512, 512, 512), -cx*(i+1)/10+(wx*512*scale), 0, scale, scale);
             }
         }
-        int wsx = (int)(window.getSize().x)/2;
-        int wsy = (int)(window.getSize().y)/2;
         for (int x = 0; x < main->MAP_WIDTH; x++) {
             for (int y = 0; y < main->MAP_HEIGHT; y++) {
                 if (main->map->at(x).at(y) == 1) {

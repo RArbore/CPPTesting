@@ -23,6 +23,9 @@ public:
 
     int counter;
 
+    int mx;
+    int my;
+
     bool isWaiting;
 
     explicit Iohandler(Global* in);

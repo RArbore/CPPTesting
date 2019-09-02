@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/EpicChicken/CLionProjects/CPPTesting/src/Coin.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/Coin.cpp.o"
   "/Users/EpicChicken/CLionProjects/CPPTesting/src/CrackedBlock.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/CrackedBlock.cpp.o"
   "/Users/EpicChicken/CLionProjects/CPPTesting/src/DustCloud.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.o"
   "/Users/EpicChicken/CLionProjects/CPPTesting/src/Entity.cpp" "/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir/src/Entity.cpp.o"

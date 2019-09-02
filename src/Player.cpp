@@ -7,7 +7,7 @@ Player::Player(Global* main, double x, double y): Entity(main, x, y) {
     pvy = 0;
     direction = 0;
     hitbox.w = 14;
-    hitbox.h = 24;
+    hitbox.h = 23;
     sheetLocation.left = 128;
     sheetLocation.top = 40;
     sheetLocation.width = 64;
@@ -18,9 +18,9 @@ Player::Player(Global* main, double x, double y): Entity(main, x, y) {
 }
 
 bool Player::onGround() {
-    hitbox.h = 28;
+    hitbox.h = 27;
     bool val = checkCollision(main->map, main->MAP_WIDTH, main->MAP_HEIGHT);
-    hitbox.h = 24;
+    hitbox.h = 23;
     return val;
 }
 

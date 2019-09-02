@@ -23,6 +23,9 @@ public:
 
     std::vector<Entity*>* entities;
 
+    int* mx;
+    int* my;
+
     std::map<char, bool>* keys;
 
 };

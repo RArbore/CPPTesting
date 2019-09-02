@@ -56,6 +56,10 @@ void Mainclass::genmap() {
                 entities.push_back(new RainCloud(&data, x*16, y*16));
                 value = 0;
             }
+            else if (value == 5) {
+                entities.push_back(new Coin(&data, x*16, y*16));
+                value = 0;
+            }
             toadd.push_back(value);
         }
         map.push_back(toadd);
@@ -104,7 +108,6 @@ void Mainclass::gameloop() {
             }
             catch (...) {}
         }
-
         atime = getmillis();
         diff = atime-ptime;
         if (diff <= 0) {
@@ -130,6 +133,8 @@ long Mainclass::getmillis() {
 
 void Mainclass::iohandle() {
     Iohandler tio(&data);
+    data.mx = &tio.mx;
+    data.my = &tio.my;
     io = &tio;
     while (running) {
         tio.windowtick();

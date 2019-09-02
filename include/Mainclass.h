@@ -6,6 +6,7 @@
 #include "DustCloud.h"
 #include "CrackedBlock.h"
 #include "RainCloud.h"
+#include "Coin.h"
 #include "Entity.h"
 #include "Global.h"
 
