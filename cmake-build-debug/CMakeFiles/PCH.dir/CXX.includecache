@@ -6,25 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h
-iostream
--
-chrono
--
-thread
--
-list
--
-array
--
-cmath
--
-fstream
--
-SFML/Graphics.hpp
--
-
-/Users/EpicChicken/CLionProjects/CPPTesting/src/Pch.cpp
-../include/Pch.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h
-

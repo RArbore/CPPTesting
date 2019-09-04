@@ -21,16 +21,8 @@ Mainclass::Mainclass():
 }
 
 void Mainclass::genmap() {
-    ifstream inFile;
-    if (PLATFORM_NAME == "osx") {
-        inFile.open("maps/map3.csv");
-    }
-    else if (PLATFORM_NAME == "windows") {
-        inFile.open("maps\\map3.csv");
-    }
-    string input;
-    getline(inFile, input);
-    inFile.close();
+    ResourceHandle map_res("maps/map3.csv");
+    string input = string(reinterpret_cast<char const*>(map_res.data()));
     vector<int> splitted;
     while (!input.empty()) {
         if (input.find(',') == string::npos) {

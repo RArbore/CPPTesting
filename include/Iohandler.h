@@ -3,6 +3,7 @@
 
 #include "Global.h"
 #include "Player.h"
+#include "ResourceManager/ResourceHandle.h"
 
 using namespace std;
 using namespace sf;

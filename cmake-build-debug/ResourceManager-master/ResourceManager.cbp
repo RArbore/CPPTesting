@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ResourceManager"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\;CMake Files\ResourceManager-master\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="embed_resource">
+				<Option output="/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master/embed_resource" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master/Makefile&quot;  VERBOSE=1 embed_resource"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="embed_resource/fast">
+				<Option output="/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master/embed_resource" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master/Makefile&quot;  VERBOSE=1 embed_resource/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/ResourceManager-master/src/embed_resource.cpp">
+			<Option target="embed_resource"/>
+		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/../../../../usr/local/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/../../../../usr/local/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/../../../../usr/local/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/ResourceManager-master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ResourceManager-master\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -9,12 +9,9 @@ Iohandler::Iohandler(Global* in, const string& PLATFORM_NAME):
     leftmouse = false;
     isWaiting = false;
     main = in;
-    if (PLATFORM_NAME == "osx") {
-        spritesheet.loadFromFile("resources/sheet.png");
-    }
-    else if (PLATFORM_NAME == "windows") {
-        spritesheet.loadFromFile("resources\\sheet.png");
-    }
+    ResourceHandle sheet("resources/sheet.png");
+    char const *image = sheet.string().c_str();
+    spritesheet.loadFromMemory(image, 186287);
     spritesheet.setSmooth(false);
     view.zoom(1.0f);
     window.setView(view);

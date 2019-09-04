@@ -6,7 +6,7 @@ CXX_FLAGS =  -std=c++11 -pthread -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/Users/EpicChicken/CLionProjects/CPPTesting/ResourceManager-master/include 
 
 # Custom flags: CMakeFiles/pch.dir/src/Pch.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h
 

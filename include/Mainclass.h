@@ -9,6 +9,7 @@
 #include "Coin.h"
 #include "Entity.h"
 #include "Global.h"
+#include "ResourceManager/ResourceHandle.h"
 
 using namespace std;
 using namespace std::chrono;

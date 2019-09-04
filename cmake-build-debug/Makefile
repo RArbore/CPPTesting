@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/270939D1-6EC2-43F1-AB97-A7CD8EA02967/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/4B9B7856-601A-4C31-97F4-0B68283A0E7D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/270939D1-6EC2-43F1-AB97-A7CD8EA02967/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/4B9B7856-601A-4C31-97F4-0B68283A0E7D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/270939D1-6EC2-43F1-AB97-A7CD8EA02967/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/4B9B7856-601A-4C31-97F4-0B68283A0E7D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/270939D1-6EC2-43F1-AB97-A7CD8EA02967/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/4B9B7856-601A-4C31-97F4-0B68283A0E7D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -135,6 +135,154 @@ pch: cmake_check_build_system
 pch/fast:
 	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/build
 .PHONY : pch/fast
+
+#=============================================================================
+# Target rules for targets named embed_resource
+
+# Build rule for target.
+embed_resource: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 embed_resource
+.PHONY : embed_resource
+
+# fast build rule for target.
+embed_resource/fast:
+	$(MAKE) -f ResourceManager-master/CMakeFiles/embed_resource.dir/build.make ResourceManager-master/CMakeFiles/embed_resource.dir/build
+.PHONY : embed_resource/fast
+
+RM_generated_files/__resources__config.o: RM_generated_files/__resources__config.cpp.o
+
+.PHONY : RM_generated_files/__resources__config.o
+
+# target to build an object file
+RM_generated_files/__resources__config.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/__resources__config.cpp.o
+.PHONY : RM_generated_files/__resources__config.cpp.o
+
+RM_generated_files/__resources__config.i: RM_generated_files/__resources__config.cpp.i
+
+.PHONY : RM_generated_files/__resources__config.i
+
+# target to preprocess a source file
+RM_generated_files/__resources__config.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/__resources__config.cpp.i
+.PHONY : RM_generated_files/__resources__config.cpp.i
+
+RM_generated_files/__resources__config.s: RM_generated_files/__resources__config.cpp.s
+
+.PHONY : RM_generated_files/__resources__config.s
+
+# target to generate assembly for a file
+RM_generated_files/__resources__config.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/__resources__config.cpp.s
+.PHONY : RM_generated_files/__resources__config.cpp.s
+
+RM_generated_files/maps/map1.csv.o: RM_generated_files/maps/map1.csv.cpp.o
+
+.PHONY : RM_generated_files/maps/map1.csv.o
+
+# target to build an object file
+RM_generated_files/maps/map1.csv.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map1.csv.cpp.o
+.PHONY : RM_generated_files/maps/map1.csv.cpp.o
+
+RM_generated_files/maps/map1.csv.i: RM_generated_files/maps/map1.csv.cpp.i
+
+.PHONY : RM_generated_files/maps/map1.csv.i
+
+# target to preprocess a source file
+RM_generated_files/maps/map1.csv.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map1.csv.cpp.i
+.PHONY : RM_generated_files/maps/map1.csv.cpp.i
+
+RM_generated_files/maps/map1.csv.s: RM_generated_files/maps/map1.csv.cpp.s
+
+.PHONY : RM_generated_files/maps/map1.csv.s
+
+# target to generate assembly for a file
+RM_generated_files/maps/map1.csv.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map1.csv.cpp.s
+.PHONY : RM_generated_files/maps/map1.csv.cpp.s
+
+RM_generated_files/maps/map2.csv.o: RM_generated_files/maps/map2.csv.cpp.o
+
+.PHONY : RM_generated_files/maps/map2.csv.o
+
+# target to build an object file
+RM_generated_files/maps/map2.csv.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map2.csv.cpp.o
+.PHONY : RM_generated_files/maps/map2.csv.cpp.o
+
+RM_generated_files/maps/map2.csv.i: RM_generated_files/maps/map2.csv.cpp.i
+
+.PHONY : RM_generated_files/maps/map2.csv.i
+
+# target to preprocess a source file
+RM_generated_files/maps/map2.csv.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map2.csv.cpp.i
+.PHONY : RM_generated_files/maps/map2.csv.cpp.i
+
+RM_generated_files/maps/map2.csv.s: RM_generated_files/maps/map2.csv.cpp.s
+
+.PHONY : RM_generated_files/maps/map2.csv.s
+
+# target to generate assembly for a file
+RM_generated_files/maps/map2.csv.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map2.csv.cpp.s
+.PHONY : RM_generated_files/maps/map2.csv.cpp.s
+
+RM_generated_files/maps/map3.csv.o: RM_generated_files/maps/map3.csv.cpp.o
+
+.PHONY : RM_generated_files/maps/map3.csv.o
+
+# target to build an object file
+RM_generated_files/maps/map3.csv.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map3.csv.cpp.o
+.PHONY : RM_generated_files/maps/map3.csv.cpp.o
+
+RM_generated_files/maps/map3.csv.i: RM_generated_files/maps/map3.csv.cpp.i
+
+.PHONY : RM_generated_files/maps/map3.csv.i
+
+# target to preprocess a source file
+RM_generated_files/maps/map3.csv.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map3.csv.cpp.i
+.PHONY : RM_generated_files/maps/map3.csv.cpp.i
+
+RM_generated_files/maps/map3.csv.s: RM_generated_files/maps/map3.csv.cpp.s
+
+.PHONY : RM_generated_files/maps/map3.csv.s
+
+# target to generate assembly for a file
+RM_generated_files/maps/map3.csv.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map3.csv.cpp.s
+.PHONY : RM_generated_files/maps/map3.csv.cpp.s
+
+RM_generated_files/resources/sheet.png.o: RM_generated_files/resources/sheet.png.cpp.o
+
+.PHONY : RM_generated_files/resources/sheet.png.o
+
+# target to build an object file
+RM_generated_files/resources/sheet.png.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/resources/sheet.png.cpp.o
+.PHONY : RM_generated_files/resources/sheet.png.cpp.o
+
+RM_generated_files/resources/sheet.png.i: RM_generated_files/resources/sheet.png.cpp.i
+
+.PHONY : RM_generated_files/resources/sheet.png.i
+
+# target to preprocess a source file
+RM_generated_files/resources/sheet.png.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/resources/sheet.png.cpp.i
+.PHONY : RM_generated_files/resources/sheet.png.cpp.i
+
+RM_generated_files/resources/sheet.png.s: RM_generated_files/resources/sheet.png.cpp.s
+
+.PHONY : RM_generated_files/resources/sheet.png.s
+
+# target to generate assembly for a file
+RM_generated_files/resources/sheet.png.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/resources/sheet.png.cpp.s
+.PHONY : RM_generated_files/resources/sheet.png.cpp.s
 
 src/Coin.o: src/Coin.cpp.o
 
@@ -500,6 +648,22 @@ help:
 	@echo "... edit_cache"
 	@echo "... CPPTesting"
 	@echo "... pch"
+	@echo "... embed_resource"
+	@echo "... RM_generated_files/__resources__config.o"
+	@echo "... RM_generated_files/__resources__config.i"
+	@echo "... RM_generated_files/__resources__config.s"
+	@echo "... RM_generated_files/maps/map1.csv.o"
+	@echo "... RM_generated_files/maps/map1.csv.i"
+	@echo "... RM_generated_files/maps/map1.csv.s"
+	@echo "... RM_generated_files/maps/map2.csv.o"
+	@echo "... RM_generated_files/maps/map2.csv.i"
+	@echo "... RM_generated_files/maps/map2.csv.s"
+	@echo "... RM_generated_files/maps/map3.csv.o"
+	@echo "... RM_generated_files/maps/map3.csv.i"
+	@echo "... RM_generated_files/maps/map3.csv.s"
+	@echo "... RM_generated_files/resources/sheet.png.o"
+	@echo "... RM_generated_files/resources/sheet.png.i"
+	@echo "... RM_generated_files/resources/sheet.png.s"
 	@echo "... src/Coin.o"
 	@echo "... src/Coin.i"
 	@echo "... src/Coin.s"
