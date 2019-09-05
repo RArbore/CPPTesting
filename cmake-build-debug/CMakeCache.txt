@@ -231,10 +231,13 @@ ResourceManager_SOURCE_DIR:STATIC=/Users/EpicChicken/CLionProjects/CPPTesting/Re
 SFML:FILEPATH=SFML-NOTFOUND
 
 //The directory containing a CMake configuration file for SFML.
-SFML_DIR:PATH=/usr/local/lib/cmake/SFML
+SFML_DIR:PATH=SFML_DIR-NOTFOUND
 
 //Path to a file.
 SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
+
+//SFML top-level directory
+SFML_ROOT:PATH=
 
 
 ########################
