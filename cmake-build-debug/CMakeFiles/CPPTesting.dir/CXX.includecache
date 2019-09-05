@@ -6,31 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../ResourceManager-master/include/ResourceManager/ResourceHandle.h
-cstddef
--
-string
--
-exception
--
-
-/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/__resources__config.cpp
-ResourceManager/ResourceHandle.h
-/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/ResourceManager/ResourceHandle.h
-
-/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/maps/map1.csv.cpp
-cstddef
--
-
-/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/maps/map2.csv.cpp
-cstddef
--
-
-/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/maps/map3.csv.cpp
-cstddef
--
-
-/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/resources/sheet.png.cpp
-cstddef
--
-

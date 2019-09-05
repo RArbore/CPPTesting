@@ -361,10 +361,10 @@ CPPTesting: CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map2.csv.cpp.o
 CPPTesting: CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map3.csv.cpp.o
 CPPTesting: CMakeFiles/CPPTesting.dir/RM_generated_files/__resources__config.cpp.o
 CPPTesting: CMakeFiles/CPPTesting.dir/build.make
-CPPTesting: /usr/local/lib/libsfml-graphics.2.5.1.dylib
-CPPTesting: /usr/local/lib/libsfml-audio.2.5.1.dylib
-CPPTesting: /usr/local/lib/libsfml-window.2.5.1.dylib
-CPPTesting: /usr/local/lib/libsfml-system.2.5.1.dylib
+CPPTesting: ../SFML/lib/libsfml-graphics.2.5.1.dylib
+CPPTesting: ../SFML/lib/libsfml-audio.2.5.1.dylib
+CPPTesting: ../SFML/lib/libsfml-window.2.5.1.dylib
+CPPTesting: ../SFML/lib/libsfml-system.2.5.1.dylib
 CPPTesting: CMakeFiles/CPPTesting.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable CPPTesting"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CPPTesting.dir/link.txt --verbose=$(VERBOSE)

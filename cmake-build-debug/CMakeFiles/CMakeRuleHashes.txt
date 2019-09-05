@@ -4,6 +4,3 @@
 32fc45fa71d9bec67f15eb2d40882543 RM_generated_files/maps/map2.csv.cpp
 1dfab170a630b53d886ec7f20db2fe63 RM_generated_files/maps/map3.csv.cpp
 c1f6e14546197b63e137dc6687c3c955 RM_generated_files/resources/sheet.png.cpp
-56f4b86458a5ffb039581da7bc32557b __cmrc_resources/intermediate/maps.cpp
-80dde282d2c2968a176fe511f2f9fff5 __cmrc_resources/intermediate/resources.cpp
-c8369ff48fb8b6bded1debc3e3f4f715 __cmrc_resources/lib.cpp

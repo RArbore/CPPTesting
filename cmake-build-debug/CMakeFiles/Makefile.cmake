@@ -9,6 +9,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
   "../ResourceManager-master/CMakeLists.txt"
+  "../SFML/SFMLConfig.cmake"
+  "../SFML/SFMLConfigDependencies.cmake"
+  "../SFML/SFMLConfigVersion.cmake"
+  "../SFML/SFMLSharedTargets-release.cmake"
+  "../SFML/SFMLSharedTargets.cmake"
   "CMakeFiles/3.14.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.14.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.14.5/CMakeSystem.cmake"
@@ -38,11 +43,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/4B9B7856-601A-4C31-97F4-0B68283A0E7D/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Platform/Darwin.cmake"
   "/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/4B9B7856-601A-4C31-97F4-0B68283A0E7D/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Platform/UnixPaths.cmake"
   "/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/4B9B7856-601A-4C31-97F4-0B68283A0E7D/d/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/ProcessorCount.cmake"
-  "/usr/local/lib/cmake/SFML/SFMLConfig.cmake"
-  "/usr/local/lib/cmake/SFML/SFMLConfigDependencies.cmake"
-  "/usr/local/lib/cmake/SFML/SFMLConfigVersion.cmake"
-  "/usr/local/lib/cmake/SFML/SFMLSharedTargets-release.cmake"
-  "/usr/local/lib/cmake/SFML/SFMLSharedTargets.cmake"
   )
 
 # The corresponding makefile is:

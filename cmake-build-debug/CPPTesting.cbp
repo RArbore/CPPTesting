@@ -5,7 +5,7 @@
 		<Option title="CPPTesting"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\;CMake Files\ResourceManager-master\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\SFML\;CMake Files\ResourceManager-master\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug"/>
@@ -45,6 +45,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/EpicChicken/CLionProjects/CPPTesting/ResourceManager-master/include"/>
+					<Add directory="/Users/EpicChicken/CLionProjects/CPPTesting/SFML/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
@@ -68,6 +69,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/EpicChicken/CLionProjects/CPPTesting/ResourceManager-master/include"/>
+					<Add directory="/Users/EpicChicken/CLionProjects/CPPTesting/SFML/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
@@ -287,20 +289,20 @@
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/../../../../usr/local/lib/cmake/SFML/SFMLConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\SFML\"/>
 		</Unit>
-		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/../../../../usr/local/lib/cmake/SFML/SFMLConfigDependencies.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\SFML\"/>
 		</Unit>
-		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/../../../../usr/local/lib/cmake/SFML/SFMLConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\SFML\"/>
 		</Unit>
-		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/SFML/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\SFML\"/>
 		</Unit>
-		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\SFML\"/>
 		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/ResourceManager-master/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\ResourceManager-master\"/>

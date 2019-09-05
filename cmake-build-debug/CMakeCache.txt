@@ -227,6 +227,9 @@ ResourceManager_BINARY_DIR:STATIC=/Users/EpicChicken/CLionProjects/CPPTesting/cm
 //Value Computed by CMake
 ResourceManager_SOURCE_DIR:STATIC=/Users/EpicChicken/CLionProjects/CPPTesting/ResourceManager-master
 
+//Path to a library.
+SFML:FILEPATH=SFML-NOTFOUND
+
 //The directory containing a CMake configuration file for SFML.
 SFML_DIR:PATH=/usr/local/lib/cmake/SFML
 
