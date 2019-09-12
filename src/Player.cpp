@@ -15,6 +15,8 @@ Player::Player(Global* main, double x, double y): Entity(main, x, y) {
     horizAnis = 4;
     vertAnis = 1;
     ticksPerFrame = 4;
+    lastWallJump = 0;
+    wallJumpTimer = 0;
 }
 
 bool Player::onGround() {
@@ -41,6 +43,9 @@ bool Player::onRight() {
 
 void Player::tick() {
     counter++;
+    if (wallJumpTimer > 0) {
+        wallJumpTimer--;
+    }
     if (transparency < 255) {
         transparency += 8;
     }
@@ -61,10 +66,13 @@ void Player::tick() {
         if (abs(vx) > 0.1 && counter % 4 == 0) {
             main->entities->push_back(new DustCloud(main, hitbox.x+rand()%10, hitbox.y+24));
         }
-        vx *= 0.8;
+    }
+    if (wallJumpTimer == 0) {
+        vx *= 0.9;
     }
     vy += 0.5;
     if (onGround()) {
+        lastWallJump = 0;
         sheetLocation.left = 128 * (-2 * direction + 1) + 1024 * direction - 64 * direction;
         sheetLocation.top = 40;
         sheetLocation.width = 64;
@@ -81,50 +89,49 @@ void Player::tick() {
         ticksPerFrame = 4*(-2*direction+1);
     }
     if (main->keys->at('W') && onGround()) {
-        vy = -abs(vx)-3;
-        if (main->keys->at('A') && direction == 0) {
-            vx *= -1.2;
-            direction = 0;
-        }
-        else if (main->keys->at('D') && direction == 1) {
-            vx *= -1.2;
-            direction = 0;
-        }
+        vy = -0.9*abs(vx)-2.8;
     }
-    else if (main->keys->at('W') && ((onLeft() && pvx < 0) || (onRight() && pvx > 0))) {
+    else if (main->keys->at('W') && ((onLeft() && pvx < 0 && lastWallJump != 2) || (onRight() && pvx > 0 && lastWallJump != 1))) {
         if (pvx < 0) {
+            vx = 7;
             for (int i = 0; i < 4; i++) {
                 main->entities->push_back(new DustCloud(main, hitbox.x, hitbox.y+rand()%20));
             }
         }
         else {
+            vx = -7;
             for (int i = 0; i < 4; i++) {
                 main->entities->push_back(new DustCloud(main, hitbox.x+10, hitbox.y+rand()%20));
             }
         }
+        wallJumpTimer = 10;
         vy = -abs(pvx)-3;
-        vx = -1*pvx;
+        lastWallJump = direction + 1;
         direction = 1 - direction;
     }
-    if (main->keys->at('A') && onGround()) {
+    if (main->keys->at('A') && wallJumpTimer == 0) {
         direction = 1;
         vx -= 0.8;
-        sheetLocation.left = 192*(-2*direction+1)+1024*direction-64*direction;
-        sheetLocation.top = 40;
-        sheetLocation.width = 64;
-        sheetLocation.height = 24;
-        horizAnis = 4;
-        ticksPerFrame = 4*(-2*direction+1);
+        if (onGround()) {
+            sheetLocation.left = 192 * (-2 * direction + 1) + 1024 * direction - 64 * direction;
+            sheetLocation.top = 40;
+            sheetLocation.width = 64;
+            sheetLocation.height = 24;
+            horizAnis = 4;
+            ticksPerFrame = 4 * (-2 * direction + 1);
+        }
     }
-    if (main->keys->at('D') && onGround()) {
+    if (main->keys->at('D') && wallJumpTimer == 0) {
         direction = 0;
         vx += 0.8;
-        sheetLocation.left = 192*(-2*direction+1)+1024*direction-64*direction;
-        sheetLocation.top = 40;
-        sheetLocation.width = 64;
-        sheetLocation.height = 24;
-        horizAnis = 4;
-        ticksPerFrame = 4*(-2*direction+1);
+        if (onGround()) {
+            sheetLocation.left = 192 * (-2 * direction + 1) + 1024 * direction - 64 * direction;
+            sheetLocation.top = 40;
+            sheetLocation.width = 64;
+            sheetLocation.height = 24;
+            horizAnis = 4;
+            ticksPerFrame = 4 * (-2 * direction + 1);
+        }
     }
     pvx = vx;
     pvy = vy;

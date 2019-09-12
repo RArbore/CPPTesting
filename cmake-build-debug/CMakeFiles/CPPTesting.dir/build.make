@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/4B9B7856-601A-4C31-97F4-0B68283A0E7D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/EA60499C-D00F-424E-BE5B-F107563B712B/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/4B9B7856-601A-4C31-97F4-0B68283A0E7D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/EA60499C-D00F-424E-BE5B-F107563B712B/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,22 +59,22 @@ include CMakeFiles/CPPTesting.dir/flags.make
 
 RM_generated_files/resources/sheet.png.cpp: ../resources/sheet.png
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating RM_generated_files/resources/sheet.png.cpp"
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/4B9B7856-601A-4C31-97F4-0B68283A0E7D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory RM_generated_files/resources
+	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/EA60499C-D00F-424E-BE5B-F107563B712B/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory RM_generated_files/resources
 	ResourceManager-master/embed_resource -data resources/sheet.png ../resources/sheet.png RM_generated_files/resources/sheet.png.cpp
 
 RM_generated_files/maps/map1.csv.cpp: ../maps/map1.csv
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating RM_generated_files/maps/map1.csv.cpp"
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/4B9B7856-601A-4C31-97F4-0B68283A0E7D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory RM_generated_files/maps
+	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/EA60499C-D00F-424E-BE5B-F107563B712B/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory RM_generated_files/maps
 	ResourceManager-master/embed_resource -data maps/map1.csv ../maps/map1.csv RM_generated_files/maps/map1.csv.cpp
 
 RM_generated_files/maps/map2.csv.cpp: ../maps/map2.csv
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating RM_generated_files/maps/map2.csv.cpp"
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/4B9B7856-601A-4C31-97F4-0B68283A0E7D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory RM_generated_files/maps
+	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/EA60499C-D00F-424E-BE5B-F107563B712B/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory RM_generated_files/maps
 	ResourceManager-master/embed_resource -data maps/map2.csv ../maps/map2.csv RM_generated_files/maps/map2.csv.cpp
 
 RM_generated_files/maps/map3.csv.cpp: ../maps/map3.csv
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating RM_generated_files/maps/map3.csv.cpp"
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/4B9B7856-601A-4C31-97F4-0B68283A0E7D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory RM_generated_files/maps
+	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/EA60499C-D00F-424E-BE5B-F107563B712B/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory RM_generated_files/maps
 	ResourceManager-master/embed_resource -data maps/map3.csv ../maps/map3.csv RM_generated_files/maps/map3.csv.cpp
 
 RM_generated_files/__resources__config.cpp: RM_generated_files/resources/sheet.png.cpp
