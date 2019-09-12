@@ -25,6 +25,7 @@ public:
     Player(Global* main, double x, double y);
 
     bool onGround();
+    bool onGround(int d);
     bool onLeft();
     bool onRight();
 

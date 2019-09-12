@@ -20,7 +20,14 @@ Player::Player(Global* main, double x, double y): Entity(main, x, y) {
 }
 
 bool Player::onGround() {
-    hitbox.h = 27;
+    hitbox.h = 23+4;
+    bool val = checkCollision(main->map, main->MAP_WIDTH, main->MAP_HEIGHT);
+    hitbox.h = 23;
+    return val;
+}
+
+bool Player::onGround(int d) {
+    hitbox.h = 23+d;
     bool val = checkCollision(main->map, main->MAP_WIDTH, main->MAP_HEIGHT);
     hitbox.h = 23;
     return val;
@@ -91,7 +98,7 @@ void Player::tick() {
     if (main->keys->at('W') && onGround()) {
         vy = -0.9*abs(vx)-2.8;
     }
-    else if (main->keys->at('W') && ((onLeft() && pvx < 0 && lastWallJump != 2) || (onRight() && pvx > 0 && lastWallJump != 1))) {
+    else if (main->keys->at('W') && !onGround(17) && ((onLeft() && pvx < 0 && lastWallJump != 2) || (onRight() && pvx > 0 && lastWallJump != 1))) {
         if (pvx < 0) {
             vx = 7;
             for (int i = 0; i < 4; i++) {
