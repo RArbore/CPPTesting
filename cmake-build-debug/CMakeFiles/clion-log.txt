@@ -1,5 +1,7 @@
-/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/4B9B7856-601A-4C31-97F4-0B68283A0E7D/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/EpicChicken/CLionProjects/CPPTesting
--- Found SFML 2.5.1 in /usr/local/lib/cmake/SFML
+/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/EA60499C-D00F-424E-BE5B-F107563B712B/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/EpicChicken/CLionProjects/CPPTesting
+/Users/EpicChicken/CLionProjects/CPPTesting/SFML/SFMLSharedTargets.cmake
+/Users/EpicChicken/CLionProjects/CPPTesting/SFML/SFMLConfigDependencies.cmake
+-- Found SFML 2.5.1 in /Users/EpicChicken/CLionProjects/CPPTesting/SFML
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug

@@ -13,6 +13,9 @@ public:
 
     int direction;
 
+    int lastWallJump;
+    int wallJumpTimer;
+
     double vx;
     double vy;
 
