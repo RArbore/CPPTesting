@@ -18,7 +18,13 @@ Entity.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
 
-/Users/EpicChicken/CLionProjects/CPPTesting/src/Entity.cpp
-../include/Entity.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/MiniTroll.h
+Entity.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+Global.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+
+/Users/EpicChicken/CLionProjects/CPPTesting/src/MiniTroll.cpp
+../include/MiniTroll.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/MiniTroll.h
 

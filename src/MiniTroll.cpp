@@ -58,12 +58,13 @@ bool MiniTroll::groundInFront() {
 
 void MiniTroll::tick() {
     counter++;
+    bool chasing = false;
     if (!playerInRange()) {
         if (rand() % 100 == 1) {
             srand(rand());
             direction = rand() % 2;
             sheetLocation.left = 432 + direction * 160;
-            vx = 1 * (-2 * direction + 1);
+            vx = 2 * (-2 * direction + 1);
             ticksPerFrame = 4 * (-2 * direction + 1);
         } else if (rand() % 15 == 1 || vx == 0) {
             vx = 0;
@@ -71,6 +72,7 @@ void MiniTroll::tick() {
         }
     }
     else {
+        chasing = true;
         if (main->player->hitbox.x+main->player->hitbox.w/2 > hitbox.x+hitbox.w/2) {
             direction = 0;
         }
@@ -78,14 +80,23 @@ void MiniTroll::tick() {
             direction = 1;
         }
         sheetLocation.left = 432 + direction * 160;
-        vx = 1 * (-2 * direction + 1);
+        vx = 4 * (-2 * direction + 1);
         ticksPerFrame = 4 * (-2 * direction + 1);
     }
     vy += 0.5;
-    if (!groundInFront() || !moveH(vx, main->map, main->MAP_WIDTH, main->MAP_HEIGHT)) {
+    if ((!groundInFront() && !chasing) || !moveH(vx, main->map, main->MAP_WIDTH, main->MAP_HEIGHT)) {
         vx = 0;
+        if (chasing && onGround()) {
+            vy = -6;
+        }
+    }
+    else if (chasing && !groundInFront() && onGround()) {
+        vy = -6;
     }
     if (!moveV(vy, main->map, main->MAP_WIDTH, main->MAP_HEIGHT)) {
         vy = 0;
+    }
+    if (hitbox.y+hitbox.h >= main->MAP_HEIGHT*16-32) {
+        remove();
     }
 }
