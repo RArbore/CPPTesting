@@ -233,6 +233,9 @@
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Mainclass.h">
 			<Option target="CPPTesting"/>
 		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/MiniTroll.h">
+			<Option target="CPPTesting"/>
+		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h">
 			<Option target="CPPTesting"/>
 			<Option target="pch"/>
@@ -271,6 +274,9 @@
 			<Option target="CPPTesting"/>
 		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Mainclass.cpp">
+			<Option target="CPPTesting"/>
+		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/MiniTroll.cpp">
 			<Option target="CPPTesting"/>
 		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Pch.cpp">

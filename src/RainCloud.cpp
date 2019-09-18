@@ -17,5 +17,7 @@ void RainCloud::tick() {
     if (counter % 10 == 0) {
         hitbox.x++;
     }
-    main->entities->push_back(new Rain(main, hitbox.x+rand()%88, hitbox.y+32));
+    if (counter % 3 == 0) {
+        main->entities->push_back(new Rain(main, hitbox.x+rand()%88, hitbox.y+32));
+    }
 }

@@ -23,6 +23,10 @@ public:
 
     std::vector<Entity*>* entities;
 
+    Entity* player;
+
+    Entity** currentTick;
+
     int* mx;
     int* my;
 

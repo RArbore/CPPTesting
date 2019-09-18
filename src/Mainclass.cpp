@@ -18,6 +18,7 @@ Mainclass::Mainclass():
     data.cx = &cx;
     data.cy = &cy;
     data.map_done = &map_done;
+    data.currentTick = &currentTick;
 }
 
 void Mainclass::genmap() {
@@ -43,6 +44,7 @@ void Mainclass::genmap() {
             int value = splitted.at(x+y*data.MAP_WIDTH+2);
             if (value == 2) {
                 entities.push_back(new Player(&data, x*16, y*16-10));
+                data.player = entities.back();
                 value = 0;
             }
             else if (value == 3) {
@@ -50,7 +52,7 @@ void Mainclass::genmap() {
                 value = 0;
             }
             else if (value == 4) {
-                entities.push_back(new RainCloud(&data, x*16, y*16));
+                entities.push_back(new MiniTroll(&data, x*16, y*16));
                 value = 0;
             }
             else if (value == 5) {
@@ -66,6 +68,7 @@ void Mainclass::genmap() {
 
 void Mainclass::resetmap() {
     map_done = false;
+    currentTick = nullptr;
     while (!io->isWaiting) {}
     vector<Entity*> temp;
     for (Entity* e : entities) {
@@ -94,6 +97,7 @@ void Mainclass::gameloop() {
         }
         for (Entity* e : temp) {
             try {
+                currentTick = e;
                 (*e).tick();
                 if (!e->exists) {
                     if (dynamic_cast<Player*>(e)) {

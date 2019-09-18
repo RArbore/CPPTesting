@@ -65,9 +65,8 @@ CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Global.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Hitbox.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Iohandler.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Mainclass.h
+CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/MiniTroll.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Player.h
-CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Rain.h
-CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/RainCloud.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../src/Main.cpp
 
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../ResourceManager-master/include/ResourceManager/ResourceHandle.h
@@ -79,10 +78,15 @@ CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/Global.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/Hitbox.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/Iohandler.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/Mainclass.h
+CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/MiniTroll.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/Player.h
-CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/Rain.h
-CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/RainCloud.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../src/Mainclass.cpp
+
+CMakeFiles/CPPTesting.dir/src/MiniTroll.cpp.o: ../include/Entity.h
+CMakeFiles/CPPTesting.dir/src/MiniTroll.cpp.o: ../include/Global.h
+CMakeFiles/CPPTesting.dir/src/MiniTroll.cpp.o: ../include/Hitbox.h
+CMakeFiles/CPPTesting.dir/src/MiniTroll.cpp.o: ../include/MiniTroll.h
+CMakeFiles/CPPTesting.dir/src/MiniTroll.cpp.o: ../src/MiniTroll.cpp
 
 CMakeFiles/CPPTesting.dir/src/Pch.cpp.o: ../include/Pch.h
 CMakeFiles/CPPTesting.dir/src/Pch.cpp.o: ../src/Pch.cpp

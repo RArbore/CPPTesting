@@ -34,3 +34,5 @@ CXX_INCLUDES = -I/Users/EpicChicken/CLionProjects/CPPTesting/ResourceManager-mas
 
 # Custom flags: CMakeFiles/CPPTesting.dir/src/Coin.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h
 
+# Custom flags: CMakeFiles/CPPTesting.dir/src/MiniTroll.cpp.o_FLAGS = -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h
+

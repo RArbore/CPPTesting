@@ -50,10 +50,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/09762603-8B59-4D05-96B1-BB8C7F5119F4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/F2FFC802-8141-430D-95DE-FFC0D7667F87/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/09762603-8B59-4D05-96B1-BB8C7F5119F4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/F2FFC802-8141-430D-95DE-FFC0D7667F87/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug
 CMakeFiles/CPPTesting.dir/all: ResourceManager-master/CMakeFiles/embed_resource.dir/all
 	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/depend
 	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24 "Built target CPPTesting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25 "Built target CPPTesting"
 .PHONY : CMakeFiles/CPPTesting.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/CPPTesting.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CPPTesting.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/CPPTesting.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/CPPTesting.dir/rule
@@ -108,7 +108,7 @@ clean: CMakeFiles/CPPTesting.dir/clean
 CMakeFiles/pch.dir/all:
 	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/depend
 	$(MAKE) -f CMakeFiles/pch.dir/build.make CMakeFiles/pch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target pch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=28,29 "Built target pch"
 .PHONY : CMakeFiles/pch.dir/all
 
 # Include target in all.
@@ -163,7 +163,7 @@ ResourceManager-master/preinstall:
 ResourceManager-master/CMakeFiles/embed_resource.dir/all:
 	$(MAKE) -f ResourceManager-master/CMakeFiles/embed_resource.dir/build.make ResourceManager-master/CMakeFiles/embed_resource.dir/depend
 	$(MAKE) -f ResourceManager-master/CMakeFiles/embed_resource.dir/build.make ResourceManager-master/CMakeFiles/embed_resource.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target embed_resource"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=26,27 "Built target embed_resource"
 .PHONY : ResourceManager-master/CMakeFiles/embed_resource.dir/all
 
 # Include target in all.

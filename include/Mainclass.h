@@ -5,7 +5,7 @@
 #include "Player.h"
 #include "DustCloud.h"
 #include "CrackedBlock.h"
-#include "RainCloud.h"
+#include "MiniTroll.h"
 #include "Coin.h"
 #include "Entity.h"
 #include "Global.h"
@@ -35,6 +35,8 @@ public:
     vector<Entity*> entities;
 
     std::map<char, bool> keys;
+
+    Entity* currentTick;
 
     Global data;
 

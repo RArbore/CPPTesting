@@ -24,6 +24,14 @@ int Entity::zeroToOne(int in) {
     return in;
 }
 
+bool Entity::ccw(double x1, double y1, double x2, double y2, double x3, double y3) {
+    return (y3-y1) * (x2-x1) > (y2-y1) * (x3-x1);
+}
+
+bool Entity::linesIntersect(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4) {
+    return ccw(x1, y1, x3, y3, x4, y4) != ccw(x2, y2, x3, y3, x4, y4) and ccw(x1, y1, x2, y2, x3, y3) != ccw(x1, y1, x2, y2, x4, y4);
+}
+
 IntRect Entity::currentFrame() {
     int left = sheetLocation.left;
     int top = sheetLocation.top;
@@ -45,7 +53,7 @@ bool Entity::checkCollision(vector<std::vector<int>>* map, int MAP_WIDTH, int MA
         for (int y = max(0, (int)(hitbox.y/16-1)); y < min(MAP_HEIGHT, (int)((hitbox.y+hitbox.h)/16+1)); y++) {
             if (map->at(x).at(y) == 1) {
                 Hitbox block(x * 16, y * 16, 16, 16);
-                if (hitbox.overlap(block.x, block.y, block.w, block.h)) {
+                if (hitbox.overlap(&block)) {
                     return true;
                 }
             }

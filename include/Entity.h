@@ -37,6 +37,10 @@ public:
 
     static int zeroToOne(int in);
 
+    static bool ccw(double x1, double y1, double x2, double y2, double x3, double y3);
+
+    static bool linesIntersect(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4);
+
     IntRect currentFrame();
 
     bool checkCollision(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);

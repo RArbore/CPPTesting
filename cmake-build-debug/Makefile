@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/09762603-8B59-4D05-96B1-BB8C7F5119F4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/F2FFC802-8141-430D-95DE-FFC0D7667F87/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/09762603-8B59-4D05-96B1-BB8C7F5119F4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/F2FFC802-8141-430D-95DE-FFC0D7667F87/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/09762603-8B59-4D05-96B1-BB8C7F5119F4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/F2FFC802-8141-430D-95DE-FFC0D7667F87/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/09762603-8B59-4D05-96B1-BB8C7F5119F4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/F2FFC802-8141-430D-95DE-FFC0D7667F87/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -527,6 +527,33 @@ src/Mainclass.cpp.s:
 	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.s
 .PHONY : src/Mainclass.cpp.s
 
+src/MiniTroll.o: src/MiniTroll.cpp.o
+
+.PHONY : src/MiniTroll.o
+
+# target to build an object file
+src/MiniTroll.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/MiniTroll.cpp.o
+.PHONY : src/MiniTroll.cpp.o
+
+src/MiniTroll.i: src/MiniTroll.cpp.i
+
+.PHONY : src/MiniTroll.i
+
+# target to preprocess a source file
+src/MiniTroll.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/MiniTroll.cpp.i
+.PHONY : src/MiniTroll.cpp.i
+
+src/MiniTroll.s: src/MiniTroll.cpp.s
+
+.PHONY : src/MiniTroll.s
+
+# target to generate assembly for a file
+src/MiniTroll.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/MiniTroll.cpp.s
+.PHONY : src/MiniTroll.cpp.s
+
 src/Pch.o: src/Pch.cpp.o
 
 .PHONY : src/Pch.o
@@ -691,6 +718,9 @@ help:
 	@echo "... src/Mainclass.o"
 	@echo "... src/Mainclass.i"
 	@echo "... src/Mainclass.s"
+	@echo "... src/MiniTroll.o"
+	@echo "... src/MiniTroll.i"
+	@echo "... src/MiniTroll.s"
 	@echo "... src/Pch.o"
 	@echo "... src/Pch.i"
 	@echo "... src/Pch.s"

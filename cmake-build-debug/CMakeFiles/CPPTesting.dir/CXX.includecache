@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-../ResourceManager-master/include/ResourceManager/ResourceHandle.h
-cstddef
--
-string
--
-exception
--
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+Hitbox.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
+Global.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
 
-/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/__resources__config.cpp
-ResourceManager/ResourceHandle.h
-/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/ResourceManager/ResourceHandle.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+Entity.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
 
-/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/maps/map3.csv.cpp
-cstddef
--
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
+
+/Users/EpicChicken/CLionProjects/CPPTesting/src/Entity.cpp
+../include/Entity.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
 

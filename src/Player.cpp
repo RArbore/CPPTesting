@@ -96,7 +96,7 @@ void Player::tick() {
         ticksPerFrame = 4*(-2*direction+1);
     }
     if (main->keys->at('W') && onGround()) {
-        vy = -0.9*abs(vx)-2.8;
+        vy = -0.3*abs(vx)-6;
     }
     else if (main->keys->at('W') && !onGround(17) && ((onLeft() && pvx < 0 && lastWallJump != 2) || (onRight() && pvx > 0 && lastWallJump != 1))) {
         if (pvx < 0) {
@@ -148,8 +148,14 @@ void Player::tick() {
     if (!moveV(vy, main->map, main->MAP_WIDTH, main->MAP_HEIGHT)) {
         vy = 0;
     }
-    *(main->cx) = hitbox.x+hitbox.w/2;
-    *(main->cy) = hitbox.y+hitbox.h/2;
+    *(main->cx) -= (*(main->cx)-(hitbox.x+hitbox.w/2))*0.2;
+    *(main->cy) -= (*(main->cy)-(hitbox.y+hitbox.h/2))*0.2;
+    if (abs(*(main->cx)-(hitbox.x+hitbox.w/2)) < 1) {
+        *(main->cx) = hitbox.x+hitbox.w/2;
+    }
+    if (abs(*(main->cy)-(hitbox.y+hitbox.h/2)) < 1) {
+        *(main->cy) = hitbox.y+hitbox.h/2;
+    }
     if (hitbox.y+hitbox.h >= main->MAP_HEIGHT*16) {
         remove();
     }
