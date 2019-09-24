@@ -4,6 +4,7 @@
 #include "Entity.h"
 #include "Global.h"
 #include "DustCloud.h"
+#include "BloodParticle.h"
 
 class Entity;
 
@@ -15,6 +16,8 @@ public:
 
     int lastWallJump;
     int wallJumpTimer;
+
+    bool dying;
 
     double vx;
     double vy;

@@ -209,6 +209,9 @@
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/resources/sheet.png.cpp.rule">
 			<Option target="CPPTesting"/>
 		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/BloodParticle.h">
+			<Option target="CPPTesting"/>
+		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/Coin.h">
 			<Option target="CPPTesting"/>
 		</Unit>
@@ -247,6 +250,9 @@
 			<Option target="CPPTesting"/>
 		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/include/RainCloud.h">
+			<Option target="CPPTesting"/>
+		</Unit>
+		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/BloodParticle.cpp">
 			<Option target="CPPTesting"/>
 		</Unit>
 		<Unit filename="/Users/EpicChicken/CLionProjects/CPPTesting/src/Coin.cpp">

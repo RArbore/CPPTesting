@@ -3,6 +3,7 @@
 
 #include "Entity.h"
 #include "Global.h"
+#include "Player.h"
 
 class Entity;
 

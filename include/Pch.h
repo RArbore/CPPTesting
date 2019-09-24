@@ -8,6 +8,7 @@
 #include <array>
 #include <cmath>
 #include <fstream>
+#include <random>
 #include <SFML/Graphics.hpp>
 
 #endif //CPPTESTING_PCH_H

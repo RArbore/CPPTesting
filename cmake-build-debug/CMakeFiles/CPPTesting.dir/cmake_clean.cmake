@@ -18,6 +18,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CPPTesting.dir/src/Rain.cpp.o"
   "CMakeFiles/CPPTesting.dir/src/Coin.cpp.o"
   "CMakeFiles/CPPTesting.dir/src/MiniTroll.cpp.o"
+  "CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.o"
   "CMakeFiles/CPPTesting.dir/RM_generated_files/resources/sheet.png.cpp.o"
   "CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map1.csv.cpp.o"
   "CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map2.csv.cpp.o"

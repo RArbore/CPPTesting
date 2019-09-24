@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/F2FFC802-8141-430D-95DE-FFC0D7667F87/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/9CD0A965-84D2-4D0C-A41A-911EFBCBF912/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/F2FFC802-8141-430D-95DE-FFC0D7667F87/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/9CD0A965-84D2-4D0C-A41A-911EFBCBF912/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,22 +59,22 @@ include CMakeFiles/CPPTesting.dir/flags.make
 
 RM_generated_files/resources/sheet.png.cpp: ../resources/sheet.png
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating RM_generated_files/resources/sheet.png.cpp"
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/F2FFC802-8141-430D-95DE-FFC0D7667F87/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory RM_generated_files/resources
+	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/9CD0A965-84D2-4D0C-A41A-911EFBCBF912/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory RM_generated_files/resources
 	ResourceManager-master/embed_resource -data resources/sheet.png ../resources/sheet.png RM_generated_files/resources/sheet.png.cpp
 
 RM_generated_files/maps/map1.csv.cpp: ../maps/map1.csv
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating RM_generated_files/maps/map1.csv.cpp"
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/F2FFC802-8141-430D-95DE-FFC0D7667F87/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory RM_generated_files/maps
+	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/9CD0A965-84D2-4D0C-A41A-911EFBCBF912/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory RM_generated_files/maps
 	ResourceManager-master/embed_resource -data maps/map1.csv ../maps/map1.csv RM_generated_files/maps/map1.csv.cpp
 
 RM_generated_files/maps/map2.csv.cpp: ../maps/map2.csv
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating RM_generated_files/maps/map2.csv.cpp"
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/F2FFC802-8141-430D-95DE-FFC0D7667F87/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory RM_generated_files/maps
+	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/9CD0A965-84D2-4D0C-A41A-911EFBCBF912/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory RM_generated_files/maps
 	ResourceManager-master/embed_resource -data maps/map2.csv ../maps/map2.csv RM_generated_files/maps/map2.csv.cpp
 
 RM_generated_files/maps/map3.csv.cpp: ../maps/map3.csv
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating RM_generated_files/maps/map3.csv.cpp"
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/F2FFC802-8141-430D-95DE-FFC0D7667F87/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory RM_generated_files/maps
+	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/9CD0A965-84D2-4D0C-A41A-911EFBCBF912/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory RM_generated_files/maps
 	ResourceManager-master/embed_resource -data maps/map3.csv ../maps/map3.csv RM_generated_files/maps/map3.csv.cpp
 
 RM_generated_files/__resources__config.cpp: RM_generated_files/resources/sheet.png.cpp
@@ -266,9 +266,22 @@ CMakeFiles/CPPTesting.dir/src/MiniTroll.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPTesting.dir/src/MiniTroll.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h -S /Users/EpicChicken/CLionProjects/CPPTesting/src/MiniTroll.cpp -o CMakeFiles/CPPTesting.dir/src/MiniTroll.cpp.s
 
+CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.o: CMakeFiles/CPPTesting.dir/flags.make
+CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.o: ../src/BloodParticle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h -o CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.o -c /Users/EpicChicken/CLionProjects/CPPTesting/src/BloodParticle.cpp
+
+CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h -E /Users/EpicChicken/CLionProjects/CPPTesting/src/BloodParticle.cpp > CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.i
+
+CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -include /Users/EpicChicken/CLionProjects/CPPTesting/include/Pch.h -S /Users/EpicChicken/CLionProjects/CPPTesting/src/BloodParticle.cpp -o CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.s
+
 CMakeFiles/CPPTesting.dir/RM_generated_files/resources/sheet.png.cpp.o: CMakeFiles/CPPTesting.dir/flags.make
 CMakeFiles/CPPTesting.dir/RM_generated_files/resources/sheet.png.cpp.o: RM_generated_files/resources/sheet.png.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/CPPTesting.dir/RM_generated_files/resources/sheet.png.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/CPPTesting.dir/RM_generated_files/resources/sheet.png.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CPPTesting.dir/RM_generated_files/resources/sheet.png.cpp.o -c /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/resources/sheet.png.cpp
 
 CMakeFiles/CPPTesting.dir/RM_generated_files/resources/sheet.png.cpp.i: cmake_force
@@ -281,7 +294,7 @@ CMakeFiles/CPPTesting.dir/RM_generated_files/resources/sheet.png.cpp.s: cmake_fo
 
 CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map1.csv.cpp.o: CMakeFiles/CPPTesting.dir/flags.make
 CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map1.csv.cpp.o: RM_generated_files/maps/map1.csv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map1.csv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map1.csv.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map1.csv.cpp.o -c /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/maps/map1.csv.cpp
 
 CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map1.csv.cpp.i: cmake_force
@@ -294,7 +307,7 @@ CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map1.csv.cpp.s: cmake_force
 
 CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map2.csv.cpp.o: CMakeFiles/CPPTesting.dir/flags.make
 CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map2.csv.cpp.o: RM_generated_files/maps/map2.csv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map2.csv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map2.csv.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map2.csv.cpp.o -c /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/maps/map2.csv.cpp
 
 CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map2.csv.cpp.i: cmake_force
@@ -307,7 +320,7 @@ CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map2.csv.cpp.s: cmake_force
 
 CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map3.csv.cpp.o: CMakeFiles/CPPTesting.dir/flags.make
 CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map3.csv.cpp.o: RM_generated_files/maps/map3.csv.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map3.csv.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map3.csv.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map3.csv.cpp.o -c /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/maps/map3.csv.cpp
 
 CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map3.csv.cpp.i: cmake_force
@@ -320,7 +333,7 @@ CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map3.csv.cpp.s: cmake_force
 
 CMakeFiles/CPPTesting.dir/RM_generated_files/__resources__config.cpp.o: CMakeFiles/CPPTesting.dir/flags.make
 CMakeFiles/CPPTesting.dir/RM_generated_files/__resources__config.cpp.o: RM_generated_files/__resources__config.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/CPPTesting.dir/RM_generated_files/__resources__config.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/CPPTesting.dir/RM_generated_files/__resources__config.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CPPTesting.dir/RM_generated_files/__resources__config.cpp.o -c /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/__resources__config.cpp
 
 CMakeFiles/CPPTesting.dir/RM_generated_files/__resources__config.cpp.i: cmake_force
@@ -347,6 +360,7 @@ CPPTesting_OBJECTS = \
 "CMakeFiles/CPPTesting.dir/src/Rain.cpp.o" \
 "CMakeFiles/CPPTesting.dir/src/Coin.cpp.o" \
 "CMakeFiles/CPPTesting.dir/src/MiniTroll.cpp.o" \
+"CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.o" \
 "CMakeFiles/CPPTesting.dir/RM_generated_files/resources/sheet.png.cpp.o" \
 "CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map1.csv.cpp.o" \
 "CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map2.csv.cpp.o" \
@@ -370,6 +384,7 @@ CPPTesting: CMakeFiles/CPPTesting.dir/src/RainCloud.cpp.o
 CPPTesting: CMakeFiles/CPPTesting.dir/src/Rain.cpp.o
 CPPTesting: CMakeFiles/CPPTesting.dir/src/Coin.cpp.o
 CPPTesting: CMakeFiles/CPPTesting.dir/src/MiniTroll.cpp.o
+CPPTesting: CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.o
 CPPTesting: CMakeFiles/CPPTesting.dir/RM_generated_files/resources/sheet.png.cpp.o
 CPPTesting: CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map1.csv.cpp.o
 CPPTesting: CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map2.csv.cpp.o
@@ -381,7 +396,7 @@ CPPTesting: ../SFML/lib/libsfml-audio.2.5.1.dylib
 CPPTesting: ../SFML/lib/libsfml-window.2.5.1.dylib
 CPPTesting: ../SFML/lib/libsfml-system.2.5.1.dylib
 CPPTesting: CMakeFiles/CPPTesting.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable CPPTesting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable CPPTesting"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CPPTesting.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

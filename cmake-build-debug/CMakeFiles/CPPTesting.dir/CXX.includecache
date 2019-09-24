@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/EpicChicken/CLionProjects/CPPTesting/include/BloodParticle.h
+Entity.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+Global.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
 Hitbox.h
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
@@ -18,13 +24,7 @@ Entity.h
 
 /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
 
-/Users/EpicChicken/CLionProjects/CPPTesting/include/MiniTroll.h
-Entity.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
-Global.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
-
-/Users/EpicChicken/CLionProjects/CPPTesting/src/MiniTroll.cpp
-../include/MiniTroll.h
-/Users/EpicChicken/CLionProjects/CPPTesting/include/MiniTroll.h
+/Users/EpicChicken/CLionProjects/CPPTesting/src/BloodParticle.cpp
+../include/BloodParticle.h
+/Users/EpicChicken/CLionProjects/CPPTesting/include/BloodParticle.h
 

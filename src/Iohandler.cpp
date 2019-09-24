@@ -11,11 +11,12 @@ Iohandler::Iohandler(Global* in, const string& PLATFORM_NAME):
     main = in;
     ResourceHandle sheet("resources/sheet.png");
     char const *image = sheet.string().c_str();
-    spritesheet.loadFromMemory(image, 186287);
+    spritesheet.loadFromMemory(image, 186370);
     spritesheet.setSmooth(false);
     view.zoom(1.0f);
     window.setView(view);
     counter = 0;
+
 }
 
 void Iohandler::windowtick() {

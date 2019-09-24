@@ -16,6 +16,7 @@ MiniTroll::MiniTroll(Global* main, double x, double y): Entity(main, x, y) {
 }
 
 bool MiniTroll::playerInRange() {
+    if (main->player->transparency == 0) return false;
     int x1 = (hitbox.x+hitbox.w/2)/16;
     int y1 = (hitbox.y+hitbox.h/2)/16;
     int x2 = (main->player->hitbox.x+main->player->hitbox.w/2)/16;
@@ -98,5 +99,8 @@ void MiniTroll::tick() {
     }
     if (hitbox.y+hitbox.h >= main->MAP_HEIGHT*16-32) {
         remove();
+    }
+    if (hitbox.overlap(&main->player->hitbox)) {
+        dynamic_cast<Player*>(main->player)->dying = true;
     }
 }
