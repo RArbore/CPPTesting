@@ -81,7 +81,9 @@ void MiniTroll::tick() {
             direction = 1;
         }
         sheetLocation.left = 432 + direction * 160;
-        vx = 4 * (-2 * direction + 1);
+        if (onGround()) {
+            vx = 4 * (-2 * direction + 1);
+        }
         ticksPerFrame = 4 * (-2 * direction + 1);
     }
     vy += 0.5;
@@ -100,7 +102,18 @@ void MiniTroll::tick() {
     if (hitbox.y+hitbox.h >= main->MAP_HEIGHT*16-32) {
         remove();
     }
-    if (hitbox.overlap(&main->player->hitbox)) {
-        dynamic_cast<Player*>(main->player)->dying = true;
+    if (hitbox.overlap(&main->player->hitbox) && dynamic_cast<Player*>(main->player)->damageTimer == 0) {
+        if (main->player->hitbox.y+main->player->hitbox.h*1/2 < hitbox.y && main->player->vy > 0) {
+            remove();
+            for (int i = 0; i < 100; i++) {
+                main->entities->push_back(new BloodParticle(main, hitbox.x+hitbox.w/2, hitbox.y+hitbox.h/2, i));
+            }
+            if (main->keys->at('W')) main->player->vy *= -1.1;
+            else main->player->vy *= -0.8;
+        }
+        else {
+            dynamic_cast<Player *>(main->player)->health--;
+            dynamic_cast<Player *>(main->player)->damageTimer = 30;
+        }
     }
 }

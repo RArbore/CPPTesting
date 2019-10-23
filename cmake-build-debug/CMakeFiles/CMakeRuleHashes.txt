@@ -1,6 +1,7 @@
 # Hashes of file build rules.
-6209409a1877fc170d07e3c108247091 RM_generated_files/__resources__config.cpp
-ac48487872aaf6aba5450bb54763124c RM_generated_files/maps/map1.csv.cpp
-70846426afd596ad0dcc705b295d0f33 RM_generated_files/maps/map2.csv.cpp
-57f38599148ee574f18f21f005ce1669 RM_generated_files/maps/map3.csv.cpp
-23c0c464a8f1cd8144451902f6f2792b RM_generated_files/resources/sheet.png.cpp
+011c95421f97292c79801e0336278ef8 RM_generated_files/__resources__config.cpp
+7bd784d6236da16a8d8b6adee0026cb3 RM_generated_files/maps/map1.csv.cpp
+6c0faba76f890e7e0be019d71b1aae97 RM_generated_files/maps/map2.csv.cpp
+0d50ea41223e4b42357d9b18e1785170 RM_generated_files/maps/map3.csv.cpp
+65c61fb74c8cbb338826cd61d9d976f7 RM_generated_files/maps/map4.csv.cpp
+c7f975aad2ca195682a702bc2375c775 RM_generated_files/resources/sheet.png.cpp

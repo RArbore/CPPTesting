@@ -52,11 +52,19 @@ void Mainclass::genmap() {
                 value = 0;
             }
             else if (value == 4) {
-                entities.push_back(new MiniTroll(&data, x*16, y*16));
+                entities.push_back(new ChestMonster(&data, x*16, y*16));
                 value = 0;
             }
             else if (value == 5) {
                 entities.push_back(new Coin(&data, x*16, y*16));
+                value = 0;
+            }
+            else if (value == 6) {
+                entities.push_back(new Dragon(&data, x*16, y*16));
+                value = 0;
+            }
+            else if (value == 7) {
+                entities.push_back(new MiniTroll(&data, x*16, y*16));
                 value = 0;
             }
             toadd.push_back(value);
@@ -87,6 +95,7 @@ void Mainclass::gameloop() {
     srand(getmillis());
     long ptime, atime, diff = 0;
     genmap();
+    vector<Entity*> to_delete;
     while (running) {
         ptime = getmillis();
 
@@ -105,13 +114,18 @@ void Mainclass::gameloop() {
                         break;
                     }
                     entities.erase(std::find(entities.begin(), entities.end(), e));
-                    delete e;
+                    to_delete.push_back(e);
                 }
             }
             catch (...) {}
         }
         if (keys.at('R')) {
             resetmap();
+        }
+        while (!io->isDrawing && !to_delete.empty()) {
+            Entity* e = to_delete.at(0);
+            to_delete.erase(to_delete.begin());
+            delete e;
         }
 
         atime = getmillis();

@@ -10,9 +10,6 @@ class BloodParticle: public Entity {
 
 public:
 
-    double vx;
-    double vy;
-
     BloodParticle(Global* main, double x, double y, int seed_mod=0);
 
     void tick() override;

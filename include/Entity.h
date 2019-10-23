@@ -13,6 +13,16 @@ class Entity {
 
 public:
 
+    struct sframe {
+
+        IntRect frame;
+
+        float x, y, r;
+
+        int direction;
+
+    };
+
     int horizAnis;
     int vertAnis;
     int ticksPerFrame;
@@ -31,6 +41,9 @@ public:
 
     IntRect sheetLocation;
 
+    double vx;
+    double vy;
+
     Entity(Global* main, double x, double y);
 
     void remove();
@@ -41,13 +54,13 @@ public:
 
     static bool linesIntersect(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4);
 
-    IntRect currentFrame();
+    virtual vector<Entity::sframe> currentFrame();
 
     bool checkCollision(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
 
-    bool moveH(double distance, vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
+    bool moveH(double distance, vector<vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
 
-    bool moveV(double distance, vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
+    bool moveV(double distance, vector<vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT);
 
     virtual void tick() = 0;
 

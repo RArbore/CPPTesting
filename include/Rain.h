@@ -10,8 +10,6 @@ class Rain: public Entity {
 
 public:
 
-    double vy;
-
     Rain(Global* main, double x, double y);
 
     void tick() override;

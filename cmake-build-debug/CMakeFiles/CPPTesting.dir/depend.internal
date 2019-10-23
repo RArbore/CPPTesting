@@ -10,6 +10,8 @@ CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map2.csv.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/maps/map2.csv.cpp
 CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map3.csv.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/maps/map3.csv.cpp
+CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map4.csv.cpp.o
+ /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/maps/map4.csv.cpp
 CMakeFiles/CPPTesting.dir/RM_generated_files/resources/sheet.png.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/RM_generated_files/resources/sheet.png.cpp
 CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.o
@@ -18,6 +20,15 @@ CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
  /Users/EpicChicken/CLionProjects/CPPTesting/src/BloodParticle.cpp
+CMakeFiles/CPPTesting.dir/src/ChestMonster.cpp.o
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/BloodParticle.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/ChestMonster.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/DustCloud.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/src/ChestMonster.cpp
 CMakeFiles/CPPTesting.dir/src/Coin.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/BloodParticle.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Coin.h
@@ -36,6 +47,16 @@ CMakeFiles/CPPTesting.dir/src/CrackedBlock.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
  /Users/EpicChicken/CLionProjects/CPPTesting/src/CrackedBlock.cpp
+CMakeFiles/CPPTesting.dir/src/Dragon.cpp.o
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/BloodParticle.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Dragon.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/DustCloud.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/FireBreath.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/src/Dragon.cpp
 CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/DustCloud.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
@@ -47,6 +68,15 @@ CMakeFiles/CPPTesting.dir/src/Entity.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
  /Users/EpicChicken/CLionProjects/CPPTesting/src/Entity.cpp
+CMakeFiles/CPPTesting.dir/src/FireBreath.cpp.o
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/BloodParticle.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/DustCloud.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/FireBreath.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Player.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/src/FireBreath.cpp
 CMakeFiles/CPPTesting.dir/src/Global.cpp.o
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
@@ -68,10 +98,13 @@ CMakeFiles/CPPTesting.dir/src/Iohandler.cpp.o
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o
  ../ResourceManager-master/include/ResourceManager/ResourceHandle.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/BloodParticle.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/ChestMonster.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Coin.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/CrackedBlock.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Dragon.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/DustCloud.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/FireBreath.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h
@@ -82,10 +115,13 @@ CMakeFiles/CPPTesting.dir/src/Main.cpp.o
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o
  ../ResourceManager-master/include/ResourceManager/ResourceHandle.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/BloodParticle.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/ChestMonster.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Coin.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/CrackedBlock.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/Dragon.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/DustCloud.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Entity.h
+ /Users/EpicChicken/CLionProjects/CPPTesting/include/FireBreath.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Global.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Hitbox.h
  /Users/EpicChicken/CLionProjects/CPPTesting/include/Iohandler.h

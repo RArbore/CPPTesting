@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/9CD0A965-84D2-4D0C-A41A-911EFBCBF912/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/9CD0A965-84D2-4D0C-A41A-911EFBCBF912/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/9CD0A965-84D2-4D0C-A41A-911EFBCBF912/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/_m/mn0ddpnj3hs2ly4zb2y44cmw0000gn/T/AppTranslocation/9CD0A965-84D2-4D0C-A41A-911EFBCBF912/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -257,6 +257,33 @@ RM_generated_files/maps/map3.csv.cpp.s:
 	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map3.csv.cpp.s
 .PHONY : RM_generated_files/maps/map3.csv.cpp.s
 
+RM_generated_files/maps/map4.csv.o: RM_generated_files/maps/map4.csv.cpp.o
+
+.PHONY : RM_generated_files/maps/map4.csv.o
+
+# target to build an object file
+RM_generated_files/maps/map4.csv.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map4.csv.cpp.o
+.PHONY : RM_generated_files/maps/map4.csv.cpp.o
+
+RM_generated_files/maps/map4.csv.i: RM_generated_files/maps/map4.csv.cpp.i
+
+.PHONY : RM_generated_files/maps/map4.csv.i
+
+# target to preprocess a source file
+RM_generated_files/maps/map4.csv.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map4.csv.cpp.i
+.PHONY : RM_generated_files/maps/map4.csv.cpp.i
+
+RM_generated_files/maps/map4.csv.s: RM_generated_files/maps/map4.csv.cpp.s
+
+.PHONY : RM_generated_files/maps/map4.csv.s
+
+# target to generate assembly for a file
+RM_generated_files/maps/map4.csv.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map4.csv.cpp.s
+.PHONY : RM_generated_files/maps/map4.csv.cpp.s
+
 RM_generated_files/resources/sheet.png.o: RM_generated_files/resources/sheet.png.cpp.o
 
 .PHONY : RM_generated_files/resources/sheet.png.o
@@ -310,6 +337,33 @@ src/BloodParticle.s: src/BloodParticle.cpp.s
 src/BloodParticle.cpp.s:
 	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.s
 .PHONY : src/BloodParticle.cpp.s
+
+src/ChestMonster.o: src/ChestMonster.cpp.o
+
+.PHONY : src/ChestMonster.o
+
+# target to build an object file
+src/ChestMonster.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/ChestMonster.cpp.o
+.PHONY : src/ChestMonster.cpp.o
+
+src/ChestMonster.i: src/ChestMonster.cpp.i
+
+.PHONY : src/ChestMonster.i
+
+# target to preprocess a source file
+src/ChestMonster.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/ChestMonster.cpp.i
+.PHONY : src/ChestMonster.cpp.i
+
+src/ChestMonster.s: src/ChestMonster.cpp.s
+
+.PHONY : src/ChestMonster.s
+
+# target to generate assembly for a file
+src/ChestMonster.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/ChestMonster.cpp.s
+.PHONY : src/ChestMonster.cpp.s
 
 src/Coin.o: src/Coin.cpp.o
 
@@ -365,6 +419,33 @@ src/CrackedBlock.cpp.s:
 	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/CrackedBlock.cpp.s
 .PHONY : src/CrackedBlock.cpp.s
 
+src/Dragon.o: src/Dragon.cpp.o
+
+.PHONY : src/Dragon.o
+
+# target to build an object file
+src/Dragon.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Dragon.cpp.o
+.PHONY : src/Dragon.cpp.o
+
+src/Dragon.i: src/Dragon.cpp.i
+
+.PHONY : src/Dragon.i
+
+# target to preprocess a source file
+src/Dragon.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Dragon.cpp.i
+.PHONY : src/Dragon.cpp.i
+
+src/Dragon.s: src/Dragon.cpp.s
+
+.PHONY : src/Dragon.s
+
+# target to generate assembly for a file
+src/Dragon.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Dragon.cpp.s
+.PHONY : src/Dragon.cpp.s
+
 src/DustCloud.o: src/DustCloud.cpp.o
 
 .PHONY : src/DustCloud.o
@@ -418,6 +499,33 @@ src/Entity.s: src/Entity.cpp.s
 src/Entity.cpp.s:
 	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/Entity.cpp.s
 .PHONY : src/Entity.cpp.s
+
+src/FireBreath.o: src/FireBreath.cpp.o
+
+.PHONY : src/FireBreath.o
+
+# target to build an object file
+src/FireBreath.cpp.o:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/FireBreath.cpp.o
+.PHONY : src/FireBreath.cpp.o
+
+src/FireBreath.i: src/FireBreath.cpp.i
+
+.PHONY : src/FireBreath.i
+
+# target to preprocess a source file
+src/FireBreath.cpp.i:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/FireBreath.cpp.i
+.PHONY : src/FireBreath.cpp.i
+
+src/FireBreath.s: src/FireBreath.cpp.s
+
+.PHONY : src/FireBreath.s
+
+# target to generate assembly for a file
+src/FireBreath.cpp.s:
+	$(MAKE) -f CMakeFiles/CPPTesting.dir/build.make CMakeFiles/CPPTesting.dir/src/FireBreath.cpp.s
+.PHONY : src/FireBreath.cpp.s
 
 src/Global.o: src/Global.cpp.o
 
@@ -715,24 +823,36 @@ help:
 	@echo "... RM_generated_files/maps/map3.csv.o"
 	@echo "... RM_generated_files/maps/map3.csv.i"
 	@echo "... RM_generated_files/maps/map3.csv.s"
+	@echo "... RM_generated_files/maps/map4.csv.o"
+	@echo "... RM_generated_files/maps/map4.csv.i"
+	@echo "... RM_generated_files/maps/map4.csv.s"
 	@echo "... RM_generated_files/resources/sheet.png.o"
 	@echo "... RM_generated_files/resources/sheet.png.i"
 	@echo "... RM_generated_files/resources/sheet.png.s"
 	@echo "... src/BloodParticle.o"
 	@echo "... src/BloodParticle.i"
 	@echo "... src/BloodParticle.s"
+	@echo "... src/ChestMonster.o"
+	@echo "... src/ChestMonster.i"
+	@echo "... src/ChestMonster.s"
 	@echo "... src/Coin.o"
 	@echo "... src/Coin.i"
 	@echo "... src/Coin.s"
 	@echo "... src/CrackedBlock.o"
 	@echo "... src/CrackedBlock.i"
 	@echo "... src/CrackedBlock.s"
+	@echo "... src/Dragon.o"
+	@echo "... src/Dragon.i"
+	@echo "... src/Dragon.s"
 	@echo "... src/DustCloud.o"
 	@echo "... src/DustCloud.i"
 	@echo "... src/DustCloud.s"
 	@echo "... src/Entity.o"
 	@echo "... src/Entity.i"
 	@echo "... src/Entity.s"
+	@echo "... src/FireBreath.o"
+	@echo "... src/FireBreath.i"
+	@echo "... src/FireBreath.s"
 	@echo "... src/Global.o"
 	@echo "... src/Global.i"
 	@echo "... src/Global.s"

@@ -19,8 +19,10 @@ public:
 
     bool dying;
 
-    double vx;
-    double vy;
+    int health;
+    int maxHealth;
+
+    int damageTimer;
 
     double pvx{};
     double pvy{};

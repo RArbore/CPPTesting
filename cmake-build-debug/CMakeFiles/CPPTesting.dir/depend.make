@@ -10,6 +10,8 @@ CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map2.csv.cpp.o: RM_generated_f
 
 CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map3.csv.cpp.o: RM_generated_files/maps/map3.csv.cpp
 
+CMakeFiles/CPPTesting.dir/RM_generated_files/maps/map4.csv.cpp.o: RM_generated_files/maps/map4.csv.cpp
+
 CMakeFiles/CPPTesting.dir/RM_generated_files/resources/sheet.png.cpp.o: RM_generated_files/resources/sheet.png.cpp
 
 CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.o: ../include/BloodParticle.h
@@ -17,6 +19,15 @@ CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.o: ../include/Entity.h
 CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.o: ../include/Global.h
 CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.o: ../include/Hitbox.h
 CMakeFiles/CPPTesting.dir/src/BloodParticle.cpp.o: ../src/BloodParticle.cpp
+
+CMakeFiles/CPPTesting.dir/src/ChestMonster.cpp.o: ../include/BloodParticle.h
+CMakeFiles/CPPTesting.dir/src/ChestMonster.cpp.o: ../include/ChestMonster.h
+CMakeFiles/CPPTesting.dir/src/ChestMonster.cpp.o: ../include/DustCloud.h
+CMakeFiles/CPPTesting.dir/src/ChestMonster.cpp.o: ../include/Entity.h
+CMakeFiles/CPPTesting.dir/src/ChestMonster.cpp.o: ../include/Global.h
+CMakeFiles/CPPTesting.dir/src/ChestMonster.cpp.o: ../include/Hitbox.h
+CMakeFiles/CPPTesting.dir/src/ChestMonster.cpp.o: ../include/Player.h
+CMakeFiles/CPPTesting.dir/src/ChestMonster.cpp.o: ../src/ChestMonster.cpp
 
 CMakeFiles/CPPTesting.dir/src/Coin.cpp.o: ../include/BloodParticle.h
 CMakeFiles/CPPTesting.dir/src/Coin.cpp.o: ../include/Coin.h
@@ -36,6 +47,16 @@ CMakeFiles/CPPTesting.dir/src/CrackedBlock.cpp.o: ../include/Hitbox.h
 CMakeFiles/CPPTesting.dir/src/CrackedBlock.cpp.o: ../include/Player.h
 CMakeFiles/CPPTesting.dir/src/CrackedBlock.cpp.o: ../src/CrackedBlock.cpp
 
+CMakeFiles/CPPTesting.dir/src/Dragon.cpp.o: ../include/BloodParticle.h
+CMakeFiles/CPPTesting.dir/src/Dragon.cpp.o: ../include/Dragon.h
+CMakeFiles/CPPTesting.dir/src/Dragon.cpp.o: ../include/DustCloud.h
+CMakeFiles/CPPTesting.dir/src/Dragon.cpp.o: ../include/Entity.h
+CMakeFiles/CPPTesting.dir/src/Dragon.cpp.o: ../include/FireBreath.h
+CMakeFiles/CPPTesting.dir/src/Dragon.cpp.o: ../include/Global.h
+CMakeFiles/CPPTesting.dir/src/Dragon.cpp.o: ../include/Hitbox.h
+CMakeFiles/CPPTesting.dir/src/Dragon.cpp.o: ../include/Player.h
+CMakeFiles/CPPTesting.dir/src/Dragon.cpp.o: ../src/Dragon.cpp
+
 CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.o: ../include/DustCloud.h
 CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.o: ../include/Entity.h
 CMakeFiles/CPPTesting.dir/src/DustCloud.cpp.o: ../include/Global.h
@@ -46,6 +67,15 @@ CMakeFiles/CPPTesting.dir/src/Entity.cpp.o: ../include/Entity.h
 CMakeFiles/CPPTesting.dir/src/Entity.cpp.o: ../include/Global.h
 CMakeFiles/CPPTesting.dir/src/Entity.cpp.o: ../include/Hitbox.h
 CMakeFiles/CPPTesting.dir/src/Entity.cpp.o: ../src/Entity.cpp
+
+CMakeFiles/CPPTesting.dir/src/FireBreath.cpp.o: ../include/BloodParticle.h
+CMakeFiles/CPPTesting.dir/src/FireBreath.cpp.o: ../include/DustCloud.h
+CMakeFiles/CPPTesting.dir/src/FireBreath.cpp.o: ../include/Entity.h
+CMakeFiles/CPPTesting.dir/src/FireBreath.cpp.o: ../include/FireBreath.h
+CMakeFiles/CPPTesting.dir/src/FireBreath.cpp.o: ../include/Global.h
+CMakeFiles/CPPTesting.dir/src/FireBreath.cpp.o: ../include/Hitbox.h
+CMakeFiles/CPPTesting.dir/src/FireBreath.cpp.o: ../include/Player.h
+CMakeFiles/CPPTesting.dir/src/FireBreath.cpp.o: ../src/FireBreath.cpp
 
 CMakeFiles/CPPTesting.dir/src/Global.cpp.o: ../include/Entity.h
 CMakeFiles/CPPTesting.dir/src/Global.cpp.o: ../include/Global.h
@@ -67,10 +97,13 @@ CMakeFiles/CPPTesting.dir/src/Iohandler.cpp.o: ../src/Iohandler.cpp
 
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../ResourceManager-master/include/ResourceManager/ResourceHandle.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/BloodParticle.h
+CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/ChestMonster.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Coin.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/CrackedBlock.h
+CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Dragon.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/DustCloud.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Entity.h
+CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/FireBreath.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Global.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Hitbox.h
 CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../include/Iohandler.h
@@ -81,10 +114,13 @@ CMakeFiles/CPPTesting.dir/src/Main.cpp.o: ../src/Main.cpp
 
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../ResourceManager-master/include/ResourceManager/ResourceHandle.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/BloodParticle.h
+CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/ChestMonster.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/Coin.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/CrackedBlock.h
+CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/Dragon.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/DustCloud.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/Entity.h
+CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/FireBreath.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/Global.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/Hitbox.h
 CMakeFiles/CPPTesting.dir/src/Mainclass.cpp.o: ../include/Iohandler.h

@@ -21,6 +21,11 @@ ResourceHandle::ResourceHandle(std::string resource_name) {
     extern const size_t _resource_maps__slash__map3__dot__csv_len;
     m_data_start = _resource_maps__slash__map3__dot__csv_data;
     m_data_len = _resource_maps__slash__map3__dot__csv_len;
+  } else if (resource_name == "maps/map4.csv") {
+    extern const unsigned char _resource_maps__slash__map4__dot__csv_data[];
+    extern const size_t _resource_maps__slash__map4__dot__csv_len;
+    m_data_start = _resource_maps__slash__map4__dot__csv_data;
+    m_data_len = _resource_maps__slash__map4__dot__csv_len;
   } else {
 #ifdef RM_NO_EXCEPTIONS
     m_data_start = nullptr;

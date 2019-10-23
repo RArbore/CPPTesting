@@ -11,6 +11,8 @@ Entity::Entity(Global* main, double x, double y):
     vertAnis = 1;
     ticksPerFrame = 1;
     counter = 0;
+    vx = 0;
+    vy = 0;
 }
 
 void Entity::remove() {
@@ -32,7 +34,7 @@ bool Entity::linesIntersect(double x1, double y1, double x2, double y2, double x
     return ccw(x1, y1, x3, y3, x4, y4) != ccw(x2, y2, x3, y3, x4, y4) and ccw(x1, y1, x2, y2, x3, y3) != ccw(x1, y1, x2, y2, x4, y4);
 }
 
-IntRect Entity::currentFrame() {
+vector<Entity::sframe> Entity::currentFrame() {
     int left = sheetLocation.left;
     int top = sheetLocation.top;
     int totalwidth = sheetLocation.width;
@@ -42,7 +44,14 @@ IntRect Entity::currentFrame() {
     int timedCount = (int)(counter/zeroToOne(ticksPerFrame));
     int x = left + (indivwidth * ((timedCount%zeroToOne(horizAnis)+zeroToOne(horizAnis))%zeroToOne(horizAnis)));
     int y = top+(indivheight*(((int)(timedCount/zeroToOne(horizAnis)))%zeroToOne(vertAnis)));
-    return {x, y, indivwidth, indivheight};
+    sframe rp;
+    rp.frame = {x, y, indivwidth, indivheight};
+    rp.x = 0.0f;
+    rp.y = 0.0f;
+    rp.r = 0.0f;
+    rp.direction = 1;
+    vector<sframe> v{rp};
+    return v;
 }
 
 bool Entity::checkCollision(vector<std::vector<int>>* map, int MAP_WIDTH, int MAP_HEIGHT) {

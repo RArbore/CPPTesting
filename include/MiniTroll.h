@@ -13,9 +13,6 @@ public:
 
     int direction;
 
-    double vx;
-    double vy;
-
     MiniTroll(Global* main, double x, double y);
 
     bool playerInRange();

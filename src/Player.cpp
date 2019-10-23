@@ -18,6 +18,9 @@ Player::Player(Global* main, double x, double y): Entity(main, x, y) {
     ticksPerFrame = 4;
     lastWallJump = 0;
     wallJumpTimer = 0;
+    health = 6;
+    maxHealth = 6;
+    damageTimer = 0;
 }
 
 bool Player::onGround() {
@@ -51,10 +54,14 @@ bool Player::onRight() {
 
 void Player::tick() {
     counter++;
+    if (health <= 0 && !dying) {
+        dying = true;
+        transparency = 255;
+    }
     if (dying) {
         if (transparency != 0) {
             counter = 0;
-            for (int i = 0; i < 1000; i++) {
+            for (int i = 0; i < 400; i++) {
                 main->entities->push_back(new BloodParticle(main, hitbox.x+hitbox.w/2, hitbox.y+hitbox.h/2, i));
             }
         }
@@ -68,10 +75,12 @@ void Player::tick() {
         if (wallJumpTimer > 0) {
             wallJumpTimer--;
         }
-        if (transparency < 255) {
-            transparency += 8;
-        } else if (transparency > 255) {
-            transparency = 255;
+        if (damageTimer == 0) {
+            if (transparency < 255) {
+                transparency += 8;
+            } else if (transparency > 255) {
+                transparency = 255;
+            }
         }
         if (*main->leftmouse && transparency == 255) {
             hitbox.x = *main->mx - hitbox.w / 2;
@@ -160,16 +169,21 @@ void Player::tick() {
         if (!moveV(vy, main->map, main->MAP_WIDTH, main->MAP_HEIGHT)) {
             vy = 0;
         }
-        *(main->cx) -= (*(main->cx) - (hitbox.x + hitbox.w / 2)) * 0.2;
-        *(main->cy) -= (*(main->cy) - (hitbox.y + hitbox.h / 2)) * 0.2;
-        if (abs(*(main->cx) - (hitbox.x + hitbox.w / 2)) < 1) {
-            *(main->cx) = hitbox.x + hitbox.w / 2;
+        *(main->cx) -= (*(main->cx) - (hitbox.x + 8)) * 0.2;
+        *(main->cy) -= (*(main->cy) - (hitbox.y + 12)) * 0.2;
+        if (abs(*(main->cx) - (hitbox.x + 8)) < 1) {
+            *(main->cx) = hitbox.x + 8;
         }
-        if (abs(*(main->cy) - (hitbox.y + hitbox.h / 2)) < 1) {
-            *(main->cy) = hitbox.y + hitbox.h / 2;
+        if (abs(*(main->cy) - (hitbox.y + 12)) < 1) {
+            *(main->cy) = hitbox.y + 12;
         }
         if (hitbox.y + hitbox.h >= main->MAP_HEIGHT * 16) {
             remove();
+        }
+        if (damageTimer > 0) damageTimer--;
+        if (damageTimer > 0) {
+            if (damageTimer % 6 > 2) transparency = 0;
+            else transparency = 255;
         }
     }
 }

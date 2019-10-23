@@ -1,7 +1,7 @@
 #include "../include/BloodParticle.h"
 
 BloodParticle::BloodParticle(Global* main, double x, double y, int seed_mod): Entity(main, x, y) {
-    hitbox.w = 2;
+    hitbox.w = 1;
     hitbox.h = 1;
     sheetLocation.left = 136;
     sheetLocation.top = 232;
