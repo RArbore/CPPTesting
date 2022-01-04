@@ -1,7 +1,0 @@
-/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/CPPTesting.dir
-/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/CMakeFiles/pch.dir
-/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master/CMakeFiles/rebuild_cache.dir
-/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master/CMakeFiles/edit_cache.dir
-/Users/EpicChicken/CLionProjects/CPPTesting/cmake-build-debug/ResourceManager-master/CMakeFiles/embed_resource.dir

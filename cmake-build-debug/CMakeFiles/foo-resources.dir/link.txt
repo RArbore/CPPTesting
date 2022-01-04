@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libfoo-resources.a  CMakeFiles/foo-resources.dir/__cmrc_foo-resources/lib.cpp.o CMakeFiles/foo-resources.dir/__cmrc_foo-resources/intermediate/NAMEPSPACE.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libfoo-resources.a

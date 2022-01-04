@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libresources.a  CMakeFiles/resources.dir/__cmrc_resources/lib.cpp.o CMakeFiles/resources.dir/__cmrc_resources/intermediate/resources/sheet.png.cpp.o CMakeFiles/resources.dir/__cmrc_resources/intermediate/maps/map1.csv.cpp.o CMakeFiles/resources.dir/__cmrc_resources/intermediate/maps/map2.csv.cpp.o CMakeFiles/resources.dir/__cmrc_resources/intermediate/maps/map3.csv.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libresources.a
